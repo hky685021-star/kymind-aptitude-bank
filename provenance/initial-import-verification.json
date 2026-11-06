@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-06T06:31:49.684280+00:00",
+  "scope": "Initial private-repository import: full original bank and existing seven-sample review data only",
+  "archiveSha256": "0fb1a4bb77efc7531a4fa557c38b327b5cd2bff1d79593cde6ad2d7f202d6075",
+  "originalFiles": 51054,
+  "originalBytes": 699118078,
+  "originalFileChecksums": "all passed",
+  "entrySignature": "verified-ed25519",
+  "manifestSignature": "verified-ed25519",
+  "signedFilesChecked": 50990,
+  "questionCount": 70575,
+  "duplicateQuestionIds": 0,
+  "aiRecordCount": 7,
+  "aiReviewStates": {
+    "needs-review": 6,
+    "blocked": 1
+  },
+  "modelRecordCount": 7,
+  "modelReviewStates": {
+    "pending": 7
+  },
+  "reviewFilesPreservedByteForByte": true,
+  "knownSourceImageDecodeErrors": 1,
+  "knownSourceImageErrorIndependentlyReproduced": true,
+  "knownSourceImageErrorPath": "releases/release-1791732747093-cdd4c2a3/assets/media_c331e869724742b8b9ae23e38db3dfff007038ccb502697f95a9965a606b0cde.bin",
+  "credentialScan": {
+    "method": "Common secret-pattern checks plus path/content scope review",
+    "matches": 0,
+    "limitation": "Heuristic scan is not a guarantee of absence"
+  },
+  "externalReviewHtmlResources": 0,
+  "excluded": [
+    "Original ZIP archive",
+    "Full KyMind application source",
+    "Runtime databases",
+    "Large research checkpoint and ledger",
+    "Credentials and keys",
+    "Unrelated workspace files"
+  ],
+  "limitations": [
+    "Signatures establish consistency against archive-supplied key, not independent authorship or answer correctness",
+    "Original PNG issue preserved without repair",
+    "No complete content review or application UI acceptance",
+    "All included sample analyses and model candidates remain unapproved",
+    "No scheduled job or automatic candidate approval configured"
+  ]
+}

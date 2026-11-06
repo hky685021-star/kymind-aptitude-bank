@@ -1,0 +1,12 @@
+{
+  "batchId": "2026-11-06-seven-samples",
+  "bankId": "bank-civil-aptitude",
+  "sourceReleaseId": "release-1791732747093-cdd4c2a3",
+  "sourceManifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+  "recordCount": 7,
+  "needsReviewCount": 6,
+  "blockedCount": 1,
+  "reviewedCount": 0,
+  "recordsSha256": "178e486c71a6e963444cb90a0ab4146d3d2072e825ce0f9e3cd55e7d7e6a8695",
+  "status": "needs-review"
+}

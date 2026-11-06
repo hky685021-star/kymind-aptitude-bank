@@ -1,0 +1,79 @@
+{
+  "archiveName": "KyMind-saved-AI-7-samples-model-index-review-20261106.zip",
+  "archiveSha256": "42e6f857ee6183bc3861a61ce37c79d0208b5ec305487735c5a79037edcd7b94",
+  "files": [
+    {
+      "sourceArchivePath": "KyMind-saved-AI/review/saved-ai-input.jsonl",
+      "path": "supplements/ai/batches/2026-11-06-seven-samples/records.jsonl",
+      "byteLength": 6760,
+      "sha256": "178e486c71a6e963444cb90a0ab4146d3d2072e825ce0f9e3cd55e7d7e6a8695"
+    },
+    {
+      "sourceArchivePath": "KyMind-saved-AI/review/samples.json",
+      "path": "supplements/ai/batches/2026-11-06-seven-samples/samples.json",
+      "byteLength": 106254,
+      "sha256": "a1cc488847b04713591e1e8575688e66a8b40c371ccf35329afa969e517f034d"
+    },
+    {
+      "sourceArchivePath": "KyMind-saved-AI/review/selection.json",
+      "path": "supplements/ai/batches/2026-11-06-seven-samples/selection.json",
+      "byteLength": 814,
+      "sha256": "b78c6df719a453b88cf805869fc0d3422cb470d62a82519d433c3ec5bad0ca43"
+    },
+    {
+      "sourceArchivePath": "KyMind-saved-AI/review/sample-independent-checks.json",
+      "path": "supplements/ai/batches/2026-11-06-seven-samples/independent-checks.json",
+      "byteLength": 465,
+      "sha256": "52e0b777b26a5e89d489cb11ac229f779388752c06f4f50974db04e39e180401"
+    },
+    {
+      "sourceArchivePath": "KyMind-saved-AI/artifacts/review-20261106/KyMind-7-real-samples-review.html",
+      "path": "review/2026-11-06-seven-samples.html",
+      "byteLength": 68765,
+      "sha256": "58ff7b6c40f542229d0821abd9dfe982cf8746c0ec17e1ff34a9d142cf029c2f"
+    },
+    {
+      "sourceArchivePath": "KyMind-saved-AI/review/models/README.zh-CN.md",
+      "path": "candidates/model-index/2026-11-06-seven-samples/README.zh-CN.md",
+      "byteLength": 3219,
+      "sha256": "e9e77184f441bcdbe42c1b773e6d32655ee37b9dcea028138959658ec7f3f097"
+    },
+    {
+      "sourceArchivePath": "KyMind-saved-AI/review/models/batch.json",
+      "path": "candidates/model-index/2026-11-06-seven-samples/batch.json",
+      "byteLength": 1278,
+      "sha256": "35a72a7b0079a80ec3df09f1bdea3bbaf8d5edb047dbea5086be889f52d42421"
+    },
+    {
+      "sourceArchivePath": "KyMind-saved-AI/review/models/dictionary.json",
+      "path": "candidates/model-index/2026-11-06-seven-samples/dictionary.json",
+      "byteLength": 5799,
+      "sha256": "ac5f30da7e4640ba6bd86788a3560f187cf3a3466767d16fe6bd2cca051d628b"
+    },
+    {
+      "sourceArchivePath": "KyMind-saved-AI/review/models/evidence/mapping-review.json",
+      "path": "candidates/model-index/2026-11-06-seven-samples/evidence/mapping-review.json",
+      "byteLength": 9049,
+      "sha256": "bd35ca3a9566f30e30667ed7d0d12d050269e87646af1ebde4ebacc3fa55c325"
+    },
+    {
+      "sourceArchivePath": "KyMind-saved-AI/review/models/evidence/prior-seven-candidates.json",
+      "path": "candidates/model-index/2026-11-06-seven-samples/evidence/prior-seven-candidates.json",
+      "byteLength": 12205,
+      "sha256": "34e9c22404de4807c4a98494e167b56033daeebf9294a41b9303b08f63620f56"
+    },
+    {
+      "sourceArchivePath": "KyMind-saved-AI/review/models/evidence/source-dictionary.draft.json",
+      "path": "candidates/model-index/2026-11-06-seven-samples/evidence/source-dictionary.draft.json",
+      "byteLength": 42618,
+      "sha256": "046c760ae842d9d70a2c5563e220c021b875ef2109db31f4039711a9a81ca820"
+    },
+    {
+      "sourceArchivePath": "KyMind-saved-AI/review/models/records.jsonl",
+      "path": "candidates/model-index/2026-11-06-seven-samples/records.jsonl",
+      "byteLength": 8698,
+      "sha256": "c8569db11263bd1f8cd27acf9b5f53715e0fe09452c4caa6e7894704535eebe6"
+    }
+  ],
+  "status": "Unapproved review material; not production-import approval"
+}

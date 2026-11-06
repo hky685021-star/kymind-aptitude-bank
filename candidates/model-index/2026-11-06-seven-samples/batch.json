@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "batchId": "civil-aptitude-seven-review-20261106",
+  "dictionaryVersion": "civil-aptitude-seven-review-20261106",
+  "bankId": "bank-civil-aptitude",
+  "sourceReleaseId": "release-1791732747093-cdd4c2a3",
+  "sourceManifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+  "sourceFiles": [
+    {
+      "relativePath": "manifest.json",
+      "sha256": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9"
+    },
+    {
+      "relativePath": "questions/part-000001.jsonl",
+      "sha256": "96d7d103c84b14733f9afac3aa795de2ccec32ee1087a3e4fbef9ba7a680dcfa"
+    },
+    {
+      "relativePath": "collections.jsonl",
+      "sha256": "0fb933a166d322996feabd155c1519faa48dc7875acc73d6d6eb153ff04d97f7"
+    }
+  ],
+  "selectedQuestionCount": 7,
+  "uniqueQuestionCount": 7,
+  "duplicateReferenceCount": 0,
+  "recordCount": 7,
+  "reviewedCount": 0,
+  "pendingCount": 7,
+  "quarantinedCount": 0,
+  "recordsSha256": "c8569db11263bd1f8cd27acf9b5f53715e0fe09452c4caa6e7894704535eebe6",
+  "createdAt": "2026-11-06T03:36:26.355263Z",
+  "producer": "七题人工审核前候选映射；保留未映射和缺材料阻断",
+  "status": "draft",
+  "dictionarySha256": "ac5f30da7e4640ba6bd86788a3560f187cf3a3466767d16fe6bd2cca051d628b"
+}

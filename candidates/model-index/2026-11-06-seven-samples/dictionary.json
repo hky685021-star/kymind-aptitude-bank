@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "dictionaryVersion": "civil-aptitude-seven-review-20261106",
+  "bankId": "bank-civil-aptitude",
+  "status": "draft",
+  "dimensions": {
+    "concept": [
+      {
+        "code": "draft.quantity.sequence",
+        "label": "数列规律",
+        "definition": "候选原定义：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤；原状态：draft-pending；未经用户批准。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.argument-form",
+        "label": "论证形式",
+        "definition": "候选原定义：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤；原状态：draft-pending；未经用户批准。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.lexical-meaning",
+        "label": "语境词义",
+        "definition": "候选原定义：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤；原状态：draft-pending；未经用户批准。",
+        "reviewStatus": "pending"
+      }
+    ],
+    "model": [
+      {
+        "code": "draft.quantity.relative-motion",
+        "label": "相对速度与路程",
+        "definition": "候选原定义：相遇追及或流水，路程由相对速度乘时间；排除：仅速度文字而无运动约束不适用；证据要求：参照系、相对速度方向、距离及起始差；原状态：draft-pending；未经用户批准。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.argument-isomorphism",
+        "label": "论证结构同构",
+        "definition": "候选原定义：问题要求相同推理形式或相同谬误；排除：一般词语类比不适用；证据要求：前提结论抽象形式与候选逐一对应；原状态：draft-pending；未经用户批准。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.truth-count",
+        "label": "真假数量约束",
+        "definition": "候选原定义：已知若干命题中真假数量，通过矛盾/枚举定位；排除：只出现真假用语但无数量约束不适用；证据要求：命题形式、真假数量以及一致性验证；原状态：draft-pending；未经用户批准。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.collocation-register",
+        "label": "搭配与语用筛选",
+        "definition": "候选原定义：决定性排除依据为搭配对象、词性、语体或褒贬；排除：语义关系主导时作为辅模型，不替代语境对应；证据要求：给出搭配双方或褒贬对象、至少一项排除理由；原状态：draft-pending；未经用户批准。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.context-correspondence",
+        "label": "语境对应选词",
+        "definition": "候选原定义：选词填空中存在解释、反义、并列或复现线索；排除：不能仅因有横线而选；语句补写不在此项；证据要求：引用空位、上下文线索及候选词差异；逐空验证；原状态：draft-pending；未经用户批准。",
+        "reviewStatus": "pending"
+      }
+    ],
+    "target": [
+      {
+        "code": "draft.lexical.best-fit",
+        "label": "最恰当词语",
+        "definition": "候选原定义：选择与全部空位语境一致的词；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文；原状态：draft-pending；未经用户批准。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.count",
+        "label": "个数或人数",
+        "definition": "候选原定义：求离散对象数量；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文；原状态：draft-pending；未经用户批准。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.relation.best-match",
+        "label": "关系同构项",
+        "definition": "候选原定义：选出关系或推理形式最一致者；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文；原状态：draft-pending；未经用户批准。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "time.total",
+        "label": "总时间",
+        "definition": "候选原定义：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文；原状态：existing-reference；未经用户批准。",
+        "reviewStatus": "pending"
+      }
+    ],
+    "context": [
+      {
+        "code": "draft.scientific-claims",
+        "label": "科学主张",
+        "definition": "候选原定义：题干明确叙述该题材；排除：不影响模型成立；不得据题材推模型；资料不足可为空；证据要求：题材原文而非解析举例；原状态：draft-pending；未经用户批准。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "water-flow",
+        "label": "水流",
+        "definition": "候选原定义：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文；原状态：existing-reference；未经用户批准。",
+        "reviewStatus": "pending"
+      }
+    ]
+  }
+}

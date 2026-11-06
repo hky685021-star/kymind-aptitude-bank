@@ -1,0 +1,268 @@
+[
+  {
+    "path": "analysis_inventory/first20_research.jsonl",
+    "record": {
+      "researchSchema": "non-importable-research-v1",
+      "sampleOrdinal": 3,
+      "questionId": "q_00013f5f09f985a0d167a5822f6c7f699e977754d1ff71c7d11ee7cafea2898e",
+      "revisionDigest": "bed61cba44d81bf3616d2a06312d0a83bd073be21ecc4a483e57187d5325cc0f",
+      "sourceFile": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "sourceLine": 3,
+      "fourDimensionCandidateProvisional": {
+        "subject": "判断推理",
+        "questionType": "论证方式",
+        "solutionModel": "诉诸无知",
+        "method": "抽象命题结构同构匹配"
+      },
+      "dictionaryMappingStatus": "pending_dictionary",
+      "analysisStatus": "machine_candidate_unreviewed",
+      "candidateAnswer": "C",
+      "sourceAnswerOptionIds": [
+        "option_c"
+      ],
+      "evidenceAndReasoning": "题干从不能证明非P推出P；C从不能证明平行世界不存在推出存在，与结构和确定性一致。A结论只是可能，B举例，D声称有迹象。",
+      "caveat": "模型分析不以反物质存在与否的现实科学事实判题。",
+      "imageInspection": {
+        "performed": false,
+        "assetEvidence": null
+      },
+      "reviewScope": "逐题读取题干、选项和原解析，独立审题；未外部核验权威来源；不是可导入正式索引",
+      "validationLevel": "machine-analysis-unreviewed"
+    }
+  },
+  {
+    "path": "analysis_inventory/first20_research.jsonl",
+    "record": {
+      "researchSchema": "non-importable-research-v1",
+      "sampleOrdinal": 5,
+      "questionId": "q_0001c97965816cd04e6ade1ae644d48225e5f1939fe9e4a99a094821b3240a59",
+      "revisionDigest": "0dbd4f9e06d32e9ac002d22067d491dc9c340fcd2b5f5e15ef601b871501265b",
+      "sourceFile": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "sourceLine": 5,
+      "fourDimensionCandidateProvisional": {
+        "subject": "言语理解与表达",
+        "questionType": "逻辑填空",
+        "solutionModel": "搭配对象与文明形成标志",
+        "method": "从限制更强的搭配入手再验证"
+      },
+      "dictionaryMappingStatus": "pending_dictionary",
+      "analysisStatus": "machine_candidate_unreviewed",
+      "candidateAnswer": "C",
+      "sourceAnswerOptionIds": [
+        "option_c"
+      ],
+      "evidenceAndReasoning": "令人叹为观止可修饰令人赞叹的文明；击节叹赏多指诗文音乐，高山仰止偏品德。第一空问文明成立的辨识特征，标志最切合三要素。",
+      "caveat": "不把拍案叫绝的搭配限制绝对化，结合两个空整体优选。",
+      "imageInspection": {
+        "performed": false,
+        "assetEvidence": null
+      },
+      "reviewScope": "逐题读取题干、选项和原解析，独立审题；未外部核验权威来源；不是可导入正式索引",
+      "validationLevel": "machine-analysis-unreviewed"
+    }
+  },
+  {
+    "path": "analysis_inventory/first20_research.jsonl",
+    "record": {
+      "researchSchema": "non-importable-research-v1",
+      "sampleOrdinal": 16,
+      "questionId": "q_000bc4bf8d55763609c8292267001dd357095db446c46b8b22204b87414d49ca",
+      "revisionDigest": "35af1f64c29137370515c1fbe50ae672b204db2afbb9788fa76bf156c2ab3b7b",
+      "sourceFile": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "sourceLine": 16,
+      "fourDimensionCandidateProvisional": {
+        "subject": "资料分析",
+        "questionType": "直接读数",
+        "solutionModel": "阈值比较计数",
+        "method": "逐项比较是否严格大于全国平均"
+      },
+      "dictionaryMappingStatus": "pending_dictionary",
+      "analysisStatus": "pending_missing_material",
+      "candidateAnswer": "B",
+      "sourceAnswerOptionIds": [
+        "option_b"
+      ],
+      "evidenceAndReasoning": "原解析称阈值185.03升，列浙江212、安徽190、福建231、广东251、海南315、西藏256，六个所列数均超过阈值。",
+      "caveat": "图2和全国文字材料未附，无法确认其余地区均不超过或城市/全国口径一致；B仅是原解析结果。",
+      "imageInspection": {
+        "performed": false,
+        "assetEvidence": null
+      },
+      "reviewScope": "逐题读取题干、选项和原解析，独立审题；未外部核验权威来源；不是可导入正式索引",
+      "validationLevel": "machine-analysis-unreviewed"
+    }
+  },
+  {
+    "path": "analysis_inventory/questions101_150_research.jsonl",
+    "record": {
+      "researchSchema": "non-importable-research-v2",
+      "sampleOrdinal": 104,
+      "questionId": "q_005850e5607c7634a70b93babd7d92506180e62eb3ffe903913b6c998bcc0680",
+      "revisionDigest": "933cd7dd2eb8a6fe37e4aea359ef314be313ab7d69730adeaebc7932b980e6ce",
+      "sourceFile": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "sourceLine": 104,
+      "fourDimensionDraftCandidate": {
+        "conceptCodes": [
+          "draft.reason.argument-form"
+        ],
+        "modelCodes": [
+          "draft.reason.truth-count"
+        ],
+        "targetCodes": [],
+        "contextCodes": []
+      },
+      "dictionaryReference": {
+        "path": "exam_dictionary_draft/dictionary.draft.json",
+        "sha256": "046c760ae842d9d70a2c5563e220c021b875ef2109db31f4039711a9a81ca820",
+        "status": "draft-not-approved"
+      },
+      "dictionaryMappingStatus": "draft-candidate-with-gaps",
+      "dictionaryGaps": [
+        "targetCodes",
+        "contextCodes"
+      ],
+      "analysisStatus": "machine_candidate_unreviewed",
+      "candidateAnswer": "C",
+      "sourceAnswerOptionIds": [
+        "option_c"
+      ],
+      "evidenceAndReasoning": "非空班级中有人不及格与有人及格至少一真。只一句真则班长不及格为假，班长及格使第2句真，第1句假意味着全班及格，学习委员及格C。",
+      "caveat": "第1第2句可同时真而非互为矛盾；突破口是至少一真。",
+      "imageInspection": {
+        "performed": false,
+        "assetEvidence": null
+      },
+      "reviewScope": "逐题实际审题、所有本批含图题已打开；未外部来源核验；四维仅未批准草稿候选，空维度不硬匹配，不可导入正式索引",
+      "validationLevel": "machine-analysis-unreviewed",
+      "researchRevisionHistory": [
+        {
+          "revision": "dimension-scope-audit-20261104T0535",
+          "changes": [
+            "保守撤回泛化正确选项标签：此题实际问文本蕴含/逻辑必真/数据综合等，当前草稿缺更具体目标，非据此更改答案。"
+          ],
+          "priorDimensions": {
+            "conceptCodes": [
+              "draft.reason.argument-form"
+            ],
+            "modelCodes": [
+              "draft.reason.truth-count"
+            ],
+            "targetCodes": [
+              "draft.knowledge.correct-option"
+            ],
+            "contextCodes": []
+          }
+        }
+      ],
+      "dimensionAuditStatus": "limited-context-target-audit-not-human-reviewed"
+    }
+  },
+  {
+    "path": "analysis_inventory/questions101_150_research.jsonl",
+    "record": {
+      "researchSchema": "non-importable-research-v2",
+      "sampleOrdinal": 112,
+      "questionId": "q_006423800b19397f589f6e3c10307dad6f81f6d9ff5cfac11f76f831e9bc514f",
+      "revisionDigest": "48185077391d9a4c4621a3516207ed3ec55132eb017b9e1f789b12c50c0f5722",
+      "sourceFile": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "sourceLine": 112,
+      "fourDimensionDraftCandidate": {
+        "conceptCodes": [],
+        "modelCodes": [
+          "draft.quantity.relative-motion"
+        ],
+        "targetCodes": [
+          "time.total"
+        ],
+        "contextCodes": [
+          "water-flow"
+        ]
+      },
+      "dictionaryReference": {
+        "path": "exam_dictionary_draft/dictionary.draft.json",
+        "sha256": "046c760ae842d9d70a2c5563e220c021b875ef2109db31f4039711a9a81ca820",
+        "status": "draft-not-approved"
+      },
+      "dictionaryMappingStatus": "draft-candidate-with-gaps",
+      "dictionaryGaps": [
+        "conceptCodes"
+      ],
+      "analysisStatus": "machine_candidate_unreviewed",
+      "candidateAnswer": "B",
+      "sourceAnswerOptionIds": [
+        "option_b"
+      ],
+      "evidenceAndReasoning": "设航程63，顺速9逆速7，船静水速(9+7)/2=8，静水时间63/8=7.875小时，B；已看图公式一致。",
+      "caveat": "默认船自身速度和水速恒定，不能平均7/9小时直接取8。target用既有time.total更合适。",
+      "imageInspection": {
+        "performed": true,
+        "assetEvidence": "analysis_inventory/q112_images.png"
+      },
+      "reviewScope": "逐题实际审题、所有本批含图题已打开；未外部来源核验；四维仅未批准草稿候选，空维度不硬匹配，不可导入正式索引",
+      "validationLevel": "machine-analysis-unreviewed",
+      "dimensionAuditStatus": "limited-context-target-audit-not-human-reviewed"
+    }
+  },
+  {
+    "path": "analysis_inventory/questions21_50_research.jsonl",
+    "record": {
+      "researchSchema": "non-importable-research-v1",
+      "sampleOrdinal": 27,
+      "questionId": "q_00145f7c49eae53262ce7843005b9c814d67e959f09a113a5e2e00543657bea3",
+      "revisionDigest": "85892571e40f6a6d64bb38c2a21aac81eda2d99f681ff067609593cf0edd4578",
+      "sourceFile": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "sourceLine": 27,
+      "fourDimensionCandidateProvisional": {
+        "subject": "数量关系",
+        "questionType": "数学运算",
+        "solutionModel": "三角数求层数与等差通项",
+        "method": "总和反求首项再求第k项"
+      },
+      "dictionaryMappingStatus": "pending_dictionary",
+      "analysisStatus": "machine_candidate_unreviewed",
+      "candidateAnswer": "B",
+      "sourceAnswerOptionIds": [
+        "option_b"
+      ],
+      "evidenceAndReasoning": "由n、n−1直至顶点1架，总和n(n+1)/2=105，14×15/2=105，n=14。第10次14−9=5架，B。",
+      "caveat": "使用等边三角形顶点为1架的题设几何含义；原解析公式图无需读取即可独立建模。",
+      "imageInspection": {
+        "performed": false,
+        "assetEvidence": null
+      },
+      "reviewScope": "逐题读取题干、选项和原解析，独立审题；未外部核验权威来源；不是可导入正式索引",
+      "validationLevel": "machine-analysis-unreviewed"
+    }
+  },
+  {
+    "path": "analysis_inventory/questions51_100_research.jsonl",
+    "record": {
+      "researchSchema": "non-importable-research-v1",
+      "sampleOrdinal": 77,
+      "questionId": "q_00400838bdb227b090471c02453b25f20913b27fdd9298afe2b5d2e764fa529e",
+      "revisionDigest": "6fdcdedd57dab7ff38fbc1ec5cdcfd9bf9f803b89003d0b490b9dad99dfedd71",
+      "sourceFile": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "sourceLine": 77,
+      "fourDimensionCandidateProvisional": {
+        "subject": "判断推理",
+        "questionType": "图形分类",
+        "solutionModel": "小元素在单体或交叠区的位置",
+        "method": "逐图判断包含与相交关系"
+      },
+      "dictionaryMappingStatus": "pending_dictionary",
+      "analysisStatus": "machine_candidate_unreviewed",
+      "candidateAnswer": "D",
+      "sourceAnswerOptionIds": [
+        "option_d"
+      ],
+      "evidenceAndReasoning": "已实际看六图：①③⑤的小正方形仅落在一个矩形内部；②④⑥的小正方形位于圆和矩形交叠处。三角形在①③⑤为圆与矩形交叠，②④⑥为两矩形交叠。分组135/246，D。",
+      "caveat": "判断内部区域而非大图外接框；本题全部六图均已查看。",
+      "imageInspection": {
+        "performed": true,
+        "assetEvidence": "analysis_inventory/q77_images.png"
+      },
+      "reviewScope": "逐题读取题干、选项和原解析，独立审题；所有本批含图题均实际打开；未外部核验权威来源；不是可导入正式索引",
+      "validationLevel": "machine-analysis-unreviewed"
+    }
+  }
+]

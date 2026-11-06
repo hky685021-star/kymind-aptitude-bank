@@ -1,0 +1,24 @@
+# Archives, local credentials, generated runtimes, and unrelated workspace files.
+*.zip
+*.7z
+*.tar
+*.tar.gz
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+node_modules/
+__pycache__/
+.DS_Store
+Thumbs.db

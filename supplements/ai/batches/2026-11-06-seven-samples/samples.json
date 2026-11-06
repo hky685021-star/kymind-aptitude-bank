@@ -1,0 +1,2816 @@
+[
+  {
+    "sampleId": "example-01",
+    "key": {
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_00013f5f09f985a0d167a5822f6c7f699e977754d1ff71c7d11ee7cafea2898e",
+      "releaseId": "release-1791732747093-cdd4c2a3",
+      "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+      "revisionDigest": "bed61cba44d81bf3616d2a06312d0a83bd073be21ecc4a483e57187d5325cc0f"
+    },
+    "title": "论证方式：缺乏反证不等于得到证明",
+    "category": "判断推理·论证方式",
+    "independentAnswer": "C",
+    "focusAnalysis": "题干的推理是“没有证据证明不存在，所以存在”，把缺乏反证当成了正面证明。C项完全复现这一结构。A项只提出“可能”的解释，没有像题干一样断言存在；B、D项都援引了正面事例或踪迹。故选C。这里比较的是论证结构，不是在判断反物质是否存在。",
+    "quickTip": "把具体名词换成X，只看“不能证明X不存在 → X存在”。C项结构完全一致；不要把“可能”与“必然”混为一谈。",
+    "questionId": "q_00013f5f09f985a0d167a5822f6c7f699e977754d1ff71c7d11ee7cafea2898e",
+    "type": "single-choice",
+    "source": {
+      "archiveUrl": "http://154.89.148.158:33314/down/sCvivawbEXXr.zip",
+      "archiveSha256": "0fb1a4bb77efc7531a4fa557c38b327b5cd2bff1d79593cde6ad2d7f202d6075",
+      "filePath": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "fileSha256": "96d7d103c84b14733f9afac3aa795de2ccec32ee1087a3e4fbef9ba7a680dcfa",
+      "lineNumber": 3,
+      "lineSha256": "9c30410a22a579012ee52daf98258c8eb3188fd4507110e8cbbe60237f94f1da",
+      "originalRecord": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "40741",
+        "splitKey": "whole-record",
+        "sourceDigest": "ec62e47049fde32728b77118a7d761d51b833052629ab21fc7711a324f55a98b",
+        "typeHint": "",
+        "classificationHints": [
+          "-2016年423公务员联考《行测》河北卷.html",
+          "题目类型：判断推理"
+        ]
+      },
+      "originalLabel": "第87回",
+      "indexPath": "releases/release-1791732747093-cdd4c2a3/web-index/page-0001.json"
+    },
+    "stem": "第87回\n理论认为，反物质是正常物质的反状态，当正反物质相遇时，双方就会相互湮灭抵消，发生爆炸并产生巨大能量，有人认为，反物质是存在的，因为到目前为止没有任何证据证明反物质是不存在的。\n以下哪项与题干中的论证方式相同？",
+    "options": [
+      {
+        "label": "A",
+        "optionId": "option_a",
+        "text": "圣女贞德的审问者们曾对她说，我们没有证据证明上帝与你有过对话，你可能是在胡编乱造，也可能精神失常"
+      },
+      {
+        "label": "B",
+        "optionId": "option_b",
+        "text": "动物进化论是正确的，例如始祖鸟就是陆地生物向鸟类进化过程中的一类生物"
+      },
+      {
+        "label": "C",
+        "optionId": "option_c",
+        "text": "既然不能证明平行世界不存在，那么平行世界就是存在的"
+      },
+      {
+        "label": "D",
+        "optionId": "option_d",
+        "text": "长白山天池有怪兽，因为有人看见过怪兽曾在天池内活动的踪迹"
+      }
+    ],
+    "answer": "C",
+    "originalSolution": "第一步：分析题干的论证方式。\n因为没有任何证据证明反物质是不存在的，所以反物质是存在的。这种论证方式是诉诸无知，其论证模式是：没有证明S为真，所以S为假的；没有证明S为假，所以S为真的。\n第二步：逐一分析选项。\nA选项，“没有证明与上帝对过话，你可能胡编乱造，也可能精神失常”，并不符合题干的论证模式，排除；\nB选项，论证方式为举例论证，即抛出一个观点，然后举出一个例子来证明这个观点，不符合题干的论证模式，排除；\nC选项，“不能证明平行世界不存在，所以平行世界存在”完全符合题干的论证模式，正确；\nD选项，因为有活动踪迹，所以有怪兽，这是因为有证据所以得到一个结论，不符合题干的论证模式，排除。\n故正确答案为C。\n-2016年423公务员联考《行测》河北卷.html\n题目类型：判断推理",
+    "passage": "",
+    "images": [],
+    "sourceQuestion": {
+      "schemaVersion": 1,
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_00013f5f09f985a0d167a5822f6c7f699e977754d1ff71c7d11ee7cafea2898e",
+      "revisionDigest": "bed61cba44d81bf3616d2a06312d0a83bd073be21ecc4a483e57187d5325cc0f",
+      "type": "single-choice",
+      "stem": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "第87回"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "理论认为，反物质是正常物质的反状态，当正反物质相遇时，双方就会相互湮灭抵消，发生爆炸并产生巨大能量，有人认为，反物质是存在的，因为到目前为止没有任何证据证明反物质是不存在的。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "以下哪项与题干中的论证方式相同？"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "options": [
+        {
+          "optionId": "option_a",
+          "label": "A",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "圣女贞德的审问者们曾对她说，我们没有证据证明上帝与你有过对话，你可能是在胡编乱造，也可能精神失常"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_b",
+          "label": "B",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "动物进化论是正确的，例如始祖鸟就是陆地生物向鸟类进化过程中的一类生物"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_c",
+          "label": "C",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "既然不能证明平行世界不存在，那么平行世界就是存在的"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_d",
+          "label": "D",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "长白山天池有怪兽，因为有人看见过怪兽曾在天池内活动的踪迹"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "answer": {
+        "content": {
+          "format": "tiptap-portable-v1",
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "C"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "optionIds": [
+          "option_c"
+        ],
+        "grading": "objective"
+      },
+      "solution": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "第一步：分析题干的论证方式。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "因为没有任何证据证明反物质是不存在的，所以反物质是存在的。这种论证方式是诉诸无知，其论证模式是：没有证明S为真，所以S为假的；没有证明S为假，所以S为真的。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "第二步：逐一分析选项。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A选项，“没有证明与上帝对过话，你可能胡编乱造，也可能精神失常”，并不符合题干的论证模式，排除；"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "B选项，论证方式为举例论证，即抛出一个观点，然后举出一个例子来证明这个观点，不符合题干的论证模式，排除；"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "C选项，“不能证明平行世界不存在，所以平行世界存在”完全符合题干的论证模式，正确；"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "D选项，因为有活动踪迹，所以有怪兽，这是因为有证据所以得到一个结论，不符合题干的论证模式，排除。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "故正确答案为C。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "-2016年423公务员联考《行测》河北卷.html"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "题目类型：判断推理"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "passageRefs": [],
+      "mediaOccurrences": [],
+      "source": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "40741",
+        "splitKey": "whole-record",
+        "sourceDigest": "ec62e47049fde32728b77118a7d761d51b833052629ab21fc7711a324f55a98b",
+        "typeHint": "",
+        "classificationHints": [
+          "-2016年423公务员联考《行测》河北卷.html",
+          "题目类型：判断推理"
+        ]
+      },
+      "review": {
+        "status": "needs-review",
+        "practiceEligible": true,
+        "reasonCodes": []
+      }
+    },
+    "sourceIssues": [],
+    "reviewStatus": "needs-review",
+    "baseRevision": 0,
+    "idempotencyKey": "real-sample-review-v1-q_00013f5f09f985a0d167a5822f6c7f699e977754d1ff71c7d11ee7cafea2898e",
+    "verification": {
+      "status": "independently-checked-pending-user-review",
+      "answerMatchesSource": true,
+      "allReferencedMediaPresentAndDecoded": true,
+      "allReferencedMediaVisuallyReviewed": true,
+      "sourceUnchanged": true,
+      "doNotMarkAsUserApproved": true
+    }
+  },
+  {
+    "sampleId": "example-02",
+    "key": {
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_0001c97965816cd04e6ade1ae644d48225e5f1939fe9e4a99a094821b3240a59",
+      "releaseId": "release-1791732747093-cdd4c2a3",
+      "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+      "revisionDigest": "0dbd4f9e06d32e9ac002d22067d491dc9c340fcd2b5f5e15ef601b871501265b"
+    },
+    "title": "逻辑填空：文明形成的标志",
+    "category": "言语理解·逻辑填空",
+    "independentAnswer": "C",
+    "focusAnalysis": "第一空讨论用哪些特征判断文明已经形成，“标志”最准确，文字、冶金术和城市都是判定依据。第二空承接对玛雅文明的赞叹，并与后文“辉煌”呼应，“叹为观止”贴切。两空合看选C。“起点”是时间或发展阶段，“高山仰止”偏重仰慕高尚品德，均不合语境。",
+    "quickTip": "先抓“三要素”是判定依据，锁定“形成的标志”，再用“辉煌”核对“叹为观止”。没有脱离语境的可靠秒杀法，必须把两空都代回去。",
+    "questionId": "q_0001c97965816cd04e6ade1ae644d48225e5f1939fe9e4a99a094821b3240a59",
+    "type": "single-choice",
+    "source": {
+      "archiveUrl": "http://154.89.148.158:33314/down/sCvivawbEXXr.zip",
+      "archiveSha256": "0fb1a4bb77efc7531a4fa557c38b327b5cd2bff1d79593cde6ad2d7f202d6075",
+      "filePath": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "fileSha256": "96d7d103c84b14733f9afac3aa795de2ccec32ee1087a3e4fbef9ba7a680dcfa",
+      "lineNumber": 5,
+      "lineSha256": "9ddae7f21a7fbd690370505aa2c3734cd68afcb5a4ed9f47fbac2af5d2615c26",
+      "originalRecord": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "18802",
+        "splitKey": "whole-record",
+        "sourceDigest": "3450aed6801df94417fd9be47b84dc76ab7cd8a3eff8385660c073b9c1d23c01",
+        "typeHint": "",
+        "classificationHints": [
+          "-2023年云南公务员录用考试《行测》题（网友回忆版）.html",
+          "题目类型：言语理解与表达"
+        ]
+      },
+      "originalLabel": "第27回",
+      "indexPath": "releases/release-1791732747093-cdd4c2a3/web-index/page-0001.json"
+    },
+    "stem": "第27回\n关于文明形成的_____，世界上公认的“三要素”是文字、冶金术和城市的出现。但是我们发现，这“三要素”是从古埃及文明和两河文明中概括出来的，世界上有很多其他的文明并不符合“三要素”。比如，中美洲的玛雅文明令人_____，但他们没有冶金术，辉煌的印加文明也没有发现文字。\n依次填入画横线部分最恰当的一项是：",
+    "options": [
+      {
+        "label": "A",
+        "optionId": "option_a",
+        "text": "符号 拍案叫绝"
+      },
+      {
+        "label": "B",
+        "optionId": "option_b",
+        "text": "象征 击节叹赏"
+      },
+      {
+        "label": "C",
+        "optionId": "option_c",
+        "text": "标志 叹为观止"
+      },
+      {
+        "label": "D",
+        "optionId": "option_d",
+        "text": "起点 高山仰止"
+      }
+    ],
+    "answer": "C",
+    "originalSolution": "本题可从第二空入手，横线处所填成语搭配“玛雅文明”，由后文“辉煌的印加文明也······”可知，横线处所填成语应体现出“玛雅文明”同样优秀，让人们称赞之意，C项“叹为观止”用来赞叹所见的事物尽善尽美，好到了极点，且“令人叹为观止”为惯用搭配，与“玛雅文明”搭配恰当，保留。A项“拍案叫绝”意思是拍桌子叫好，形容非常赞赏，强调对某人的作品或者话语意见的赞赏，B项“击节叹赏”形容对诗文、音乐等的赞赏，D项“高山仰止”比喻对高尚的品德的仰慕，均与“玛雅文明”搭配不当，排除。\n第一空，代入验证，C项“标志”意思是表明特征的记号或事物，表明某种特征，置于此处可体现出“文字、冶金术和城市的出现”这“三要素”表明了文明的形成，符合文意，当选。\n故正确答案为C。\n【文段出处】文摘报《判断文明形成的标志是什么》\n-2023年云南公务员录用考试《行测》题（网友回忆版）.html\n题目类型：言语理解与表达",
+    "passage": "",
+    "images": [],
+    "sourceQuestion": {
+      "schemaVersion": 1,
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_0001c97965816cd04e6ade1ae644d48225e5f1939fe9e4a99a094821b3240a59",
+      "revisionDigest": "0dbd4f9e06d32e9ac002d22067d491dc9c340fcd2b5f5e15ef601b871501265b",
+      "type": "single-choice",
+      "stem": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "第27回"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "关于文明形成的_____，世界上公认的“三要素”是文字、冶金术和城市的出现。但是我们发现，这“三要素”是从古埃及文明和两河文明中概括出来的，世界上有很多其他的文明并不符合“三要素”。比如，中美洲的玛雅文明令人_____，但他们没有冶金术，辉煌的印加文明也没有发现文字。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "依次填入画横线部分最恰当的一项是："
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "options": [
+        {
+          "optionId": "option_a",
+          "label": "A",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "符号 拍案叫绝"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_b",
+          "label": "B",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "象征 击节叹赏"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_c",
+          "label": "C",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "标志 叹为观止"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_d",
+          "label": "D",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "起点 高山仰止"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "answer": {
+        "content": {
+          "format": "tiptap-portable-v1",
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "C"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "optionIds": [
+          "option_c"
+        ],
+        "grading": "objective"
+      },
+      "solution": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "本题可从第二空入手，横线处所填成语搭配“玛雅文明”，由后文“辉煌的印加文明也······”可知，横线处所填成语应体现出“玛雅文明”同样优秀，让人们称赞之意，C项“叹为观止”用来赞叹所见的事物尽善尽美，好到了极点，且“令人叹为观止”为惯用搭配，与“玛雅文明”搭配恰当，保留。A项“拍案叫绝”意思是拍桌子叫好，形容非常赞赏，强调对某人的作品或者话语意见的赞赏，B项“击节叹赏”形容对诗文、音乐等的赞赏，D项“高山仰止”比喻对高尚的品德的仰慕，均与“玛雅文明”搭配不当，排除。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "第一空，代入验证，C项“标志”意思是表明特征的记号或事物，表明某种特征，置于此处可体现出“文字、冶金术和城市的出现”这“三要素”表明了文明的形成，符合文意，当选。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "故正确答案为C。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "【文段出处】文摘报《判断文明形成的标志是什么》"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "-2023年云南公务员录用考试《行测》题（网友回忆版）.html"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "题目类型：言语理解与表达"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "passageRefs": [],
+      "mediaOccurrences": [],
+      "source": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "18802",
+        "splitKey": "whole-record",
+        "sourceDigest": "3450aed6801df94417fd9be47b84dc76ab7cd8a3eff8385660c073b9c1d23c01",
+        "typeHint": "",
+        "classificationHints": [
+          "-2023年云南公务员录用考试《行测》题（网友回忆版）.html",
+          "题目类型：言语理解与表达"
+        ]
+      },
+      "review": {
+        "status": "needs-review",
+        "practiceEligible": true,
+        "reasonCodes": []
+      }
+    },
+    "sourceIssues": [],
+    "reviewStatus": "needs-review",
+    "baseRevision": 0,
+    "idempotencyKey": "real-sample-review-v1-q_0001c97965816cd04e6ade1ae644d48225e5f1939fe9e4a99a094821b3240a59",
+    "verification": {
+      "status": "independently-checked-pending-user-review",
+      "answerMatchesSource": true,
+      "allReferencedMediaPresentAndDecoded": true,
+      "allReferencedMediaVisuallyReviewed": true,
+      "sourceUnchanged": true,
+      "doNotMarkAsUserApproved": true
+    }
+  },
+  {
+    "sampleId": "example-03",
+    "key": {
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_00145f7c49eae53262ce7843005b9c814d67e959f09a113a5e2e00543657bea3",
+      "releaseId": "release-1791732747093-cdd4c2a3",
+      "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+      "revisionDigest": "85892571e40f6a6d64bb38c2a21aac81eda2d99f681ff067609593cf0edd4578"
+    },
+    "title": "等差数列：第10批无人机",
+    "category": "数量关系·等差数列",
+    "independentAnswer": "B",
+    "focusAnalysis": "各批数量从n依次减到1，总数为n(n＋1)÷2＝105。因14×15＝210，得n＝14。第10批比第一批少9架，所以14－9＝5架，选B。第10项要减9，不能误减10。",
+    "quickTip": "记住1＋2＋…＋14＝105，直接得首批14架；第10批＝14－9＝5架。适用于完整的连续整数阶梯排列。",
+    "questionId": "q_00145f7c49eae53262ce7843005b9c814d67e959f09a113a5e2e00543657bea3",
+    "type": "single-choice",
+    "source": {
+      "archiveUrl": "http://154.89.148.158:33314/down/sCvivawbEXXr.zip",
+      "archiveSha256": "0fb1a4bb77efc7531a4fa557c38b327b5cd2bff1d79593cde6ad2d7f202d6075",
+      "filePath": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "fileSha256": "96d7d103c84b14733f9afac3aa795de2ccec32ee1087a3e4fbef9ba7a680dcfa",
+      "lineNumber": 27,
+      "lineSha256": "6264bbd8570e30efc6a31956d6f3d4ee8e4f45d307a09216e32d61022f1e8963",
+      "originalRecord": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "51096",
+        "splitKey": "whole-record",
+        "sourceDigest": "58c5ae811ec0ee61215cfb5281825333b4365539389462d006674cb60b702ecf",
+        "typeHint": "",
+        "classificationHints": [
+          "-2022年吉林省公务员录用考试《行测》题（网友回忆版）.html",
+          "题目类型：数量关系"
+        ]
+      },
+      "originalLabel": "第53回",
+      "indexPath": "releases/release-1791732747093-cdd4c2a3/web-index/page-0001.json"
+    },
+    "stem": "第53回\n某市举行庆典活动，将依次升空105架无人机，升空方式如下：每架无人机间距均相等，第一次升空n架，第二次升空n-1架，以此类推，最终在夜空中组成一个近似等边三角形背景的灯光秀，那么第10次升空的无人机数量是：",
+    "options": [
+      {
+        "label": "A",
+        "optionId": "option_a",
+        "text": "3架"
+      },
+      {
+        "label": "B",
+        "optionId": "option_b",
+        "text": "5架"
+      },
+      {
+        "label": "C",
+        "optionId": "option_c",
+        "text": "8架"
+      },
+      {
+        "label": "D",
+        "optionId": "option_d",
+        "text": "10架"
+      }
+    ],
+    "answer": "B",
+    "originalSolution": "根据题意可知，每次升空的无人机数量组成等差数列。又因为“组成一个近似等边三角形”，则第一次升空n架（\n〔原图：media_c32f9001496f93b3c760ce3b5e1b4b446902cad0d3edaa971702dca42494513d〕）为底边，最后一次升空的无人机在三角形的顶点上，数量为1架（\n〔原图：media_bc13a5505cfa599718b2fe116eedd71636b9c672b84baf7c9f30ff3c890b468b〕），且公差d＝-1。根据等差数列求和公式：\n〔原图：media_751c71cf444701023a9c9c94809d4be5b3b9325c6e8c5f72d24ac56fbd2350b2〕，可得\n〔原图：media_1fb1ab55e6cca63c607fbfa82bd04c052ab3ebe9bc2d065ddfa8827ddefaec7f〕，解得n＝14。再根据等差数列通项公式：\n〔原图：media_04c666691c9ad5d9b21b59caa741e8658df944be453cfa78dbebe5dcc0751d87〕，则\n〔原图：media_0ce519bef8d21cf0a17c75a96934c7763e1f03bb7bfaa2312887317f224c4613〕，故第10次升空的无人机数量是5架。\n故正确答案为B。\n-2022年吉林省公务员录用考试《行测》题（网友回忆版）.html\n题目类型：数量关系",
+    "passage": "",
+    "images": [
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_c32f9001496f93b3c760ce3b5e1b4b446902cad0d3edaa971702dca42494513d.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_c32f9001496f93b3c760ce3b5e1b4b446902cad0d3edaa971702dca42494513d.bin",
+        "alt": "a₁",
+        "placement": "solution",
+        "occurrenceId": "occ_edba81e32e7045b61cd699296141411052183c8af3c77301ffe7214100f4a71b",
+        "order": 0,
+        "mediaId": "media_c32f9001496f93b3c760ce3b5e1b4b446902cad0d3edaa971702dca42494513d",
+        "sha256": "c32f9001496f93b3c760ce3b5e1b4b446902cad0d3edaa971702dca42494513d",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_c32f9001496f93b3c760ce3b5e1b4b446902cad0d3edaa971702dca42494513d.bin",
+        "sourceMedia": {
+          "byteLength": 529,
+          "height": 18,
+          "mediaId": "media_c32f9001496f93b3c760ce3b5e1b4b446902cad0d3edaa971702dca42494513d",
+          "mimeType": "image/png",
+          "path": "assets/media_c32f9001496f93b3c760ce3b5e1b4b446902cad0d3edaa971702dca42494513d.bin",
+          "sha256": "c32f9001496f93b3c760ce3b5e1b4b446902cad0d3edaa971702dca42494513d",
+          "width": 13
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      },
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_bc13a5505cfa599718b2fe116eedd71636b9c672b84baf7c9f30ff3c890b468b.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_bc13a5505cfa599718b2fe116eedd71636b9c672b84baf7c9f30ff3c890b468b.bin",
+        "alt": "aₙ",
+        "placement": "solution",
+        "occurrenceId": "occ_24eb353d174d0905bc1e4005591b3823a12deda77416421dae4afe633c8de540",
+        "order": 1,
+        "mediaId": "media_bc13a5505cfa599718b2fe116eedd71636b9c672b84baf7c9f30ff3c890b468b",
+        "sha256": "bc13a5505cfa599718b2fe116eedd71636b9c672b84baf7c9f30ff3c890b468b",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_bc13a5505cfa599718b2fe116eedd71636b9c672b84baf7c9f30ff3c890b468b.bin",
+        "sourceMedia": {
+          "byteLength": 547,
+          "height": 18,
+          "mediaId": "media_bc13a5505cfa599718b2fe116eedd71636b9c672b84baf7c9f30ff3c890b468b",
+          "mimeType": "image/png",
+          "path": "assets/media_bc13a5505cfa599718b2fe116eedd71636b9c672b84baf7c9f30ff3c890b468b.bin",
+          "sha256": "bc13a5505cfa599718b2fe116eedd71636b9c672b84baf7c9f30ff3c890b468b",
+          "width": 14
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      },
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_751c71cf444701023a9c9c94809d4be5b3b9325c6e8c5f72d24ac56fbd2350b2.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_751c71cf444701023a9c9c94809d4be5b3b9325c6e8c5f72d24ac56fbd2350b2.bin",
+        "alt": "Sₙ＝(a₁＋aₙ)÷2×n",
+        "placement": "solution",
+        "occurrenceId": "occ_1cdf0f5609074a5b85f6d2d605bf494ab347327f8a5c34568a646926e5b9bc35",
+        "order": 2,
+        "mediaId": "media_751c71cf444701023a9c9c94809d4be5b3b9325c6e8c5f72d24ac56fbd2350b2",
+        "sha256": "751c71cf444701023a9c9c94809d4be5b3b9325c6e8c5f72d24ac56fbd2350b2",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_751c71cf444701023a9c9c94809d4be5b3b9325c6e8c5f72d24ac56fbd2350b2.bin",
+        "sourceMedia": {
+          "byteLength": 944,
+          "height": 28,
+          "mediaId": "media_751c71cf444701023a9c9c94809d4be5b3b9325c6e8c5f72d24ac56fbd2350b2",
+          "mimeType": "image/png",
+          "path": "assets/media_751c71cf444701023a9c9c94809d4be5b3b9325c6e8c5f72d24ac56fbd2350b2.bin",
+          "sha256": "751c71cf444701023a9c9c94809d4be5b3b9325c6e8c5f72d24ac56fbd2350b2",
+          "width": 99
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      },
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_1fb1ab55e6cca63c607fbfa82bd04c052ab3ebe9bc2d065ddfa8827ddefaec7f.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_1fb1ab55e6cca63c607fbfa82bd04c052ab3ebe9bc2d065ddfa8827ddefaec7f.bin",
+        "alt": "(n＋1)÷2×n＝105",
+        "placement": "solution",
+        "occurrenceId": "occ_7f3f2ee6c38e93bcda842f1e838f124daeb19395d37d419569d96de8dab563ba",
+        "order": 3,
+        "mediaId": "media_1fb1ab55e6cca63c607fbfa82bd04c052ab3ebe9bc2d065ddfa8827ddefaec7f",
+        "sha256": "1fb1ab55e6cca63c607fbfa82bd04c052ab3ebe9bc2d065ddfa8827ddefaec7f",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_1fb1ab55e6cca63c607fbfa82bd04c052ab3ebe9bc2d065ddfa8827ddefaec7f.bin",
+        "sourceMedia": {
+          "byteLength": 918,
+          "height": 28,
+          "mediaId": "media_1fb1ab55e6cca63c607fbfa82bd04c052ab3ebe9bc2d065ddfa8827ddefaec7f",
+          "mimeType": "image/png",
+          "path": "assets/media_1fb1ab55e6cca63c607fbfa82bd04c052ab3ebe9bc2d065ddfa8827ddefaec7f.bin",
+          "sha256": "1fb1ab55e6cca63c607fbfa82bd04c052ab3ebe9bc2d065ddfa8827ddefaec7f",
+          "width": 91
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      },
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_04c666691c9ad5d9b21b59caa741e8658df944be453cfa78dbebe5dcc0751d87.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_04c666691c9ad5d9b21b59caa741e8658df944be453cfa78dbebe5dcc0751d87.bin",
+        "alt": "aₙ＝a₁＋(n－1)d",
+        "placement": "solution",
+        "occurrenceId": "occ_254fa313110e09261fb605305463e43df7924c72c5ea573a2ac59cadaaf61ff3",
+        "order": 4,
+        "mediaId": "media_04c666691c9ad5d9b21b59caa741e8658df944be453cfa78dbebe5dcc0751d87",
+        "sha256": "04c666691c9ad5d9b21b59caa741e8658df944be453cfa78dbebe5dcc0751d87",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_04c666691c9ad5d9b21b59caa741e8658df944be453cfa78dbebe5dcc0751d87.bin",
+        "sourceMedia": {
+          "byteLength": 879,
+          "height": 18,
+          "mediaId": "media_04c666691c9ad5d9b21b59caa741e8658df944be453cfa78dbebe5dcc0751d87",
+          "mimeType": "image/png",
+          "path": "assets/media_04c666691c9ad5d9b21b59caa741e8658df944be453cfa78dbebe5dcc0751d87.bin",
+          "sha256": "04c666691c9ad5d9b21b59caa741e8658df944be453cfa78dbebe5dcc0751d87",
+          "width": 105
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      },
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_0ce519bef8d21cf0a17c75a96934c7763e1f03bb7bfaa2312887317f224c4613.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_0ce519bef8d21cf0a17c75a96934c7763e1f03bb7bfaa2312887317f224c4613.bin",
+        "alt": "a₁₀＝14＋(10－1)×(－1)＝5",
+        "placement": "solution",
+        "occurrenceId": "occ_c14a5607745a14f6b850511b3fa0e49006540c194d4b1447a7572ac070b21156",
+        "order": 5,
+        "mediaId": "media_0ce519bef8d21cf0a17c75a96934c7763e1f03bb7bfaa2312887317f224c4613",
+        "sha256": "0ce519bef8d21cf0a17c75a96934c7763e1f03bb7bfaa2312887317f224c4613",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_0ce519bef8d21cf0a17c75a96934c7763e1f03bb7bfaa2312887317f224c4613.bin",
+        "sourceMedia": {
+          "byteLength": 1152,
+          "height": 18,
+          "mediaId": "media_0ce519bef8d21cf0a17c75a96934c7763e1f03bb7bfaa2312887317f224c4613",
+          "mimeType": "image/png",
+          "path": "assets/media_0ce519bef8d21cf0a17c75a96934c7763e1f03bb7bfaa2312887317f224c4613.bin",
+          "sha256": "0ce519bef8d21cf0a17c75a96934c7763e1f03bb7bfaa2312887317f224c4613",
+          "width": 169
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      }
+    ],
+    "sourceQuestion": {
+      "schemaVersion": 1,
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_00145f7c49eae53262ce7843005b9c814d67e959f09a113a5e2e00543657bea3",
+      "revisionDigest": "85892571e40f6a6d64bb38c2a21aac81eda2d99f681ff067609593cf0edd4578",
+      "type": "single-choice",
+      "stem": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "第53回"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "某市举行庆典活动，将依次升空105架无人机，升空方式如下：每架无人机间距均相等，第一次升空n架，第二次升空n-1架，以此类推，最终在夜空中组成一个近似等边三角形背景的灯光秀，那么第10次升空的无人机数量是："
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "options": [
+        {
+          "optionId": "option_a",
+          "label": "A",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "3架"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_b",
+          "label": "B",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "5架"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_c",
+          "label": "C",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "8架"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_d",
+          "label": "D",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "10架"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "answer": {
+        "content": {
+          "format": "tiptap-portable-v1",
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "optionIds": [
+          "option_b"
+        ],
+        "grading": "objective"
+      },
+      "solution": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "根据题意可知，每次升空的无人机数量组成等差数列。又因为“组成一个近似等边三角形”，则第一次升空n架（"
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_edba81e32e7045b61cd699296141411052183c8af3c77301ffe7214100f4a71b"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "）为底边，最后一次升空的无人机在三角形的顶点上，数量为1架（"
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_24eb353d174d0905bc1e4005591b3823a12deda77416421dae4afe633c8de540"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "），且公差d＝-1。根据等差数列求和公式："
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_1cdf0f5609074a5b85f6d2d605bf494ab347327f8a5c34568a646926e5b9bc35"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "，可得"
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_7f3f2ee6c38e93bcda842f1e838f124daeb19395d37d419569d96de8dab563ba"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "，解得n＝14。再根据等差数列通项公式："
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_254fa313110e09261fb605305463e43df7924c72c5ea573a2ac59cadaaf61ff3"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "，则"
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_c14a5607745a14f6b850511b3fa0e49006540c194d4b1447a7572ac070b21156"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "，故第10次升空的无人机数量是5架。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "故正确答案为B。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "-2022年吉林省公务员录用考试《行测》题（网友回忆版）.html"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "题目类型：数量关系"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "passageRefs": [],
+      "mediaOccurrences": [
+        {
+          "occurrenceId": "occ_edba81e32e7045b61cd699296141411052183c8af3c77301ffe7214100f4a71b",
+          "mediaId": "media_c32f9001496f93b3c760ce3b5e1b4b446902cad0d3edaa971702dca42494513d",
+          "zone": "solution",
+          "order": 0,
+          "alt": "",
+          "status": "ready"
+        },
+        {
+          "occurrenceId": "occ_24eb353d174d0905bc1e4005591b3823a12deda77416421dae4afe633c8de540",
+          "mediaId": "media_bc13a5505cfa599718b2fe116eedd71636b9c672b84baf7c9f30ff3c890b468b",
+          "zone": "solution",
+          "order": 1,
+          "alt": "",
+          "status": "ready"
+        },
+        {
+          "occurrenceId": "occ_1cdf0f5609074a5b85f6d2d605bf494ab347327f8a5c34568a646926e5b9bc35",
+          "mediaId": "media_751c71cf444701023a9c9c94809d4be5b3b9325c6e8c5f72d24ac56fbd2350b2",
+          "zone": "solution",
+          "order": 2,
+          "alt": "",
+          "status": "ready"
+        },
+        {
+          "occurrenceId": "occ_7f3f2ee6c38e93bcda842f1e838f124daeb19395d37d419569d96de8dab563ba",
+          "mediaId": "media_1fb1ab55e6cca63c607fbfa82bd04c052ab3ebe9bc2d065ddfa8827ddefaec7f",
+          "zone": "solution",
+          "order": 3,
+          "alt": "",
+          "status": "ready"
+        },
+        {
+          "occurrenceId": "occ_254fa313110e09261fb605305463e43df7924c72c5ea573a2ac59cadaaf61ff3",
+          "mediaId": "media_04c666691c9ad5d9b21b59caa741e8658df944be453cfa78dbebe5dcc0751d87",
+          "zone": "solution",
+          "order": 4,
+          "alt": "",
+          "status": "ready"
+        },
+        {
+          "occurrenceId": "occ_c14a5607745a14f6b850511b3fa0e49006540c194d4b1447a7572ac070b21156",
+          "mediaId": "media_0ce519bef8d21cf0a17c75a96934c7763e1f03bb7bfaa2312887317f224c4613",
+          "zone": "solution",
+          "order": 5,
+          "alt": "",
+          "status": "ready"
+        }
+      ],
+      "source": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "51096",
+        "splitKey": "whole-record",
+        "sourceDigest": "58c5ae811ec0ee61215cfb5281825333b4365539389462d006674cb60b702ecf",
+        "typeHint": "",
+        "classificationHints": [
+          "-2022年吉林省公务员录用考试《行测》题（网友回忆版）.html",
+          "题目类型：数量关系"
+        ]
+      },
+      "review": {
+        "status": "needs-review",
+        "practiceEligible": true,
+        "reasonCodes": []
+      }
+    },
+    "sourceIssues": [],
+    "reviewStatus": "needs-review",
+    "baseRevision": 0,
+    "idempotencyKey": "real-sample-review-v1-q_00145f7c49eae53262ce7843005b9c814d67e959f09a113a5e2e00543657bea3",
+    "verification": {
+      "status": "independently-checked-pending-user-review",
+      "answerMatchesSource": true,
+      "allReferencedMediaPresentAndDecoded": true,
+      "allReferencedMediaVisuallyReviewed": true,
+      "sourceUnchanged": true,
+      "doNotMarkAsUserApproved": true
+    }
+  },
+  {
+    "sampleId": "example-04",
+    "key": {
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_00400838bdb227b090471c02453b25f20913b27fdd9298afe2b5d2e764fa529e",
+      "releaseId": "release-1791732747093-cdd4c2a3",
+      "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+      "revisionDigest": "6fdcdedd57dab7ff38fbc1ec5cdcfd9bf9f803b89003d0b490b9dad99dfedd71"
+    },
+    "title": "图形分类：小正方形位于几个图形内",
+    "category": "判断推理·图形分类",
+    "independentAnswer": "D",
+    "focusAnalysis": "不计最外层题框，观察小正方形：①③⑤都只在一个大矩形内部；②④⑥都在圆与矩形的重叠区域内。按这一相对位置分成①③⑤和②④⑥，对应D。原图六个图形已逐一核对。",
+    "quickTip": "只跟踪小正方形，数有几个大图形罩住它：1个归一组，2个归另一组。不要把最外层题框算进去。",
+    "questionId": "q_00400838bdb227b090471c02453b25f20913b27fdd9298afe2b5d2e764fa529e",
+    "type": "single-choice",
+    "source": {
+      "archiveUrl": "http://154.89.148.158:33314/down/sCvivawbEXXr.zip",
+      "archiveSha256": "0fb1a4bb77efc7531a4fa557c38b327b5cd2bff1d79593cde6ad2d7f202d6075",
+      "filePath": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "fileSha256": "96d7d103c84b14733f9afac3aa795de2ccec32ee1087a3e4fbef9ba7a680dcfa",
+      "lineNumber": 77,
+      "lineSha256": "3466cd680529cdab3355037b05ff1f37f1e69a1f0da8905b9d347b8cd0e61ec2",
+      "originalRecord": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "48676",
+        "splitKey": "whole-record",
+        "sourceDigest": "63a3ce4e1d4b692dd7dfdc320741a106143b9ece4bd3e6e5521a749fe0223aa9",
+        "typeHint": "",
+        "classificationHints": [
+          "-2016年423公务员联考《行测》湖北卷.html",
+          "题目类型：判断推理"
+        ]
+      },
+      "originalLabel": "第73回",
+      "indexPath": "releases/release-1791732747093-cdd4c2a3/web-index/page-0001.json"
+    },
+    "stem": "第73回\n把下面的六个图形分为两类，使每一类图形都有各自的共同特征或规律，分类正确的一项是:\n〔原图：media_763a45a0650a2ded2aa3934a6a15c56f853dfcaf80ea860f4e3100e9e19894ce〕",
+    "options": [
+      {
+        "label": "A",
+        "optionId": "option_a",
+        "text": "①②③，④⑤⑥"
+      },
+      {
+        "label": "B",
+        "optionId": "option_b",
+        "text": "①④⑤，②③⑥"
+      },
+      {
+        "label": "C",
+        "optionId": "option_c",
+        "text": "①④⑥，②③⑤"
+      },
+      {
+        "label": "D",
+        "optionId": "option_d",
+        "text": "①③⑤，②④⑥"
+      }
+    ],
+    "answer": "D",
+    "originalSolution": "本题图形组成相同，但无明显的位置移动规律，考虑图形间的相对位置。观察发现 ①③⑤图形中，小正方形均在一个大图形内部，②④⑥图形中小正方形均在 两个图形相交的区域内。且①③⑤中三角形都在矩形和圆相交的区域内，②④⑥中三 角形都在两个矩形相交的区域内。\n故正确答案为 D。\n-2016年423公务员联考《行测》湖北卷.html\n题目类型：判断推理",
+    "passage": "",
+    "images": [
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_763a45a0650a2ded2aa3934a6a15c56f853dfcaf80ea860f4e3100e9e19894ce.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_763a45a0650a2ded2aa3934a6a15c56f853dfcaf80ea860f4e3100e9e19894ce.bin",
+        "alt": "六个编号图形，均由圆、矩形、小正方形和小三角形组成；请根据相对位置分类。",
+        "placement": "stem",
+        "occurrenceId": "occ_de014229be0980193091546c65508d2acac2a54a46c3451ed11547f708bcd999",
+        "order": 0,
+        "mediaId": "media_763a45a0650a2ded2aa3934a6a15c56f853dfcaf80ea860f4e3100e9e19894ce",
+        "sha256": "763a45a0650a2ded2aa3934a6a15c56f853dfcaf80ea860f4e3100e9e19894ce",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_763a45a0650a2ded2aa3934a6a15c56f853dfcaf80ea860f4e3100e9e19894ce.bin",
+        "sourceMedia": {
+          "byteLength": 11920,
+          "height": 509,
+          "mediaId": "media_763a45a0650a2ded2aa3934a6a15c56f853dfcaf80ea860f4e3100e9e19894ce",
+          "mimeType": "image/png",
+          "path": "assets/media_763a45a0650a2ded2aa3934a6a15c56f853dfcaf80ea860f4e3100e9e19894ce.bin",
+          "sha256": "763a45a0650a2ded2aa3934a6a15c56f853dfcaf80ea860f4e3100e9e19894ce",
+          "width": 590
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      }
+    ],
+    "sourceQuestion": {
+      "schemaVersion": 1,
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_00400838bdb227b090471c02453b25f20913b27fdd9298afe2b5d2e764fa529e",
+      "revisionDigest": "6fdcdedd57dab7ff38fbc1ec5cdcfd9bf9f803b89003d0b490b9dad99dfedd71",
+      "type": "single-choice",
+      "stem": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "第73回"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "把下面的六个图形分为两类，使每一类图形都有各自的共同特征或规律，分类正确的一项是:"
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_de014229be0980193091546c65508d2acac2a54a46c3451ed11547f708bcd999"
+              }
+            }
+          ]
+        }
+      },
+      "options": [
+        {
+          "optionId": "option_a",
+          "label": "A",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "①②③，④⑤⑥"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_b",
+          "label": "B",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "①④⑤，②③⑥"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_c",
+          "label": "C",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "①④⑥，②③⑤"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_d",
+          "label": "D",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "①③⑤，②④⑥"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "answer": {
+        "content": {
+          "format": "tiptap-portable-v1",
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "D"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "optionIds": [
+          "option_d"
+        ],
+        "grading": "objective"
+      },
+      "solution": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "本题图形组成相同，但无明显的位置移动规律，考虑图形间的相对位置。观察发现 ①③⑤图形中，小正方形均在一个大图形内部，②④⑥图形中小正方形均在 两个图形相交的区域内。且①③⑤中三角形都在矩形和圆相交的区域内，②④⑥中三 角形都在两个矩形相交的区域内。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "故正确答案为 D。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "-2016年423公务员联考《行测》湖北卷.html"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "题目类型：判断推理"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "passageRefs": [],
+      "mediaOccurrences": [
+        {
+          "occurrenceId": "occ_de014229be0980193091546c65508d2acac2a54a46c3451ed11547f708bcd999",
+          "mediaId": "media_763a45a0650a2ded2aa3934a6a15c56f853dfcaf80ea860f4e3100e9e19894ce",
+          "zone": "stem",
+          "order": 0,
+          "alt": "",
+          "status": "ready"
+        }
+      ],
+      "source": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "48676",
+        "splitKey": "whole-record",
+        "sourceDigest": "63a3ce4e1d4b692dd7dfdc320741a106143b9ece4bd3e6e5521a749fe0223aa9",
+        "typeHint": "",
+        "classificationHints": [
+          "-2016年423公务员联考《行测》湖北卷.html",
+          "题目类型：判断推理"
+        ]
+      },
+      "review": {
+        "status": "needs-review",
+        "practiceEligible": true,
+        "reasonCodes": []
+      }
+    },
+    "sourceIssues": [],
+    "reviewStatus": "needs-review",
+    "baseRevision": 0,
+    "idempotencyKey": "real-sample-review-v1-q_00400838bdb227b090471c02453b25f20913b27fdd9298afe2b5d2e764fa529e",
+    "verification": {
+      "status": "independently-checked-pending-user-review",
+      "answerMatchesSource": true,
+      "allReferencedMediaPresentAndDecoded": true,
+      "allReferencedMediaVisuallyReviewed": true,
+      "sourceUnchanged": true,
+      "doNotMarkAsUserApproved": true
+    }
+  },
+  {
+    "sampleId": "example-05",
+    "key": {
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_005850e5607c7634a70b93babd7d92506180e62eb3ffe903913b6c998bcc0680",
+      "releaseId": "release-1791732747093-cdd4c2a3",
+      "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+      "revisionDigest": "933cd7dd2eb8a6fe37e4aea359ef314be313ab7d69730adeaebc7932b980e6ce"
+    },
+    "title": "真假推理：只有一句预测为真",
+    "category": "判断推理·真假推理",
+    "independentAnswer": "C",
+    "focusAnalysis": "若班长不及格，第3句为真，第1句“有人没及格”也为真，违反“只有一句正确”，所以班长必及格。于是第2句为真，第1句必假，即全班都及格，学习委员也及格，选C。第1、2句可以同时为真，不能误当成互相矛盾的命题。",
+    "quickTip": "先试包含关系：第3句一真就带出第1句也真，因此第3句必假。再由班长及格锁定第2句为唯一真话。",
+    "questionId": "q_005850e5607c7634a70b93babd7d92506180e62eb3ffe903913b6c998bcc0680",
+    "type": "single-choice",
+    "source": {
+      "archiveUrl": "http://154.89.148.158:33314/down/sCvivawbEXXr.zip",
+      "archiveSha256": "0fb1a4bb77efc7531a4fa557c38b327b5cd2bff1d79593cde6ad2d7f202d6075",
+      "filePath": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "fileSha256": "96d7d103c84b14733f9afac3aa795de2ccec32ee1087a3e4fbef9ba7a680dcfa",
+      "lineNumber": 104,
+      "lineSha256": "58c90fda45516d05917eb3f330f405bc350de8d49b56bd59e8823ef87e24dedf",
+      "originalRecord": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "52246",
+        "splitKey": "whole-record",
+        "sourceDigest": "0e8917799143aa8a929cbfbc08225de073308922069d000da03add03f8abe066",
+        "typeHint": "",
+        "classificationHints": [
+          "-2016年10月吉林公务员考试《行测》乙卷.html",
+          "题目类型：判断推理"
+        ]
+      },
+      "originalLabel": "第83回",
+      "indexPath": "releases/release-1791732747093-cdd4c2a3/web-index/page-0001.json"
+    },
+    "stem": "第83回\n某次数学考试结束后，甲班班长和学习委员一起对考试成绩进行了预测，具体如下：\n1．有人考试没及格。\n2．有人考试及格了。\n3．班长考试没及格。\n成绩公布后，发现三句预测中只有一句话正确。可推知：",
+    "options": [
+      {
+        "label": "A",
+        "optionId": "option_a",
+        "text": "甲班同学都没有及格"
+      },
+      {
+        "label": "B",
+        "optionId": "option_b",
+        "text": "甲班同学有人没及格"
+      },
+      {
+        "label": "C",
+        "optionId": "option_c",
+        "text": "学习委员考试及格了"
+      },
+      {
+        "label": "D",
+        "optionId": "option_d",
+        "text": "学习委员考试没及格"
+      }
+    ],
+    "answer": "C",
+    "originalSolution": "第一步，找到突破口\n有的有的必有一真，故12中必有一句是正确的，题干中说只有一句话正确，则3为错误，即班长及格了。\n第二步，进一步分析题干\n班长及格了，说明2正确，1错误，即并非有的人没及格，等同于所有人都及格了。\nABD错误，C正确。\n故正确答案为C。\n-2016年10月吉林公务员考试《行测》乙卷.html\n题目类型：判断推理",
+    "passage": "",
+    "images": [],
+    "sourceQuestion": {
+      "schemaVersion": 1,
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_005850e5607c7634a70b93babd7d92506180e62eb3ffe903913b6c998bcc0680",
+      "revisionDigest": "933cd7dd2eb8a6fe37e4aea359ef314be313ab7d69730adeaebc7932b980e6ce",
+      "type": "single-choice",
+      "stem": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "第83回"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "某次数学考试结束后，甲班班长和学习委员一起对考试成绩进行了预测，具体如下："
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "1．有人考试没及格。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "2．有人考试及格了。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "3．班长考试没及格。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "成绩公布后，发现三句预测中只有一句话正确。可推知："
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "options": [
+        {
+          "optionId": "option_a",
+          "label": "A",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "甲班同学都没有及格"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_b",
+          "label": "B",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "甲班同学有人没及格"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_c",
+          "label": "C",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "学习委员考试及格了"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_d",
+          "label": "D",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "学习委员考试没及格"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "answer": {
+        "content": {
+          "format": "tiptap-portable-v1",
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "C"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "optionIds": [
+          "option_c"
+        ],
+        "grading": "objective"
+      },
+      "solution": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "第一步，找到突破口"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "有的有的必有一真，故12中必有一句是正确的，题干中说只有一句话正确，则3为错误，即班长及格了。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "第二步，进一步分析题干"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "班长及格了，说明2正确，1错误，即并非有的人没及格，等同于所有人都及格了。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ABD错误，C正确。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "故正确答案为C。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "-2016年10月吉林公务员考试《行测》乙卷.html"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "题目类型：判断推理"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "passageRefs": [],
+      "mediaOccurrences": [],
+      "source": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "52246",
+        "splitKey": "whole-record",
+        "sourceDigest": "0e8917799143aa8a929cbfbc08225de073308922069d000da03add03f8abe066",
+        "typeHint": "",
+        "classificationHints": [
+          "-2016年10月吉林公务员考试《行测》乙卷.html",
+          "题目类型：判断推理"
+        ]
+      },
+      "review": {
+        "status": "needs-review",
+        "practiceEligible": true,
+        "reasonCodes": []
+      }
+    },
+    "sourceIssues": [],
+    "reviewStatus": "needs-review",
+    "baseRevision": 0,
+    "idempotencyKey": "real-sample-review-v1-q_005850e5607c7634a70b93babd7d92506180e62eb3ffe903913b6c998bcc0680",
+    "verification": {
+      "status": "independently-checked-pending-user-review",
+      "answerMatchesSource": true,
+      "allReferencedMediaPresentAndDecoded": true,
+      "allReferencedMediaVisuallyReviewed": true,
+      "sourceUnchanged": true,
+      "doNotMarkAsUserApproved": true
+    }
+  },
+  {
+    "sampleId": "example-06",
+    "key": {
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_006423800b19397f589f6e3c10307dad6f81f6d9ff5cfac11f76f831e9bc514f",
+      "releaseId": "release-1791732747093-cdd4c2a3",
+      "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+      "revisionDigest": "48185077391d9a4c4621a3516207ed3ec55132eb017b9e1f789b12c50c0f5722"
+    },
+    "title": "流水行船：静水时间",
+    "category": "数量关系·流水行船",
+    "independentAnswer": "B",
+    "focusAnalysis": "设两港相距63个长度单位，顺水速度为63÷7＝9，逆水速度为63÷9＝7。静水船速为(9＋7)÷2＝8，静水时间为63÷8＝7.875小时，选B。应平均顺、逆水速度，不能直接平均7和9小时。",
+    "quickTip": "顺逆等路程且船速、水速恒定时，静水时间＝2×顺水时间×逆水时间÷两时间之和。本题2×7×9÷16＝7.875小时。",
+    "questionId": "q_006423800b19397f589f6e3c10307dad6f81f6d9ff5cfac11f76f831e9bc514f",
+    "type": "single-choice",
+    "source": {
+      "archiveUrl": "http://154.89.148.158:33314/down/sCvivawbEXXr.zip",
+      "archiveSha256": "0fb1a4bb77efc7531a4fa557c38b327b5cd2bff1d79593cde6ad2d7f202d6075",
+      "filePath": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "fileSha256": "96d7d103c84b14733f9afac3aa795de2ccec32ee1087a3e4fbef9ba7a680dcfa",
+      "lineNumber": 112,
+      "lineSha256": "3a34fb112e181f825166c1189bac45273154975bdd3d5a08f1d7dd4ca6dd113e",
+      "originalRecord": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "17978",
+        "splitKey": "whole-record",
+        "sourceDigest": "99a893a55c27f6fb5b2a12667c80d3c8df1042a6a73aa56ef29106292a28323f",
+        "typeHint": "",
+        "classificationHints": [
+          "-2011年浙江公务员考试《行测》卷.html",
+          "题目类型：数量关系"
+        ]
+      },
+      "originalLabel": "第58回",
+      "indexPath": "releases/release-1791732747093-cdd4c2a3/web-index/page-0001.json"
+    },
+    "stem": "第58回\n一艘游轮从甲港口顺水航行至乙港口需7小时，从乙港口逆水航行至甲港口需9小时。问如果在静水条件下，游轮从甲港口航行至乙港口需多少小时：",
+    "options": [
+      {
+        "label": "A",
+        "optionId": "option_a",
+        "text": "7.75小时"
+      },
+      {
+        "label": "B",
+        "optionId": "option_b",
+        "text": "7.875小时"
+      },
+      {
+        "label": "C",
+        "optionId": "option_c",
+        "text": "8小时"
+      },
+      {
+        "label": "D",
+        "optionId": "option_d",
+        "text": "8.25小时"
+      }
+    ],
+    "answer": "B",
+    "originalSolution": "方法1：\n根据所需时间比，设距离为63，则游轮顺水和逆水的速度分别为9、7，则游轮自身的速度为\n〔原图：media_b41dc3eeb3bcdec48d567019da082b02c71922b6a6f37f5860acd29a2442d9f8〕，因此在静水条件下所需时间为\n〔原图：media_c74d3bfc9297918933abff46794f0fff39150d936af043124d5b1d17f1a1c743〕小时。\n方法2：\n设甲乙港口相距距离为\n〔原图：media_dc2e086aa3ecf4842533e1f1bb6ff3413841c963725a30dfa293b0180ea5ead1〕，则游轮顺水和逆水的速度分别为\n〔原图：media_ce5ce85750f0aa0ba233ffced9bdbb212b653f667be4e145aada7d90d11e1829〕、\n〔原图：media_845413971aad7f2093347126505f90f4d31ca76ebbaba697c583a0581837b090〕，游轮自身速度为\n〔原图：media_ee623b7e4aa0f117b065c8eef8d663d52f4b3fdf93a9aba395c54ab247661803〕，因此静水条件下所需时间为\n〔原图：media_bc08f48261f281e866f9240b9b0de7d33291b3b048015bd131b902d2ade33182〕。\n故正确答案为B。\n-2011年浙江公务员考试《行测》卷.html\n题目类型：数量关系",
+    "passage": "",
+    "images": [
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_b41dc3eeb3bcdec48d567019da082b02c71922b6a6f37f5860acd29a2442d9f8.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_b41dc3eeb3bcdec48d567019da082b02c71922b6a6f37f5860acd29a2442d9f8.bin",
+        "alt": "(9＋7)÷2＝8",
+        "placement": "solution",
+        "occurrenceId": "occ_a691a61e8a07d6642b40803202c5e121fc42c75f4ec28f0fee3538166937d685",
+        "order": 0,
+        "mediaId": "media_b41dc3eeb3bcdec48d567019da082b02c71922b6a6f37f5860acd29a2442d9f8",
+        "sha256": "b41dc3eeb3bcdec48d567019da082b02c71922b6a6f37f5860acd29a2442d9f8",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_b41dc3eeb3bcdec48d567019da082b02c71922b6a6f37f5860acd29a2442d9f8.bin",
+        "sourceMedia": {
+          "byteLength": 854,
+          "height": 18,
+          "mediaId": "media_b41dc3eeb3bcdec48d567019da082b02c71922b6a6f37f5860acd29a2442d9f8",
+          "mimeType": "image/png",
+          "path": "assets/media_b41dc3eeb3bcdec48d567019da082b02c71922b6a6f37f5860acd29a2442d9f8.bin",
+          "sha256": "b41dc3eeb3bcdec48d567019da082b02c71922b6a6f37f5860acd29a2442d9f8",
+          "width": 90
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      },
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_c74d3bfc9297918933abff46794f0fff39150d936af043124d5b1d17f1a1c743.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_c74d3bfc9297918933abff46794f0fff39150d936af043124d5b1d17f1a1c743.bin",
+        "alt": "63÷8＝7.875",
+        "placement": "solution",
+        "occurrenceId": "occ_21164c6eb9a073bedbb1c26b97e52019566b38e0c9bb6b90bd075c65acd93586",
+        "order": 1,
+        "mediaId": "media_c74d3bfc9297918933abff46794f0fff39150d936af043124d5b1d17f1a1c743",
+        "sha256": "c74d3bfc9297918933abff46794f0fff39150d936af043124d5b1d17f1a1c743",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_c74d3bfc9297918933abff46794f0fff39150d936af043124d5b1d17f1a1c743.bin",
+        "sourceMedia": {
+          "byteLength": 882,
+          "height": 18,
+          "mediaId": "media_c74d3bfc9297918933abff46794f0fff39150d936af043124d5b1d17f1a1c743",
+          "mimeType": "image/png",
+          "path": "assets/media_c74d3bfc9297918933abff46794f0fff39150d936af043124d5b1d17f1a1c743.bin",
+          "sha256": "c74d3bfc9297918933abff46794f0fff39150d936af043124d5b1d17f1a1c743",
+          "width": 86
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      },
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_dc2e086aa3ecf4842533e1f1bb6ff3413841c963725a30dfa293b0180ea5ead1.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_dc2e086aa3ecf4842533e1f1bb6ff3413841c963725a30dfa293b0180ea5ead1.bin",
+        "alt": "S",
+        "placement": "solution",
+        "occurrenceId": "occ_132cc5872d0b20408e045774d024d1cdb141b7dbabd3b35894b5a46468e4811a",
+        "order": 2,
+        "mediaId": "media_dc2e086aa3ecf4842533e1f1bb6ff3413841c963725a30dfa293b0180ea5ead1",
+        "sha256": "dc2e086aa3ecf4842533e1f1bb6ff3413841c963725a30dfa293b0180ea5ead1",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_dc2e086aa3ecf4842533e1f1bb6ff3413841c963725a30dfa293b0180ea5ead1.bin",
+        "sourceMedia": {
+          "byteLength": 532,
+          "height": 18,
+          "mediaId": "media_dc2e086aa3ecf4842533e1f1bb6ff3413841c963725a30dfa293b0180ea5ead1",
+          "mimeType": "image/png",
+          "path": "assets/media_dc2e086aa3ecf4842533e1f1bb6ff3413841c963725a30dfa293b0180ea5ead1.bin",
+          "sha256": "dc2e086aa3ecf4842533e1f1bb6ff3413841c963725a30dfa293b0180ea5ead1",
+          "width": 10
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      },
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_ce5ce85750f0aa0ba233ffced9bdbb212b653f667be4e145aada7d90d11e1829.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_ce5ce85750f0aa0ba233ffced9bdbb212b653f667be4e145aada7d90d11e1829.bin",
+        "alt": "S÷7",
+        "placement": "solution",
+        "occurrenceId": "occ_85c02d19e4f012214b718d07c1e3ab10165aaf6b711f68e5a975bb30784cc621",
+        "order": 3,
+        "mediaId": "media_ce5ce85750f0aa0ba233ffced9bdbb212b653f667be4e145aada7d90d11e1829",
+        "sha256": "ce5ce85750f0aa0ba233ffced9bdbb212b653f667be4e145aada7d90d11e1829",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_ce5ce85750f0aa0ba233ffced9bdbb212b653f667be4e145aada7d90d11e1829.bin",
+        "sourceMedia": {
+          "byteLength": 589,
+          "height": 29,
+          "mediaId": "media_ce5ce85750f0aa0ba233ffced9bdbb212b653f667be4e145aada7d90d11e1829",
+          "mimeType": "image/png",
+          "path": "assets/media_ce5ce85750f0aa0ba233ffced9bdbb212b653f667be4e145aada7d90d11e1829.bin",
+          "sha256": "ce5ce85750f0aa0ba233ffced9bdbb212b653f667be4e145aada7d90d11e1829",
+          "width": 12
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      },
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_845413971aad7f2093347126505f90f4d31ca76ebbaba697c583a0581837b090.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_845413971aad7f2093347126505f90f4d31ca76ebbaba697c583a0581837b090.bin",
+        "alt": "S÷9",
+        "placement": "solution",
+        "occurrenceId": "occ_8fd86d8f4193ccfe13e75447af15b379ee51f502fb3b4471b0a098641ece5946",
+        "order": 4,
+        "mediaId": "media_845413971aad7f2093347126505f90f4d31ca76ebbaba697c583a0581837b090",
+        "sha256": "845413971aad7f2093347126505f90f4d31ca76ebbaba697c583a0581837b090",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_845413971aad7f2093347126505f90f4d31ca76ebbaba697c583a0581837b090.bin",
+        "sourceMedia": {
+          "byteLength": 609,
+          "height": 29,
+          "mediaId": "media_845413971aad7f2093347126505f90f4d31ca76ebbaba697c583a0581837b090",
+          "mimeType": "image/png",
+          "path": "assets/media_845413971aad7f2093347126505f90f4d31ca76ebbaba697c583a0581837b090.bin",
+          "sha256": "845413971aad7f2093347126505f90f4d31ca76ebbaba697c583a0581837b090",
+          "width": 12
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      },
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_ee623b7e4aa0f117b065c8eef8d663d52f4b3fdf93a9aba395c54ab247661803.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_ee623b7e4aa0f117b065c8eef8d663d52f4b3fdf93a9aba395c54ab247661803.bin",
+        "alt": "(S÷7＋S÷9)÷2",
+        "placement": "solution",
+        "occurrenceId": "occ_4dce549244761db3a763b84acc1a7338d59dbdcc3047f9701c97a5485c403b1b",
+        "order": 5,
+        "mediaId": "media_ee623b7e4aa0f117b065c8eef8d663d52f4b3fdf93a9aba395c54ab247661803",
+        "sha256": "ee623b7e4aa0f117b065c8eef8d663d52f4b3fdf93a9aba395c54ab247661803",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_ee623b7e4aa0f117b065c8eef8d663d52f4b3fdf93a9aba395c54ab247661803.bin",
+        "sourceMedia": {
+          "byteLength": 941,
+          "height": 29,
+          "mediaId": "media_ee623b7e4aa0f117b065c8eef8d663d52f4b3fdf93a9aba395c54ab247661803",
+          "mimeType": "image/png",
+          "path": "assets/media_ee623b7e4aa0f117b065c8eef8d663d52f4b3fdf93a9aba395c54ab247661803.bin",
+          "sha256": "ee623b7e4aa0f117b065c8eef8d663d52f4b3fdf93a9aba395c54ab247661803",
+          "width": 76
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      },
+      {
+        "localPath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_bc08f48261f281e866f9240b9b0de7d33291b3b048015bd131b902d2ade33182.bin",
+        "relativePath": "bank/releases/release-1791732747093-cdd4c2a3/assets/media_bc08f48261f281e866f9240b9b0de7d33291b3b048015bd131b902d2ade33182.bin",
+        "alt": "S÷[(S÷7＋S÷9)÷2]＝63÷8＝7.875小时",
+        "placement": "solution",
+        "occurrenceId": "occ_2cb03dbb53ca6421924eafcad0086ff733792a528b58051b5ccba30d41eaa147",
+        "order": 6,
+        "mediaId": "media_bc08f48261f281e866f9240b9b0de7d33291b3b048015bd131b902d2ade33182",
+        "sha256": "bc08f48261f281e866f9240b9b0de7d33291b3b048015bd131b902d2ade33182",
+        "mimeType": "image/png",
+        "sourcePath": "releases/release-1791732747093-cdd4c2a3/assets/media_bc08f48261f281e866f9240b9b0de7d33291b3b048015bd131b902d2ade33182.bin",
+        "sourceMedia": {
+          "byteLength": 1698,
+          "height": 29,
+          "mediaId": "media_bc08f48261f281e866f9240b9b0de7d33291b3b048015bd131b902d2ade33182",
+          "mimeType": "image/png",
+          "path": "assets/media_bc08f48261f281e866f9240b9b0de7d33291b3b048015bd131b902d2ade33182.bin",
+          "sha256": "bc08f48261f281e866f9240b9b0de7d33291b3b048015bd131b902d2ade33182",
+          "width": 240
+        },
+        "originalAlt": "",
+        "reviewedVisually": true
+      }
+    ],
+    "sourceQuestion": {
+      "schemaVersion": 1,
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_006423800b19397f589f6e3c10307dad6f81f6d9ff5cfac11f76f831e9bc514f",
+      "revisionDigest": "48185077391d9a4c4621a3516207ed3ec55132eb017b9e1f789b12c50c0f5722",
+      "type": "single-choice",
+      "stem": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "第58回"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "一艘游轮从甲港口顺水航行至乙港口需7小时，从乙港口逆水航行至甲港口需9小时。问如果在静水条件下，游轮从甲港口航行至乙港口需多少小时："
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "options": [
+        {
+          "optionId": "option_a",
+          "label": "A",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "7.75小时"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_b",
+          "label": "B",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "7.875小时"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_c",
+          "label": "C",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "8小时"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_d",
+          "label": "D",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "8.25小时"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "answer": {
+        "content": {
+          "format": "tiptap-portable-v1",
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "optionIds": [
+          "option_b"
+        ],
+        "grading": "objective"
+      },
+      "solution": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "方法1："
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "根据所需时间比，设距离为63，则游轮顺水和逆水的速度分别为9、7，则游轮自身的速度为"
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_a691a61e8a07d6642b40803202c5e121fc42c75f4ec28f0fee3538166937d685"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "，因此在静水条件下所需时间为"
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_21164c6eb9a073bedbb1c26b97e52019566b38e0c9bb6b90bd075c65acd93586"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "小时。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "方法2："
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "设甲乙港口相距距离为"
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_132cc5872d0b20408e045774d024d1cdb141b7dbabd3b35894b5a46468e4811a"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "，则游轮顺水和逆水的速度分别为"
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_85c02d19e4f012214b718d07c1e3ab10165aaf6b711f68e5a975bb30784cc621"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "、"
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_8fd86d8f4193ccfe13e75447af15b379ee51f502fb3b4471b0a098641ece5946"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "，游轮自身速度为"
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_4dce549244761db3a763b84acc1a7338d59dbdcc3047f9701c97a5485c403b1b"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "，因此静水条件下所需时间为"
+                }
+              ]
+            },
+            {
+              "type": "questionImage",
+              "attrs": {
+                "occurrenceId": "occ_2cb03dbb53ca6421924eafcad0086ff733792a528b58051b5ccba30d41eaa147"
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "故正确答案为B。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "-2011年浙江公务员考试《行测》卷.html"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "题目类型：数量关系"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "passageRefs": [],
+      "mediaOccurrences": [
+        {
+          "occurrenceId": "occ_a691a61e8a07d6642b40803202c5e121fc42c75f4ec28f0fee3538166937d685",
+          "mediaId": "media_b41dc3eeb3bcdec48d567019da082b02c71922b6a6f37f5860acd29a2442d9f8",
+          "zone": "solution",
+          "order": 0,
+          "alt": "",
+          "status": "ready"
+        },
+        {
+          "occurrenceId": "occ_21164c6eb9a073bedbb1c26b97e52019566b38e0c9bb6b90bd075c65acd93586",
+          "mediaId": "media_c74d3bfc9297918933abff46794f0fff39150d936af043124d5b1d17f1a1c743",
+          "zone": "solution",
+          "order": 1,
+          "alt": "",
+          "status": "ready"
+        },
+        {
+          "occurrenceId": "occ_132cc5872d0b20408e045774d024d1cdb141b7dbabd3b35894b5a46468e4811a",
+          "mediaId": "media_dc2e086aa3ecf4842533e1f1bb6ff3413841c963725a30dfa293b0180ea5ead1",
+          "zone": "solution",
+          "order": 2,
+          "alt": "",
+          "status": "ready"
+        },
+        {
+          "occurrenceId": "occ_85c02d19e4f012214b718d07c1e3ab10165aaf6b711f68e5a975bb30784cc621",
+          "mediaId": "media_ce5ce85750f0aa0ba233ffced9bdbb212b653f667be4e145aada7d90d11e1829",
+          "zone": "solution",
+          "order": 3,
+          "alt": "",
+          "status": "ready"
+        },
+        {
+          "occurrenceId": "occ_8fd86d8f4193ccfe13e75447af15b379ee51f502fb3b4471b0a098641ece5946",
+          "mediaId": "media_845413971aad7f2093347126505f90f4d31ca76ebbaba697c583a0581837b090",
+          "zone": "solution",
+          "order": 4,
+          "alt": "",
+          "status": "ready"
+        },
+        {
+          "occurrenceId": "occ_4dce549244761db3a763b84acc1a7338d59dbdcc3047f9701c97a5485c403b1b",
+          "mediaId": "media_ee623b7e4aa0f117b065c8eef8d663d52f4b3fdf93a9aba395c54ab247661803",
+          "zone": "solution",
+          "order": 5,
+          "alt": "",
+          "status": "ready"
+        },
+        {
+          "occurrenceId": "occ_2cb03dbb53ca6421924eafcad0086ff733792a528b58051b5ccba30d41eaa147",
+          "mediaId": "media_bc08f48261f281e866f9240b9b0de7d33291b3b048015bd131b902d2ade33182",
+          "zone": "solution",
+          "order": 6,
+          "alt": "",
+          "status": "ready"
+        }
+      ],
+      "source": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "17978",
+        "splitKey": "whole-record",
+        "sourceDigest": "99a893a55c27f6fb5b2a12667c80d3c8df1042a6a73aa56ef29106292a28323f",
+        "typeHint": "",
+        "classificationHints": [
+          "-2011年浙江公务员考试《行测》卷.html",
+          "题目类型：数量关系"
+        ]
+      },
+      "review": {
+        "status": "needs-review",
+        "practiceEligible": true,
+        "reasonCodes": []
+      }
+    },
+    "sourceIssues": [],
+    "reviewStatus": "needs-review",
+    "baseRevision": 0,
+    "idempotencyKey": "real-sample-review-v1-q_006423800b19397f589f6e3c10307dad6f81f6d9ff5cfac11f76f831e9bc514f",
+    "verification": {
+      "status": "independently-checked-pending-user-review",
+      "answerMatchesSource": true,
+      "allReferencedMediaPresentAndDecoded": true,
+      "allReferencedMediaVisuallyReviewed": true,
+      "sourceUnchanged": true,
+      "doNotMarkAsUserApproved": true
+    }
+  },
+  {
+    "sampleId": "example-07",
+    "key": {
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_000bc4bf8d55763609c8292267001dd357095db446c46b8b22204b87414d49ca",
+      "releaseId": "release-1791732747093-cdd4c2a3",
+      "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+      "revisionDigest": "35af1f64c29137370515c1fbe50ae672b204db2afbb9788fa76bf156c2ab3b7b"
+    },
+    "title": "缺材料阻断：用水量比较",
+    "category": "资料分析·缺材料示例",
+    "independentAnswer": null,
+    "focusAnalysis": "暂不生成解题结论。题干要求依据“图2”比较2021年各地城市人均日生活用水量，但该原题没有图2、全国平均值材料或共享材料引用。原库答案为B，原解析称有6地超过185.03升；这些仅作为原文保留，不能用解析反推材料来冒充独立核验。补齐原图及材料后再判断。",
+    "quickTip": "无可靠秒杀法。先补齐图2及全国平均值材料，再逐项比较并计数；目前不应猜选项。",
+    "questionId": "q_000bc4bf8d55763609c8292267001dd357095db446c46b8b22204b87414d49ca",
+    "type": "single-choice",
+    "source": {
+      "archiveUrl": "http://154.89.148.158:33314/down/sCvivawbEXXr.zip",
+      "archiveSha256": "0fb1a4bb77efc7531a4fa557c38b327b5cd2bff1d79593cde6ad2d7f202d6075",
+      "filePath": "releases/release-1791732747093-cdd4c2a3/questions/part-000001.jsonl",
+      "fileSha256": "96d7d103c84b14733f9afac3aa795de2ccec32ee1087a3e4fbef9ba7a680dcfa",
+      "lineNumber": 16,
+      "lineSha256": "511ad99c98e2ee664644bd9739dd739724a84cbbf9fa262924e65ccdbd3b4756",
+      "originalRecord": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "59802",
+        "splitKey": "whole-record",
+        "sourceDigest": "41acc29f0bcf90672f51f0a0b2372a79d4faddbb56bd9eef4292bf6cbe376d30",
+        "typeHint": "",
+        "classificationHints": [
+          "-2023年江西省公务员录用考试《行测》题（网友回忆版）.html",
+          "题目类型：资料分析"
+        ]
+      },
+      "originalLabel": "第123回",
+      "indexPath": "releases/release-1791732747093-cdd4c2a3/web-index/page-0001.json"
+    },
+    "stem": "第123回\n图2所列的全国部分省（区、市）中，2021年城市人均日生活用水量超过全国平均值的有：",
+    "options": [
+      {
+        "label": "A",
+        "optionId": "option_a",
+        "text": "5个"
+      },
+      {
+        "label": "B",
+        "optionId": "option_b",
+        "text": "6个"
+      },
+      {
+        "label": "C",
+        "optionId": "option_c",
+        "text": "7个"
+      },
+      {
+        "label": "D",
+        "optionId": "option_d",
+        "text": "8个"
+      }
+    ],
+    "answer": "B",
+    "originalSolution": "定位文字材料可得：2021年，全国人均日生活用水量185.03升。定位图2可得2021年全国部分省（区、市）城市人均日生活用水量。则超过全国平均值（185.03升）的有浙江（212升）、安徽（190升）、福建（231升）、广东（251升）、海南（315升）、西藏（256升）6个省（区、市）。\n故正确答案为B。\n-2023年江西省公务员录用考试《行测》题（网友回忆版）.html\n题目类型：资料分析",
+    "passage": "",
+    "images": [],
+    "sourceQuestion": {
+      "schemaVersion": 1,
+      "bankId": "bank-civil-aptitude",
+      "questionId": "q_000bc4bf8d55763609c8292267001dd357095db446c46b8b22204b87414d49ca",
+      "revisionDigest": "35af1f64c29137370515c1fbe50ae672b204db2afbb9788fa76bf156c2ab3b7b",
+      "type": "single-choice",
+      "stem": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "第123回"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "图2所列的全国部分省（区、市）中，2021年城市人均日生活用水量超过全国平均值的有："
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "options": [
+        {
+          "optionId": "option_a",
+          "label": "A",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "5个"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_b",
+          "label": "B",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "6个"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_c",
+          "label": "C",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "7个"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "optionId": "option_d",
+          "label": "D",
+          "content": {
+            "format": "tiptap-portable-v1",
+            "doc": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "8个"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "answer": {
+        "content": {
+          "format": "tiptap-portable-v1",
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "B"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "optionIds": [
+          "option_b"
+        ],
+        "grading": "objective"
+      },
+      "solution": {
+        "format": "tiptap-portable-v1",
+        "doc": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "定位文字材料可得：2021年，全国人均日生活用水量185.03升。定位图2可得2021年全国部分省（区、市）城市人均日生活用水量。则超过全国平均值（185.03升）的有浙江（212升）、安徽（190升）、福建（231升）、广东（251升）、海南（315升）、西藏（256升）6个省（区、市）。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "故正确答案为B。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "-2023年江西省公务员录用考试《行测》题（网友回忆版）.html"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "题目类型：资料分析"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "passageRefs": [],
+      "mediaOccurrences": [],
+      "source": {
+        "namespace": "swdtbook-questionbank-20260514",
+        "table": "xingce",
+        "recordId": "59802",
+        "splitKey": "whole-record",
+        "sourceDigest": "41acc29f0bcf90672f51f0a0b2372a79d4faddbb56bd9eef4292bf6cbe376d30",
+        "typeHint": "",
+        "classificationHints": [
+          "-2023年江西省公务员录用考试《行测》题（网友回忆版）.html",
+          "题目类型：资料分析"
+        ]
+      },
+      "review": {
+        "status": "needs-review",
+        "practiceEligible": true,
+        "reasonCodes": []
+      }
+    },
+    "sourceIssues": [
+      "missing-image",
+      "missing-material"
+    ],
+    "reviewStatus": "blocked",
+    "baseRevision": 0,
+    "idempotencyKey": "real-sample-review-v1-q_000bc4bf8d55763609c8292267001dd357095db446c46b8b22204b87414d49ca",
+    "verification": {
+      "status": "blocked-missing-source-material",
+      "answerMatchesSource": null,
+      "allReferencedMediaPresentAndDecoded": true,
+      "allReferencedMediaVisuallyReviewed": true,
+      "sourceUnchanged": true,
+      "doNotMarkAsUserApproved": true
+    }
+  }
+]
