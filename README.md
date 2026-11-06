@@ -1,6 +1,13 @@
 # KyMind 行测题库
 
-这是 **hky685021-star 的私有题库版本仓库**，用于保留完整原始题库，并按批次保存独立 AI 补充及待审核的解题模型索引。不是公开发布站点，也不是已完成全库修订的新发行。
+这是 **hky685021-star 的公开题库版本仓库**，保留完整原始题库，并按批次保存独立 AI 补充及待审核的解题模型索引。原始网页通过 GitHub Pages 提供在线练习；AI 补充和模型候选仍未批准，没有合入原始练习题库。
+
+## 在线练习
+
+- 入口：https://hky685021-star.github.io/kymind-aptitude-bank/
+- GitHub Pages 从 `main` 分支根目录发布，根入口跳转到 `original/bank-civil-aptitude/site/index.html`。
+- 原始签名题库、网页和相对资源路径保持不变。题库加载会验证签名及文件摘要。
+- 首次进入需要下载题库清单和当前题目相关数据，速度取决于网络；部分旧浏览器可能不支持 Ed25519。
 
 ## 当前范围
 
@@ -15,7 +22,7 @@
 - `original/bank-civil-aptitude/`：完整原始签名题库，不直接改写。
 - `supplements/ai/batches/`：重点解析、秒杀技巧及问题说明，与原题独立保存。
 - `candidates/model-index/`：未获批准的模型字典和索引候选。提交到 GitHub 不等于审核通过。
-- `review/2026-11-06-seven-samples.html`：现有七题离线审阅页；下载到本地打开，不是线上服务。
+- `review/2026-11-06-seven-samples.html`：现有七题审阅页，不是正式练习入口；其中记录仍待审核。
 - `provenance/`：原始迁移清单、导入来源和文件校验记录。
 - `scripts/verify_repository.py`：原始文件摘要、Ed25519 签名、题目数量与样题状态检查。
 - `docs/batch-workflow.md`：后续批次保存与同步约定。
@@ -37,6 +44,6 @@ python3 scripts/verify_repository.py
 - 原迁移清单记录 1 个已有 PNG 解码异常，原字节保留，路径见 `provenance/transfer-manifest.json` 的 `summary.imageDecodeErrors`。不能把完整性验证通过理解成所有图片可正常显示。
 - 七题中的用水量题缺“图2/全国平均值”材料，AI 记录仍阻断，不补造材料。
 - 模型映射缺准确词条时保留空值和待复核原因，不为填满四维而编造正式代码。`practiceEligible` 是原始题目属性，不是本次候选审核通过标志。
-- 原始签名元数据中保留 `visibility: public` 等历史字段，因为改写会破坏签名；GitHub 仓库本身实际设置为 **private**，没有开启 Pages。
-- 原包许可为“仅供测试；对外再发行前须核对原题授权”。保持私有，不把本仓库备份视为公开再发行许可。
-- 本次只建立版本管理和同步落点；没有批量继续处理新题、没有定时后台上传任务、没有自动批准候选。
+- 原始签名元数据中的 `visibility: public` 等字段保持原字节；仓库已公开，并使用 GitHub Pages 提供原始网页入口。
+- 原包许可为“仅供测试；对外再发行前须核对原题授权”。仓库公开不改变该限制，也不代表取得原题版权许可；使用或再次传播前须自行核对授权。
+- 这里只新增在线访问入口；没有批量继续处理新题、没有定时后台上传任务、没有自动批准候选。
