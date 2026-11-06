@@ -1,0 +1,49 @@
+{
+  "sequence": 258,
+  "key": {
+    "bankId": "bank-civil-aptitude",
+    "questionId": "q_00e2923a3c669e32e8ee994680b478b05fe310a7f6e8c206fa32f1450932d07d",
+    "releaseId": "release-1791732747093-cdd4c2a3",
+    "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+    "revisionDigest": "d922c4cae3b1d46897cc057ec079b9191adf822abfb772239b3264b3227ae019"
+  },
+  "status": "incomplete",
+  "note": "缺经原卷确认的字符比较操作指令",
+  "answerPolicy": "signed-original",
+  "aiReviewStatus": "blocked",
+  "modelReviewStatus": "quarantined",
+  "sourceFile": "questions/part-000001.jsonl",
+  "sourceClassification": [
+    "-2011年江苏公务员考试《行测》B卷.html",
+    "题目类型：知觉速度"
+  ],
+  "originalAnswerPreserved": [
+    "option_c"
+  ],
+  "originalPathUnchanged": true,
+  "recoveryEvidence": {
+    "checkedAt": "2026-11-06T09:44:41.523608+00:00",
+    "attempts": [
+      "搜索精确48HI9J13无匹配；2011江苏B星光回忆卷同符区第10为空图且选项1/3/5/7，与银行1/2/3/4不同，拒绝自动配对。",
+      "gwysk2011B页面只查到前几题，下载403，未绕过；51wendang标题2011但首题9AGUKL/RHGJA为不同卷序，拒绝其通用指令作本题原文。"
+    ],
+    "sources": [
+      {
+        "url": "https://upload.xingguanggongkao.com/pdf/2011%E5%B9%B4%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88B%E5%8D%B7-%E8%80%83%E7%94%9F%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf?time=1733728430",
+        "accessedAt": "2026-11-06T09:44:41.523608+00:00"
+      },
+      {
+        "url": "https://m.gwysk.cn/shengkao/jiangsu/zhenti/3821.html",
+        "accessedAt": "2026-11-06T09:44:41.523608+00:00"
+      },
+      {
+        "url": "https://www.51wendang.com/doc/3c18b0097582122332a3c208",
+        "accessedAt": "2026-11-06T09:44:41.523608+00:00"
+      }
+    ],
+    "sourceEvidence": "题中48HI9J13 / K12I6F9T完整，但没有设问。原答案虽符合共同字符1、9、I，不能据答案反推并伪装原卷指令。",
+    "missing": [
+      "经原卷确认的同符查找设问/操作指令"
+    ]
+  }
+}

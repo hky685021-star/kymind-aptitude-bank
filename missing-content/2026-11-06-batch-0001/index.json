@@ -1,0 +1,52 @@
+{
+  "batchId": "2026-11-06-batch-0001",
+  "purpose": "未完全恢复的作答内容，独立收纳题目引用和缺失说明，原始签名文件不移动。",
+  "count": 9,
+  "questions": [
+    {
+      "sequence": 7,
+      "questionId": "q_0004fcfe379f58f867278f75117151fdcfbb88455af12210f0576c2a98211599",
+      "status": "incomplete"
+    },
+    {
+      "sequence": 258,
+      "questionId": "q_00e2923a3c669e32e8ee994680b478b05fe310a7f6e8c206fa32f1450932d07d",
+      "status": "incomplete"
+    },
+    {
+      "sequence": 438,
+      "questionId": "q_019c62c6f09ff87f31096651372b8d0d0eaa0fb933736009e96f79375179bbd7",
+      "status": "partial-material"
+    },
+    {
+      "sequence": 457,
+      "questionId": "q_01a85caa300710efcfaefdf1ec485382f3ad2d33b883a6f5b064daad6293f6ba",
+      "status": "incomplete"
+    },
+    {
+      "sequence": 532,
+      "questionId": "q_01edfbce28260c30885745b9469ec7b35d27efbb4db910a6aee85d3660e342b4",
+      "status": "partial-material"
+    },
+    {
+      "sequence": 588,
+      "questionId": "q_022a07aa5a836ea9a45dc962ba96484d218e0a286c61767c1dd7b3ea087709b9",
+      "status": "incomplete"
+    },
+    {
+      "sequence": 697,
+      "questionId": "q_0285408810c195d2860468d7c968758a34aceea6e315ee344252c4dbfbd0574b",
+      "status": "incomplete"
+    },
+    {
+      "sequence": 946,
+      "questionId": "q_0344378ff0b747bd2383794ffed7f1963ae99c8591ba976b109da39f7f809169",
+      "status": "incomplete"
+    },
+    {
+      "sequence": 960,
+      "questionId": "q_034cda239e1ea9723d2ede52d1538003e529a8368396f639f8a11d6fa9616129",
+      "status": "incomplete"
+    }
+  ]
+}

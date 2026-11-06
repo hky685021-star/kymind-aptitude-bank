@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 2,
+  "batchId": "2026-11-06-batch-0001-review-v2",
+  "dictionaryVersion": "civil-aptitude-batch-0001-dict-review-v2-20261106",
+  "bankId": "bank-civil-aptitude",
+  "sourceReleaseId": "release-1791732747093-cdd4c2a3",
+  "sourceManifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+  "recordCount": 522,
+  "uniqueQuestionCount": 522,
+  "reviewedCount": 395,
+  "pendingCount": 124,
+  "quarantinedCount": 3,
+  "recordsSha256": "589c697c274b040e2603868a58cb918585b7a1ddaa1387f232e52fbbace42f64",
+  "dictionarySha256": "dc7cef19efc1d40bcdae56322af874a2b38cef47cc090b4bbf69e4ddf18311c5",
+  "status": "AI-reviewed-and-pending-as-labelled",
+  "producer": "逐题实质分析；AI审核不表示用户逐题批准"
+}

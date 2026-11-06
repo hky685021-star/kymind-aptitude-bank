@@ -1,0 +1,1222 @@
+{
+  "schemaVersion": 1,
+  "dictionaryVersion": "civil-aptitude-batch-0001-dict-review-v2-20261106",
+  "bankId": "bank-civil-aptitude",
+  "status": "draft",
+  "dimensions": {
+    "concept": [
+      {
+        "code": "efficiency.work",
+        "label": "效率与工作量",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "cost.time-rate",
+        "label": "单位时间成本",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.lexical-meaning",
+        "label": "语境词义",
+        "definition": "适用：词或成语在给定语境中的意义、感情色彩、使用对象及搭配限制。 排除：不含整句结构诊病、字形校勘或古汉语词义辨析；文章主题不构成本考点。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.main-idea",
+        "label": "主旨意图",
+        "definition": "适用：文段的中心命题、论述重心及由语篇整体支持的表达意图。 排除：不以句末位置代替语篇主次；细节真假、后续话题及单纯态度辨识不自动纳入。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.discourse",
+        "label": "篇章衔接",
+        "definition": "适用：句段之间的指代、关联、照应、承接和先后关系。 排除：不含词汇单空选择或依外部程序确定事件次序；不是所有长文题的通用概念。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.analogy",
+        "label": "类比关系",
+        "definition": "适用：两个或多个词项之间的语义、集合、功能、时序等关系及其方向、层级。 排除：论证前提至结论的形式比较用argument-form；仅同主题不足。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.argument-form",
+        "label": "论证形式",
+        "definition": "适用：把一段论证的前提、结论及推理规则抽象后得到的结构，包括明确的形式谬误。 排除：单纯真假话数量约束、条件演绎、对象排序不是论证形式相似；不得把所有逻辑题收进此概念。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.causality",
+        "label": "因果论证",
+        "definition": "适用：原因与结果的方向、因果链及因果解释的竞争关系。 排除：相关关系本身不证明因果；非因果的样本代表性或一般论证缺口不必标本项。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.definition",
+        "label": "定义要件",
+        "definition": "适用：题干明示定义的属概念、必要条件、条件间且或关系、适用对象和范围。 排除：不将题干未给出的法律规则或一般词语常识补作定义要件；选非与选是均可有此考点。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.distribution",
+        "label": "人数分配与盈亏",
+        "definition": "适用：将人数或离散对象分组、分配，在总量、每组容量、余缺和组数间建立的数量关系。 排除：不把收入成本、百分比或任何一次方程都称人数分配；排列组合不是同义概念。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.sequence",
+        "label": "数列规律",
+        "definition": "适用：按项序、相邻或隔项关系组织的有序数列，以及由明确规则或候选考试模式确定的项与总和。 排除：有限项本身不保证数学唯一延拓；一般人员比例、图形位置排列不归此项。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.average",
+        "label": "平均数",
+        "definition": "适用：统计总量与相应单位数、次数、人数之比形成的每单位平均水平；须明确分子分母和量纲。 排除：部分占总体是比重；两个不具每单位解释的同类总量之比是一般比值。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.growth",
+        "label": "增长指标",
+        "definition": "适用：同一统计指标在可比两时点间的现期量、基期量、增长量和增长率关系。 排除：不同指标同一期的占比不是增长；百分点变化不等于增长率。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.share",
+        "label": "比重",
+        "definition": "适用：同一统计口径下部分量相对包含该部分的总体量的占比及其变化。 排除：非包含关系的两个指标之比（如研发经费/GDP的投入强度）不能仅因写成百分数就视为严格部分占比；宜用一般比值。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.knowledge.official-documents",
+        "label": "公文种类适用",
+        "definition": "适用：党政或指定制度中的公文文种、行文关系及用途匹配知识。 排除：给定文段理解不等于公文规则；一般法律规范不自动归为公文种类。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.knowledge.history",
+        "label": "历史事实",
+        "definition": "适用：确定历史人物、事件、制度、作品等所处时序、归属及历史事实的知识。 排除：历史题材的阅读理解不等于考查历史事实；当代政策或纯词义不宜归此项。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.knowledge.science",
+        "label": "自然科学",
+        "definition": "适用：题目求解实质依赖的物理、化学、生物、天文、自然地理等自然科学知识。 排除：科学题材文段主旨及仅形式逻辑判断不自动标；不是一切科学字眼的题材标签。 证据：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.properties",
+        "label": "图形定性属性",
+        "definition": "适用：可见图形的直曲、开闭、内外、包含交叠、连通等非单纯数量性质。 排除：不能因题有图就标；对称和三维朝向有专门概念时优先专门。 证据：指出具体几何属性及其在全部图中的差别。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.symmetry",
+        "label": "轴对称与中心对称",
+        "definition": "适用：平面图形经关于某直线镜像或绕某点180度旋转是否与自身重合，包含颜色、箭头方向等题目可见约束。 排除：轴对称不等于中心对称；一般旋转周期不必是180度；不能未经题意允许忽略填色。 证据：对称轴/中心、逐部件对应及是否保留颜色方向。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.spatial-orientation",
+        "label": "立体面邻接与空间朝向",
+        "definition": "适用：三维物体的面、棱、顶点邻接及刚体转动后的朝向关系。 排除：平面图上同向旋转不是立体旋转；仅表面看起来对称不能代替空间对应。 证据：初始面标记、邻面/对面关系和观察或滚动方向。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.solid-section",
+        "label": "立体与平面截交",
+        "definition": "适用：一个平面与给定实体相交形成的实体区域、孔洞、边界及可能形状。 排除：投影、可见面轮廓、剖视图内部线不自动等于几何截面。 证据：切平面位置/方向与实心、空洞边界。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.sentence-validity",
+        "label": "句法与表达规范",
+        "definition": "适用：完整句子的成分、搭配、语序、句式、关联关系以及表达是否合乎所考语言规范。 排除：单词填空、错别字和纯事实真假不因此归语病；自然语言可接受的异体表述不得机械判错。 证据：指出有问题的成分或关系，给最小修正或说明原句可成立。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.ambiguity",
+        "label": "句法语义歧义",
+        "definition": "适用：同一句表述可形成两种及以上语法可行且意义不同的作用域、指代、修饰或切分。 排除：只有语义不清但无法给出两种合理读法时不可断言歧义；法律效力不是语言歧义。 证据：至少两种明确读法及对应修饰或指代范围。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.orthography",
+        "label": "汉字字形与词语书写",
+        "definition": "适用：词语中应选用的规范汉字及常见同音、形近字误写。 排除：不把低频但规范词语按更常见词机械改写；字义差异及语病另核。 证据：原字、应写字及词义/规范依据。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.classical-word-sense",
+        "label": "古汉语词义与称谓",
+        "definition": "适用：古汉语字词在给定句中的人称、称谓或实词/虚词义项。 排除：古文出处事实和整句翻译不自动等同单字义项；不得以今义代古义。 证据：题内用例及语法身份，比较各项义项。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.propositional-logic",
+        "label": "命题真假与量词关系",
+        "definition": "适用：真假命题、充分必要条件、否定、量词以及题给真假数量之间的逻辑关系。 排除：不是外部事实核验；没有论证形式同构任务不必标argument-form。 证据：命题形式、量词范围及合法推出关系。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.price-revenue",
+        "label": "单价销量与收入利润",
+        "definition": "适用：价格、销量、销售收入、成本和利润的数量关系，明确收入口径及净额定义。 排除：销售额不是利润；总费用及单位时间成本旧引用未核实，不能假定与本码等价。 证据：价格变化基准、销量单位时间、收入/成本/净支出关系。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.ratio-proportion",
+        "label": "比值与比例约束",
+        "definition": "适用：同口径数量之间的倍数、比率及按比例变化或混合分组时的等量约束。 排除：部分/总体、甲/乙、增长率需分清分母；不能见百分数就一律标统计比重。 证据：分子分母对象、比例基准及单位。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.motion",
+        "label": "路程速度时间",
+        "definition": "适用：物体运动中的路程、速度、时间关系，包含分段速度和流水参照系。 排除：产线效率不是运动；不因题干提车辆就标，必须实际用到运动关系。 证据：每段距离、速度、时长及参照系。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.periodicity",
+        "label": "周期与余数",
+        "definition": "适用：事件或数值按确定周期重复，利用周期位置、余数和同步周期定位。 排除：未经说明仅有限项巧合重复不得作为已证长期周期；工人交替施工还需工作量模型。 证据：周期长度、起点计数约定和偏移天数。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.ratio",
+        "label": "一般统计比值",
+        "definition": "适用：统计口径明确的两量相对大小或强度比，包括不具有部分包含关系的投入强度。 排除：每单位平均水平与真正部分占整体优先用average/share；必须说明分母，不从百分号判型。 证据：分子、分母、单位、时点及是否存在包含关系。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.efficiency.work-rate",
+        "label": "工作量与效率关系",
+        "definition": "适用：用工作量=单位时间完成量×时间表达任务的进度、效率比较和合作。 排除：人数本身不等于效率；速度运动和费用单价不自动等价；效率变化必须分段。 证据：工作量单位、时长、每单位时间量与效率是否恒定。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.cost.time-rate",
+        "label": "按时计费与单位时间费用",
+        "definition": "适用：费用随使用或参与时长变化，涉及每单位时间费率、固定费和分段收费。 排除：单位商品价格不是时间费率；只在故事里出现费用不足；不把固定月租当每分钟费率。 证据：时间单位、费率单位、固定费及收费周期。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.text-information",
+        "label": "文本信息与命题范围",
+        "definition": "适用：文段实际表达的事实、观点、主体、对象、时间、数量、程度及模态范围。 排除：不是外部事实真实性；篇章先后衔接和整段主旨与细节核验不同；符合作者观点不等于现实正确。 证据：原文与候选逐项对应，保留主体范围和可能/必然等限定。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.knowledge.legal-norms",
+        "label": "法律规范与国家机关职权",
+        "definition": "适用：题目实际依赖的法律规则、构成要件、适用范围、法律后果或由规范规定的机关职权。 排除：题内自行给出的定义匹配不自动依赖外部法；法律题材阅读不等于法律考点；必须区分题源时点与现行法。 证据：具体规则及版本时点、事实要件和适用关系。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.knowledge.public-governance",
+        "label": "公共治理原理与制度目的",
+        "definition": "适用：党政机关公共管理职能、治理方式、公共服务、公众参与及制度措施的主要目的等知识。 排除：只出现政府的文本阅读不自动标；具体法律权限用legal-norms；特定讲话原文事实用policy-discourse。 证据：需要依赖的治理原理、目的与措施的关系，以及题内/可靠来源。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.knowledge.policy-discourse",
+        "label": "政策文件与政治讲话内容",
+        "definition": "适用：题目要求核验指定时点的政策文件、政治报告、讲话或治理经验的准确表述及归属。 排除：不把现行实践推测代替历史原文；纯文段理解不需外部原文则用text-information；不等于普遍法律效力。 证据：文件/讲话名称、日期、权威原文与选项差别。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.knowledge.human-geography",
+        "label": "行政区划与人文地理",
+        "definition": "适用：国家首都、行政地域、城市、人文地标的地点、归属、用途与文化地理分类等知识。 排除：自然地理过程用science；历史时期/事件归属用history；文段内已有地点信息的理解不自动属此知识。 证据：地点、地域和类别的明确对应，必要时核官方资料及时间。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.geometry",
+        "label": "几何度量关系",
+        "definition": "适用：几何对象的长度、角度、周长、面积、体积及由形状/位置带来的等量关系。 排除：纯图形属性分类、立体转面或截面可行性不因有几何图就套度量；量纲须匹配。 证据：图形条件、度量定义、等式及单位。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.combinatorics",
+        "label": "离散选择与排列计数",
+        "definition": "适用：在元素可区分性、顺序、重复与约束条件明确时，对离散选择、分组、排列的可能情况计数。 排除：一般库存数量或直接人数加减不是组合计数；等可能概率还需概率考点及样本空间。 证据：计数对象、是否有序/重复/同类可区分和约束。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.argument-support",
+        "label": "证据与结论支持关系",
+        "definition": "适用：已有证据与论点之间的支持强度、范围缺口、补充前提及反驳关系。 排除：论证形式同构用argument-form；因果链有专门概念时可优先causality；必要假设与有利背景不能等同。 证据：列出论点、论据、缺口及选项改变支持的方向。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.element-state",
+        "label": "图形元素状态与组合",
+        "definition": "适用：图形中可辨识部件的身份、颜色/填充、所在位置及部件集合之间的保留、删除或组合关系。 排除：几何开闭/对称性质不同；纯数量规律优先quantitative-properties；不得把像素交集与完整部件交集混同。 证据：明确元素单位和状态，以及对应位置或完整部件集合。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.quantitative-properties",
+        "label": "图形对象与种类数量",
+        "definition": "适用：在统一口径下统计图形的点、线、角、封闭面、连通部分、重复元素或形状种类等数量。 排除：有无某性质但未实质计数不归此项；笔画须分书写笔画与最少连笔数；种类与总个数分开。 证据：逐图计数对象、计数单位、类型等价判据及数值。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.euler-trails",
+        "label": "图形连通性与奇度顶点",
+        "definition": "适用：将无向线条图视为顶点与边，利用连通分量及奇度顶点数量理解不重复描边的笔画数。 排除：交叉点不能一律当奇点；图不连通时不能直接只用全图奇点数/2；书写笔画不是欧拉笔画。 证据：交点/端点定义、每顶点度数、连通分量及不重边规则。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.weighted-path",
+        "label": "带权有向路径与最优值",
+        "definition": "适用：由顶点、允许方向和边的时间/距离/费用权重定义的路径，以及起终点之间的累计权重最优值。 排除：欧拉描边要求遍历边与最短路径不同；几何直线最短不能替代离散道路约束。 证据：节点、方向、每条边权、起终点和优化目标。",
+        "reviewStatus": "reviewed"
+      }
+    ],
+    "model": [
+      {
+        "code": "efficiency.solo-then-cooperate",
+        "label": "先独做后合作",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "efficiency.simultaneous-cooperation",
+        "label": "同时合作",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "efficiency.alternating",
+        "label": "交替工作",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "efficiency.opposing-flows",
+        "label": "相反效率合成",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "cost.participant-time-sum",
+        "label": "分参与者累计费用",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.context-correspondence",
+        "label": "语境对应选词",
+        "definition": "适用：选词填空中存在解释、反义、并列或复现线索 排除：不能仅因有横线而选；语句补写不在此项 证据：引用空位、上下文线索及候选词差异；逐空验证",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.collocation-register",
+        "label": "搭配与语用筛选",
+        "definition": "适用：决定性排除依据为搭配对象、词性、语体或褒贬 排除：语义关系主导时作为辅模型，不替代语境对应 证据：给出搭配双方或褒贬对象、至少一项排除理由",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.central-proposition",
+        "label": "主旨层次归纳",
+        "definition": "适用：问题要求中心主旨或意图；需辨认论点与例证层级 排除：接下来讲什么属于话题衔接；细节判断非主旨 证据：全文结构、中心句及选项覆盖/偏离关系",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.detail-entailment",
+        "label": "细节蕴含核验",
+        "definition": "适用：选项命题与原文逐项核对主体、程度、范围、时态 排除：不能将合理常识当文段可推出 证据：每一被判断选项对应原文与差异",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.discourse-continuation",
+        "label": "尾句话题衔接",
+        "definition": "适用：询问后续内容；尾句留下明确话题或待展开事项 排除：主旨不等于后续；不能只靠接下来关键词 证据：尾句话题、前文已讲内容、候选承接关系",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.sentence-order",
+        "label": "语句排序约束",
+        "definition": "适用：多个句子排列，依据指代、时间、关联或逻辑建立先后约束 排除：单句填空不适用 证据：至少两条可检查的先后约束及整体验证",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.sentence-insertion",
+        "label": "语句插入衔接",
+        "definition": "适用：完整句置于段内位置或补全缺句 排除：词语填空不适用 证据：前后话题、指代及逻辑同时满足",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.definition-conjunction",
+        "label": "定义要件匹配",
+        "definition": "适用：当题干定义可表示为若干必须同时满足的要件时，逐项对照对象是否满足全部要件，并按设问方向筛选。 排除：含可替代条件的或结构、例外、多个互斥定义不能未经转换直接全部按且处理；不引入题干没有的外部规范。 证据：拆出全部必要要件并逐项对照事实；注意否定设问",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.analogy-relations",
+        "label": "类比关系同构",
+        "definition": "适用：词项之间关系需在候选中保持同向同层级 排除：同主题或同词性不足；论证同构独立建模 证据：两侧关系与方向，竞争选项的二级差异",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.argument-isomorphism",
+        "label": "论证结构同构",
+        "definition": "适用：问题要求相同推理形式或相同谬误 排除：一般词语类比不适用 证据：前提结论抽象形式与候选逐一对应",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.causal-weaken",
+        "label": "因果归因削弱",
+        "definition": "适用：待削弱命题包含因果/排他归因；选项改变因果可信度 排除：仅话题一致不足；非因果论证不用本项 证据：标出因与果、反驳的具体环节和作用机制",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.argument-strengthen",
+        "label": "补足论证支持",
+        "definition": "适用：提供信息使指定结论更可信或填补前提缺口 排除：必要假设另用否定检验；仅重复论点不自动有效 证据：前提、结论、缺口及候选如何弥补",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.assumption-negation",
+        "label": "必要假设否定检验",
+        "definition": "适用：问题询问论证成立必须依赖的假设 排除：充分支持不等于必要假设 证据：否定候选后说明原推理何以断裂",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.conditional-chain",
+        "label": "条件命题链推导",
+        "definition": "适用：可把已知转化为充分/必要条件进行合法推导 排除：日常相关性不能转为蕴含；不得肯后肯前 证据：命题翻译、推出链和使用的逆否/选言规则",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.constraint-enumeration",
+        "label": "约束列表与排除",
+        "definition": "适用：人物、位置、时间等离散对象存在多项限制 排除：单一因果论证不适用 证据：变量域、所有约束、候选可行性或唯一性",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.truth-count",
+        "label": "真假数量约束",
+        "definition": "适用：已知若干命题中真假数量，通过矛盾/枚举定位 排除：只出现真假用语但无数量约束不适用 证据：命题形式、真假数量以及一致性验证",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.attribute-count",
+        "label": "图形属性计数",
+        "definition": "适用：为每幅图明确同一计数对象及单位，逐图统计点、线、面、角、连通部分、笔画或重复元素数，再检验数量规律。 排除：有无封闭、轴对称、包含位置等性质不是计数；以奇点推最少笔画时需另说明欧拉条件；未看全部原图不得映射。 证据：原图可读、每格计数、整行/列规律及候选检验",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.position-transform",
+        "label": "图形位置变换",
+        "definition": "适用：二维图形中的相同元素按可验证的平移、平面旋转或镜像变换对应，需说明变换方向、幅度和保持不变者。 排除：三维物体滚动/换观察面、展开折叠、仅元素位置不重复的分布约束不归此项；不能凭数量不变就猜移动。 证据：逐格位置映射、旋转角/方向或对称轴",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.overlay",
+        "label": "图形叠加运算",
+        "definition": "适用：前两图通过明确同异/黑白规则生成后一图 排除：未检验所有位置不成立 证据：逐位真值表、至少两组验证及目标推导",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.linear-balance",
+        "label": "线性等量约束",
+        "definition": "适用：依据守恒、分配、盈亏构造一次方程或不等式 排除：若专门效率/浓度模型完整解释则优先专门模型 证据：未知量、各条件方程、不等式边界、代回验证",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.work-fixed-ratio",
+        "label": "定工作量时间效率反比",
+        "definition": "适用：总工作量不变，比较时间和单位时间效率 排除：先独做后合作、交替工作不能用此替代阶段建模 证据：固定总量、两个时间、效率比及增长率分母",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.relative-motion",
+        "label": "相对速度与路程",
+        "definition": "适用：在明确参照系下，把相遇追及的相对速度或流水中船速与水速的向量合成，与相应路程和时间联立。 排除：单个物体分段变速、往返时间和而无相对运动核心时不硬套；工作效率之和不因量纲相似即视为速度。 证据：参照系、相对速度方向、距离及起始差",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.set-inclusion-exclusion",
+        "label": "集合容斥",
+        "definition": "适用：交叠集合计数，给定总体/交集等约束 排除：互不相交直接加和不必标此项 证据：集合定义、交集计数口径、容斥式",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.combinatorial-count",
+        "label": "分类分步计数",
+        "definition": "适用：离散安排/选择要求枚举计数且无重漏 排除：等可能概率需另标概率模型 证据：分类互斥完备、分步条件与排列组合限制",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.classical-probability",
+        "label": "等可能样本空间",
+        "definition": "适用：有限等可能基本事件可定义有利/总数 排除：不可未证明等可能直接相除 证据：样本空间、等可能理由、有利事件计数",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.concentration-balance",
+        "label": "溶质守恒",
+        "definition": "适用：混合、稀释、蒸发中浓度与质量守恒 排除：百分比统计不属于溶质模型 证据：质量单位、溶质质量关系、浓度分母",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.sequence-interleave",
+        "label": "数列奇偶分组",
+        "definition": "适用：奇偶或固定周期子列分别具有简单一致规律 排除：只有少量巧合不足；不声称有限数列数学唯一 证据：列出各子列与全部已知项验证，注明考试模式推断",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.geometry-measure",
+        "label": "几何关系求量",
+        "definition": "适用：依据图形几何关系求长度面积体积 排除：未读图不以题名猜公式 证据：图形条件、关键几何关系、单位及计算式",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.direct-lookup",
+        "label": "资料定位读取",
+        "definition": "适用：目标值直接在材料中给出，仅需定位 排除：需比例、差值或求和时不可只标直接读取 证据：材料位置、统计对象、时间、单位",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.filtered-aggregation",
+        "label": "条件筛选后汇总",
+        "definition": "适用：先按排序/阈值筛选对象再加和或计数 排除：仅单值读取不适用 证据：全候选筛选条件、入选集合、汇总量",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.current-ratio",
+        "label": "现期比值比较计算",
+        "definition": "适用：同一时期两个直接已知且口径可比的统计量相除，求比值、比重或每单位平均值并可比较。 排除：已知部分量与比例反求整体、已知整体和比例求部分，另用share-reconstruction；两期还原或变化不能仅标本项。 证据：分子分母含义、同口径单位、商或交叉乘积",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.base-reconstruction",
+        "label": "基期量还原",
+        "definition": "适用：已知现期A和增长率r，求A/(1+r) 排除：增长量不是基期量；下降使用负r 证据：基期现期、增长率符号、还原式及单位",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.growth-amount",
+        "label": "增长量计算比较",
+        "definition": "适用：求现期减基期或Ar/(1+r) 排除：比较增长率不能替代增量排序 证据：基准期间、单位、差值或增长率换算式",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.growth-rate",
+        "label": "增长率计算比较",
+        "definition": "适用：求差额相对基期的比例 排除：比重或百分点不是增长率 证据：基期分母、增量、同/环比期间",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.ratio-change",
+        "label": "两期比值变化",
+        "definition": "适用：比较两期平均数/比重，利用分子分母增速 排除：仅现期比值不标此项 证据：两期口径、a与b或完整比值；百分点和相对变化区分",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.knowledge.rule-application",
+        "label": "规范适用核验",
+        "definition": "适用：依据制度/法律/公文规范将事实匹配适用条件 排除：题干自行给完整定义且不依赖外部规范时归定义判断 证据：规范内容、版本/适用时间、具体事实与排除理由",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.knowledge.fact-verification",
+        "label": "事实陈述核验",
+        "definition": "适用：核验历史、地理、科技、人文等事实 排除：依文段得结论不是外部事实核验 证据：待核验命题、可靠出处或明确未外查、时间范围",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.knowledge.scientific-mechanism",
+        "label": "科学机制解释",
+        "definition": "适用：用物理化学生物原理解释现象或判断因果 排除：术语记忆题不自动属于机制模型 证据：原理、适用条件、从条件到现象的因果链",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.property-classification",
+        "label": "图形定性属性分类",
+        "definition": "适用：选定一个可重复判定的非计数属性，逐幅比较属性取值，再与所有分类选项核对。 排除：不凭形似或答案倒推分类；若对称、包含交叠是决定特征，优先选相应更具体模型。 证据：给每图属性值以及分组，展示其他分组为什么混入不同属性。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.containment-overlap",
+        "label": "包含交叠关系分类",
+        "definition": "适用：追踪被指定的小图形或标记位于哪个区域及多少重交集，以包含/交叠关系逐图分类。 排除：不是图形移动序列，也不是两图叠加生成第三图；不按纸面上下位置替代所属区域。 证据：指出标记、容器边界、独占区/交叠区和各图归属。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.symmetry-test",
+        "label": "轴与中心对称检验",
+        "definition": "适用：逐图检验是否存在镜像轴、180度旋转中心及其组合，保留题中颜色和方向，再分类或补全。 排除：只按外轮廓、未经允许忽略颜色、把任意旋转对称当中心对称均不成立。 证据：逐部件镜像/180度重合证明及全部已知项回验。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.net-folding",
+        "label": "展开图折叠核验",
+        "definition": "适用：沿相邻面公共棱折叠，追踪面邻接/相对、图案朝向和待合棱长度，判断展开图与实体是否一致。 排除：不把纸面相邻误作折后相邻；长方体不得套等棱立方体条件；纯滚动与截面另码。 证据：面标记映射、公共棱、折叠方向及至少一个排除约束。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.solid-rotation",
+        "label": "立体旋转与滚动追踪",
+        "definition": "适用：保持刚体面邻接不变，按明确三维轴/观察转换或每步滚动更新面朝向；可使用有证据的周期。 排除：二维图案旋转另码；不同方向滚动的总步数为4倍数不意味着复原；展开折叠不是刚体旋转。 证据：起始上前右面、相对面及逐段转轴/方向/步数；验证终态。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.cross-section-feasibility",
+        "label": "截面可行性构造与排除",
+        "definition": "适用：对候选截面构造一个切平面，或用实体/空洞/边界必要条件排除其可能性。 排除：不能以正投影或剖视内部标线代替截面实体；只给某一切法不能证明所有切法不可能。 证据：可行候选的切面位置和不可能候选的普遍边界矛盾。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.position-distribution",
+        "label": "元素位置分布约束",
+        "definition": "适用：记录各同类元素在行列或位置中的分布，按题组可验证的不重复/周遍等约束选择缺图。 排除：没有固定平移旋转轨迹时不编position-transform；不得只用部分行忽略反例行。 证据：逐元素位置表、完整已知组核验、每个候选的违反项。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.sentence-diagnosis",
+        "label": "句法成分与搭配诊断",
+        "definition": "适用：对完整句的主谓宾、修饰、关联结构和表达逻辑逐项检查，指出成分/搭配/句式问题并比较候选。 排除：仅凭不常见或个人语感不能判错；选词搭配模型不替代完整句诊断；不审核句中事实真伪。 证据：原句片段、结构错误及最小可接受改法；无病句说明结构为何成立。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.ambiguity-scope",
+        "label": "修饰指代作用域辨析",
+        "definition": "适用：为同一句构造不同的语法切分、修饰或指代范围，比较是否导出不同且合理的意义。 排除：不能把知识不足或现实信息不足自动叫歧义；不是验证法律文书效力。 证据：至少两种可行释读，或唯一范围为何被句法固定。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.orthography-check",
+        "label": "字形词义对照校勘",
+        "definition": "适用：按规范词语及构词意义检查选项用字，定位误用并给出正确字。 排除：不按词频把正确罕见词换成常见词；不改写整句意思。 证据：词语、误字、正字以及意义或可核词典依据。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.classical-word-sense-check",
+        "label": "古文语境义项比较",
+        "definition": "适用：根据句内语法身份与称谓/指代对象，给目标古字定项，再比较候选是否同义。 排除：不凭字形相同或同篇出处判同义；语境不足仍待核。 证据：各用例的词性、人称/对象和释义。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.arithmetic-sum-term",
+        "label": "等差求和与通项定位",
+        "definition": "适用：已明确等差相邻规则时，用等差和确定项数/首项，再用通项求指定位置的数量；三角数为首末差1的特例。 排除：未给完整递减到1的排列不得硬设三角数；不能代替仅凭有限数列拟合的模式选择。 证据：首项、末项、公差、项数和指定项位置，至少回代总和。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.price-quantity-revenue",
+        "label": "分段定价销量收入合计",
+        "definition": "适用：按每段有效单价及相对正确基准的销量函数求销量，再累加各段单价×销量。 排除：连续折扣必须连乘；销售收入不减成本便不叫利润；不可把半天销量直接当全天。 证据：各段价格基准、时间段、销量变化率、收入及合计。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.leg-time-sum",
+        "label": "分段路程时间合成",
+        "definition": "适用：将运动按不同速度/停留分段，用每段路程÷速度求时间，再以总时长守恒或同程时间反比联立。 排除：无实际相遇/追及或介质参照关系时不冒用relative-motion；两速度不能一律算术平均。 证据：分段路程、速度、时间和总时间等式；停留时间单列。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.sequence-difference",
+        "label": "差分规律续项",
+        "definition": "适用：对数列作明确阶数的相邻差或指定间隔差，检验差列简单模式，再反推目标项。 排除：不是奇偶子列本身；需覆盖所有已知差，有限项不证明唯一延拓。 证据：原数列、逐项差列、差列规则和回算。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.sequence-recurrence",
+        "label": "相邻项递推核验",
+        "definition": "适用：用固定少量前项及统一表达式生成后一项，逐步回验所有可检验位置，再续项。 排除：不能不断换公式以迁就答案；明确等差应用用专门和/通项；有限项只支持考试模式。 证据：递推式、初值、每个已知位置的回验和候选比较。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.period-modulo",
+        "label": "周期余数定位",
+        "definition": "适用：在周期已给定或经题意允许的周期模型下，将偏移量除以周期取余，再按起点定位。 排除：第n天与过n天的偏移不同；有限数列不自动证实永久周期。 证据：周期、起点编号、偏移量和余数。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.lcm-synchronization",
+        "label": "周期同步与最小公倍数",
+        "definition": "适用：多事件具有固定周期且起始相位明确时，用最小公倍数或相位同余求再次共同发生时刻。 排除：不同起始相位不能只求周期LCM；不是任何最小值题。 证据：每个事件周期与首次发生日、同步条件、最小性。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.pigeonhole-worst-case",
+        "label": "最不利分配与保证阈值",
+        "definition": "适用：先构造仍不能满足目标的最大可行分配，再加1得到无论如何都保证出现目标的最小阈值。 排除：至多、可能、随机概率等任务不能不加区分套加1；须检查每组容量足够。 证据：失败分配构造、可行容量、上界及再加1证明。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.share-reconstruction",
+        "label": "部分整体与比例反解",
+        "definition": "适用：根据部分=整体×比例，在两个量已知且口径一致时求第三量；可与基期还原分步组合。 排除：已知两个统计量相除求现期比值可用current-ratio；百分点与比率不得混用；比例为0时不能反求整体。 证据：部分、整体、比率及时间单位口径，标明求谁。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.explanatory-resolution",
+        "label": "反常现象因果解释",
+        "definition": "适用：保留题干两项看似矛盾的事实，寻找能同时成立并说明反常结果的额外条件或因果机制。 排除：不是削弱任一已给事实；不是从材料必然推出结论；加强题不自动等同解释。 证据：反差双方、选项补足环节及为何与两事实兼容。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.efficiency.solo-then-cooperate",
+        "label": "先独作再合作的工作量分段",
+        "definition": "适用：同一目标任务先由一方独作，再由其与新增参与者合作；分段累计独作量和合作量求未知。 排除：先合作后独作不适用；并行做不同任务不能不核工作量就相加；帮助者效率变化须说明。 证据：独作阶段时长/效率、转入合作的时点、新合效率与总量。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.efficiency.simultaneous-cooperation",
+        "label": "同一任务同时合作",
+        "definition": "适用：多参与者在同一时段共同完成同一可加任务时，以合作效率为有效效率之和，结合该阶段时长求工作量。 排除：并行做互不归并的任务不等于同一合作任务；相互妨碍/重叠劳动不得无依据相加；混合阶段另分段。 证据：合作对象、共同时段、可加性和各有效效率。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.efficiency.alternating",
+        "label": "轮流工作的整周期与尾段",
+        "definition": "适用：参与者按已知顺序和时长轮流作业，计算完整周期的工作量，再逐段处理最后不足一周期。 排除：最后一人不必工作满时长；同时合作或仅排班不求工作量不适用；不得只用平均效率忽略停工位置。 证据：顺序、每段时长/效率、完整周期数及最后剩余量。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.efficiency.opposing-flows",
+        "label": "相反流入流出的净变化",
+        "definition": "适用：同一存量同时有增加与减少过程时统一正负号，以净变化率累积至目标，必要时分阶段。 排除：水流航船是运动参照系，不等于水池进排；净速率不指向目标时不得正时长求到达；边界开关需单列。 证据：存量单位、正负流率、初末存量和开启时段。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.cost.participant-time-sum",
+        "label": "参与者时长费用累加",
+        "definition": "适用：对不同参与者或设备按各自实际计费时长×对应费率计算费用，再汇总必要固定费用。 排除：不能用总工期乘全部人数假定人人全程参与；销售额、统一总量平均价不是本模型。 证据：每人的计费起止、费率及固定费用是否重复计算。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.efficiency.stage-work-sum",
+        "label": "分阶段工作量守恒",
+        "definition": "适用：按人员加入退出、效率变化或任务转移切分阶段，对同一任务累加各阶段有效效率×时长，再联立总量及同时完工约束。 排除：不是见工程就套；不同任务不能混为一份工作量；等人力必等效率须有题设支持；固定工作量时间反比只覆盖恒效率。 证据：各任务总量、阶段界点、每阶段参与者与有效效率及守恒方程。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.component-set-operation",
+        "label": "完整图形部件集合运算",
+        "definition": "适用：先将每幅图拆为可识别的完整部件，按已验证的部件集合交、并、差等规则生成目标。 排除：不能对所有交叉像素机械运算；部件识别必须稳定；旋转/位移等价或重复重数应先说明。 证据：各图完整部件清单、集合操作及全部已知组回验。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.euler-stroke-count",
+        "label": "奇点与连通分量求笔画",
+        "definition": "适用：对每个有边的连通分量统计奇度顶点数o，最少不重边连续笔画为max(1,o/2)，再对分量求和并比较。 排除：需无向图且每边恰好一次；不重复过点不是同一要求；连接是否真实不清时不能直接套定理。 证据：连通分量、奇点逐个标注和每分量笔画数。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.additive-complement",
+        "label": "统计部分整体加减",
+        "definition": "适用：在同一时点、单位和统计口径下，利用总体等于已知互不重叠部分之和，求和、差额或未列部分。 排除：分类未穷尽或部分重叠时不能直接相减；增长量、比例反解和筛选计数有专门模型；缺材料仍阻断。 证据：总体、互斥部分及统计范围，证明可加关系。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.information-sufficiency",
+        "label": "指标计算所需信息核验",
+        "definition": "适用：为指定指标写出所需量及公式，逐个检查既有和可补信息是否足以唯一计算目标，不要求先算具体值。 排除：任意缺量不能都判不可求，可由其他关系推出；不能把一条足够说成两条都必要。 证据：目标公式、已知/未知清单、各信息组合能否确定目标的证明。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.budget-optimal-count",
+        "label": "限额内先最大数量再数方案",
+        "definition": "适用：离散项目有成本和数量上限时，先证明限额内最大可完成数量，再枚举达到该最大数的可行集合并按对象区别计数。 排除：只构造一组不证明最大；若项目必须成组/有依赖不能直接按单位成本贪心；顺序是否计方案必须明确。 证据：限额、资源上限、最大数量上界和可行构造、所有最优集合及重计检查。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.dag-shortest-path",
+        "label": "有向无环图最短路径递推",
+        "definition": "适用：在无环有向图中按拓扑顺序对每点取各可达前驱最优值加边权的最小值，并保留可行前驱路径。 排除：不能把含环图不加检查地只扫一遍；局部选最小边不保证总路径最短；未核边权图不能执行。 证据：起点距离0、不可达状态、完整转移边权和终点最优值/回溯路径。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.truth-equivalence",
+        "label": "命题真值等价转换",
+        "definition": "适用：使用明示逻辑联结词的等值规则或完整真值表，比对两个命题在相同赋值下是否恒同真值。 排除：语义相近不等于逻辑等价；相容或/排他或、量词与否定作用域必须分清；等价可能产生多个正确选项。 证据：形式化命题、变换规则或真值表及全候选核验。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.constant-growth-forecast",
+        "label": "给定增速的后期量推算",
+        "definition": "适用：在题干明确保持某期增长率或固定增长率的假设下，用下一期=本期×(1+r)，多期时复合相乘。 排除：不能自行假定现实长期恒增长；环比增长额不等于环比率；基期还原是逆向模型。 证据：期别、基期、增长率来源及恒定假设，必要时逐期回算。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.piecewise-tariff",
+        "label": "分段用量计费与反解",
+        "definition": "适用：按用量区间的费率、固定费用和边界规则建立分段费用函数，分别正算或反解各区间并检查落点。 排除：超过部分收费不同于全部按新费率；不能凭差额不能整除就擅加用量整数条件；销售收入销量响应另模型。 证据：阈值、各段单价、累进还是全量、单位、分段逆解及边界检验。",
+        "reviewStatus": "reviewed"
+      }
+    ],
+    "target": [
+      {
+        "code": "cost.total",
+        "label": "总费用",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "time.total",
+        "label": "总时间",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "time.stage",
+        "label": "阶段时间",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "work.quantity",
+        "label": "工作量",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "efficiency.rate",
+        "label": "效率",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.lexical.best-fit",
+        "label": "最恰当词语",
+        "definition": "适用：最终任务是为一个或多个词语空位选择整体最贴合语境的词语组合。 排除：整句补写、语病辨析、字形订正不用本项。 证据：最终设问原文",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.proposition.main",
+        "label": "中心主旨或意图",
+        "definition": "适用：最终要求概括中心主旨或表达意图，或选择准确体现全文主旨的标题。 排除：细节命题、作者态度、后续话题不是同一目标；标题须确实由主旨统摄。 证据：最终设问原文",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.discourse.next",
+        "label": "后续话题",
+        "definition": "适用：最终要求预测当前文段之后最有根据的承接话题或内容。 排除：段内句子插入和概括已述内容不适用。 证据：最终设问原文",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.relation.best-match",
+        "label": "关系同构项",
+        "definition": "适用：最终要求选择词项关系或前提—结论形式与题干同向同层级的对应项。 排除：图形补全、定义归属、同一主题陈述不因此成为关系同构项。 证据：最终设问原文",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.argument.weakener",
+        "label": "最强削弱项",
+        "definition": "适用：最终要求选择对指定结论最有削弱作用的信息。 排除：加强、解释反常现象、论证假设、不能削弱的选非目标不适用。 证据：最终设问原文",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.definition.member",
+        "label": "定义符合项",
+        "definition": "适用：最终要求选出符合题干定义的对象或行为。 排除：明确不属于、不符合的选非题需nonmember，不得把找到正确答案等同于定义符合。 证据：最终设问原文",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.count",
+        "label": "个数或人数",
+        "definition": "适用：最终所求为离散对象个数、人数、件数或次数，可附至少/至多限制。 排除：金额、时间、比值、面积等非计数目标不适用；中间计数不是最终目标。 证据：最终设问原文",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.rate.relative-change",
+        "label": "相对变化率",
+        "definition": "适用：最终求某量相对原值的变化比例，按(新−旧)/旧定义，可为正或负。 排除：比重、两个现值之比或百分点差不是相对变化率。 证据：最终设问原文",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.max-average",
+        "label": "最大平均值对应对象",
+        "definition": "适用：最终求平均水平最大者所对应的对象，而不是平均值数值。 排除：总量最大、最小平均、比重最大或数值区间需另行表达。 证据：最终设问原文",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.sequence.next",
+        "label": "数列后续项",
+        "definition": "适用：最终求给定数列紧接其后的一个或多个待补项。 排除：已明确规则下求第n项、总项数或实际批次数量，不是单纯续写目标。 证据：最终设问原文",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.knowledge.correct-option",
+        "label": "符合规范或事实的选项",
+        "definition": "适用：最终要求选择符合外部可核验事实、科学知识或制度规范的陈述、对应或应用。 排除：明确错误、不正确、不宜等选非设问用incorrect-option；文段内可推出命题及语法正确性不用本项。 证据：最终设问原文",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.classification",
+        "label": "图形分组方案",
+        "definition": "适用：最终选择对若干图形进行分组的方案。 排除：图形序列补全、旋转后朝向和截面可行性不是分组目标。 证据：最终分类问句和候选分组。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.completion",
+        "label": "图形缺项",
+        "definition": "适用：最终选择填入图形序列、矩阵或类比图组空位的图形。 排除：折叠展开匹配或滚动面朝向有明确专项目标时优先专门。 证据：缺项所在位置及全部候选。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.net-match",
+        "label": "匹配实体的展开图",
+        "definition": "适用：最终选择能折成指定实体并保持面图案关系的展开图。 排除：不能混同截面选择或旋转后的可见面。 证据：实体、各展开候选及设问方向。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.orientation",
+        "label": "转动后的指定朝向",
+        "definition": "适用：最终求刚体旋转/滚动后指定方位的面、标记或图案。 排除：平面序列下一个图形和展开图不是本目标。 证据：目标时刻、方位和应识别的面标记。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.figure.impossible-section",
+        "label": "不可能的立体截面",
+        "definition": "适用：最终选出不能由给定实体和平面相交得到的截面。 排除：选可能截面不可套用选非代码；投影和展开不是截面。 证据：题干不可能方向和候选截面。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.valid-sentence",
+        "label": "无语病句",
+        "definition": "适用：最终选择语言结构和表达没有所考语病的完整句子。 排除：词语最佳填空、事实正确、无歧义各有独立目标；不能把无语病理解成事实已经核实。 证据：无语病/没有错误设问及候选句。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.invalid-sentence",
+        "label": "有语病句",
+        "definition": "适用：最终定位存在所考语病的完整句或句段。 排除：不含仅选错别字、与原文不符或事实错误。 证据：有语病设问及需定位的句号/编号。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.unambiguous-sentence",
+        "label": "无歧义句",
+        "definition": "适用：最终选择按题设语境只有一个合理句法语义解释的句子。 排除：无语病不自动无歧义；不表示陈述具法律效力。 证据：没有歧义设问、各候选可能释读。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.orthographic-error",
+        "label": "含错别字项",
+        "definition": "适用：最终选择含有错误汉字书写的词语组或句子。 排除：选全部正确字形、语病或词义匹配不是同一方向。 证据：有错别字设问与具体字词。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.same-word-sense",
+        "label": "相同词义用例",
+        "definition": "适用：最终选择与题给字词用例具有相同义项的用例。 排除：不同义项、近义词填空或类比关系同构不自动适用。 证据：目标字词及各语境释义。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.money.revenue",
+        "label": "销售收入金额",
+        "definition": "适用：最终求未扣成本的销售额或营业收入金额。 排除：利润、支出、费用差和单价不是销售额；不要套cost.total。 证据：最终销售额设问、币种及时间范围。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.money.difference",
+        "label": "金额差额",
+        "definition": "适用：最终求两个同口径金额之差或差额大小。 排除：总费用、利润率、价格比和每单位金额均不同；方向由设问说明。 证据：两金额对象、币种及相差方向/绝对值。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.ratio",
+        "label": "数量比值或倍数",
+        "definition": "适用：最终求明确两个数量之比、倍数或等价分数，须记录分子分母。 排除：增长率以旧值为基点；百分点差不是比值；不能把中间比例作最终目标。 证据：最终问句中的分子对象、分母对象与单位。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.value-range",
+        "label": "统计数值所在区间",
+        "definition": "适用：最终选择某统计量所在的数值范围，需说明单位和区间端点。 排除：精确数值、最大对象与能否计算不是同一输出。 证据：最终所求指标、区间选项与端点口径。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.logic.entailed-conclusion",
+        "label": "题设必然结论",
+        "definition": "适用：最终选择在题设为真时逻辑上必然成立的命题。 排除：外部事实真假、最有可能的解释、加强和削弱不是必真推论。 证据：最终可推知设问，题设到选项的蕴含链。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.reason.best-explanation",
+        "label": "最佳解释项",
+        "definition": "适用：最终选择对给定反常或冲突现象最有解释力的补充信息。 排除：不能削弱原事实作为解释；不等同最强支持或必然结论。 证据：解释设问和需共同成立的事实。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.knowledge.incorrect-option",
+        "label": "不符合事实或规范项",
+        "definition": "适用：最终选择错误、不正确、不宜或与所考外部事实/制度规范不符的陈述或应用。 排除：文段不符、语病、错别字及定义不属于各有不同判据，不以选非二字共用。 证据：设问否定方向及所核事实/规范。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.time.weekday",
+        "label": "星期几",
+        "definition": "适用：最终求某指定日期或周期事件发生日的星期。 排除：天数、工期、阶段时长和第几次事件不等于星期目标。 证据：起始星期、日序计法和指定日期。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.distance.length",
+        "label": "路程或长度",
+        "definition": "适用：最终求具有长度单位的距离、路程或线段长度。 排除：面积、体积、时间和速度不可混用；明确距离是单程还是总路程。 证据：最终求距问句、长度单位和所求范围。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.cost.total",
+        "label": "总支出费用",
+        "definition": "适用：最终求指定任务、采购或使用周期需要支付的合计费用。 排除：销售收入、利润、每单位成本和两方案差额不是总费用。 证据：最终支付目标、币种、计费范围。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.time.total",
+        "label": "全部过程所需时间",
+        "definition": "适用：最终求题设完整目标过程从开始到完成的累计时长，按题意包含所需等待或停留。 排除：某阶段时长、星期、时间比和开始时刻不是总时长。 证据：完整过程边界、时间单位及是否含停留。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.time.stage",
+        "label": "指定阶段所需时间",
+        "definition": "适用：最终求完整过程中被明确指明的一段持续多久。 排除：题目最终问总时间或阶段/总时长的比例时不得用本码替代。 证据：最终问句点名的阶段及起止边界。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.work.quantity",
+        "label": "完成或剩余工作量",
+        "definition": "适用：最终求某任务已完成、需完成或剩余的工作量，单位可以为件、米、工程份。 排除：工期、工作效率或完成率不是工作量；若最终问离散数量可与count择更贴切者，不重复堆标。 证据：目标工作量、单位、完成/剩余方向。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.efficiency.rate",
+        "label": "单位时间工作效率",
+        "definition": "适用：最终求单位时间完成的工作量或单个参与者的工作效率数值。 排除：效率提高百分比、效率比例及总工作量均非同一目标。 证据：最终效率对象与单位，如米/天、件/小时。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.max-growth-rate",
+        "label": "增长率最大的对象",
+        "definition": "适用：最终选出比较增长率最大的年份、地区或其他对象。 排除：增长率数值、增长量最大和现期总量最大均不是同一目标。 证据：明确增长率及比较对象、基期口径。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.text-supported",
+        "label": "符合文本信息或作者观点项",
+        "definition": "适用：最终选择与原文信息或作者所述观点相符、由给定文本充分支持的陈述。 排除：不表示外部事实已证实；主旨、后续话题及严格形式逻辑必然结论另区分。 证据：最终设问及原文对应语句，保留作者观点和现实事实区别。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.text-inconsistent",
+        "label": "不符合文本信息项",
+        "definition": "适用：最终选择与原文意思不符、改动限定或无法由原文支持的陈述，须区分明确矛盾与未获支持。 排除：外部事实错误用knowledge.incorrect-option；单纯问未提及可用text-unmentioned；不得因现实可能就当符合原文。 证据：选非问句、原句与候选的具体冲突或无依据扩展。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.verbal.text-unmentioned",
+        "label": "文本未提及内容",
+        "definition": "适用：最终选择原文没有涉及的内容、问题或信息。 排除：未提及不必为错误；与原文矛盾和外部事实不正确是不同判据。 证据：文段覆盖事项清单及未覆盖候选。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.area.measure",
+        "label": "面积",
+        "definition": "适用：最终求指定平面区域的面积或面积数值。 排除：长度、周长、面积增长比例和体积均不同；明确原区域还是扩建后区域。 证据：最终所求区域及平方单位。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.argument.plausible-premise",
+        "label": "最合理的补充前提",
+        "definition": "适用：最终选出在候选中最能补足论证背景/范围缺口、使推理更合理的前提；题意不是严格必要条件证明。 排除：明确必须依赖、没有则不成立的设问用necessary-assumption；不能把最合理说成逻辑必要。 证据：前提设问语气、论据结论缺口及相对候选支持。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.argument.strengthener",
+        "label": "最强支持项",
+        "definition": "适用：最终选择最能加强、支持或提高指定结论可信度的信息。 排除：必要假设、最佳解释与最强削弱方向不同；选不能加强需另标。 证据：加强设问、指定结论及选项的支持作用。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.argument.necessary-assumption",
+        "label": "论证所需必要假设",
+        "definition": "适用：最终选择论证必须依赖、否定后相应推理缺乏成立基础的假设。 排除：最可能背景前提不自动等同严格必要；充分支持条件并不必然必要。 证据：明确所需/必须的设问方向，原论证缺口与否定检验。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.definition.nonmember",
+        "label": "定义不符合项",
+        "definition": "适用：最终选择不满足题干给定定义的对象或行为。 排除：外部法规违法/错误和事实选非不是题内定义不属于；成员方向不能混。 证据：不属于/不符合设问、未满足的定义要件。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.discourse.order",
+        "label": "完整语句排序方案",
+        "definition": "适用：最终求一组句子组成语篇的正确排列顺序。 排除：后续话题、单句插入位置、事件流程顺序不是同一目标。 证据：完整句编号、候选序列和排序设问。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.discourse.insertion",
+        "label": "语篇补入句或插入位置",
+        "definition": "适用：最终选择与前后文衔接的完整补句，或指定句的合适插入位置。 排除：词语填空、语句整体排序和预测下一段不同。 证据：完整待补句/位置及双向上下文。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.computability",
+        "label": "指标可计算性与信息充分性",
+        "definition": "适用：最终判断哪些指标能由现有材料计算，或补充哪些信息足以确定目标。 排除：最终并非数值多少；真实缺材料导致无法审题不等于题目考信息充分性。 证据：最终能否计算设问、目标公式和信息组合。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.correct-statement",
+        "label": "符合统计资料的判断项",
+        "definition": "适用：最终选择与给定统计资料及合法计算结果相符的陈述。 排除：不核外部事实真伪；不能把资料计算综合判断当文段主旨或知识正确选项。 证据：统计口径、陈述对应数据与必要计算。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.incorrect-statement",
+        "label": "不符合统计资料的判断项",
+        "definition": "适用：最终选择与统计资料或其合法计算结果不符的陈述。 排除：选非方向须明确；资料不足和原答案歧义仍须阻断，不能因有目标码即通过。 证据：最终选非问句、各项数字/口径核验。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.data.metric-order",
+        "label": "统计指标排序方案",
+        "definition": "适用：最终按指定统计指标的数值从高到低或相反方向给对象排序。 排除：仅求最大对象、增长率数值和文句排序不同；指标不可在总量/比重/增长率间偷换。 证据：排序指标、方向、对象及全部比较依据。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.logic.equivalent-proposition",
+        "label": "逻辑等值命题",
+        "definition": "适用：最终选择与题给命题在同一解释下具有相同真值条件的命题。 排除：仅可推出、逆命题、最佳解释和论证形式相同不是逻辑等价目标。 证据：等值设问、命题作用域及全赋值比较。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.quantity.measured-value",
+        "label": "有量纲的连续数值",
+        "definition": "适用：最终求带明确单位的可连续计量数值，例如能耗、质量、单位商品价格或每单位金额差。 排除：离散个数、无量纲比值/百分比不用；已有精确时间、路程、面积、总费用或销售额目标时优先精确码；必须在证据注明量名、单位及是否为差。 证据：最终所求量名、量纲、单位、比较对象和是原值/差值，不允许只写数值。",
+        "reviewStatus": "reviewed"
+      }
+    ],
+    "context": [
+      {
+        "code": "construction",
+        "label": "工程施工",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "production",
+        "label": "生产",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "water-flow",
+        "label": "水流",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "abstract-work",
+        "label": "抽象工作",
+        "definition": "原始词条定义未取得，仅保留代码与标签引用。不得由标签猜写原定义，不得据此宣称已审核；取得efficiency-pilot-v1原定义后重新核对适用、排除与证据。",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.culture-performance",
+        "label": "文化演出",
+        "definition": "适用：题干场景主要涉及舞台表演、音乐戏曲、剧场、艺术团体及演出观众。 排除：文化史、文明形成或纯无人机编队数量不因文化活动背景而强行归入；不由场景推出选词模型。 证据：题材原文而非解析举例",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.family-education",
+        "label": "家庭教育",
+        "definition": "适用：题干明确讨论家长与孩子、家庭环境中的养育、情绪教育或家庭教育选择。 排除：普通学校考试成绩、考室分配、成人培训并非自动家庭教育。 证据：题材原文而非解析举例",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.classroom-allocation",
+        "label": "考室安排",
+        "definition": "适用：题干以考试场地、考室或教室的席位/考生安排为叙事场景。 排除：一般学习、成绩预测和公司招工不是考室安排。 证据：题材原文而非解析举例",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.public-administration",
+        "label": "公共行政",
+        "definition": "适用：题干主要讨论政府机关履职、行政管理、基层治理、公共政策执行或公文行政场景。 排除：仅有公共二字、泛社会议题或私人企业管理不自动适用；不等于法律规范模型。 证据：题材原文而非解析举例",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.industrial-employment",
+        "label": "产业就业",
+        "definition": "适用：题干主要讨论产业部门就业、从业人数、劳动力转移或产业升级带来的用工变化。 排除：纯产量、商品销量及无就业内容的技术材料不自动纳入。 证据：题材原文而非解析举例",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.scientific-claims",
+        "label": "科学主张",
+        "definition": "适用：题干陈述自然科学发现、理论、实验结果或科学假说作为叙事材料。 排除：不是模型正确的证明，也不意味着解题依赖科学常识；普通调查中的社会/商业主张不自动归此场景。 证据：题材原文而非解析举例",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.abstract-language",
+        "label": "抽象词语",
+        "definition": "适用：题干以孤立词语、成语或词项组合为直接材料，不依赖展开的现实叙事。 排除：所有中文题都不等于抽象词语；完整社会科学文段不用本项兜底。 证据：题材原文而非解析举例",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.abstract-numbers",
+        "label": "抽象数列",
+        "definition": "适用：题干以无现实单位或故事对象的裸数列为直接材料。 排除：有无人机、人数、金额等实际对象的等差应用题不适用。 证据：题材原文而非解析举例",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.abstract-figures",
+        "label": "抽象几何图形",
+        "definition": "适用：题干主体为没有现实物体任务的抽象平面/立体图形、标记和图形关系。 排除：真实器具/建筑/交通场景不因附图就标；context不是figure模型的替身。 证据：题干图像内容与非现实叙事特征。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.retail-sales",
+        "label": "商品销售",
+        "definition": "适用：题干主要描述商品价格、折扣、销售数量、收入或商品市场交易。 排除：仅企业生产而无交易、抽象金额或家庭费用不自动纳入。 证据：商品及销售/价格行为原句。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.transport",
+        "label": "交通运输",
+        "definition": "适用：题干主要描述车辆、航空器或船舶的运输行程、装运与航行。 排除：无人机灯光编队表演不等于运输；没有运输场景的图形滚动不适用。 证据：交通对象、起终点或运载行为。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.exam-results",
+        "label": "考试成绩",
+        "definition": "适用：题干主要叙述考试及格、成绩预测或成绩公布。 排除：考室人数分配与家庭教育不是同一情境。 证据：考试成绩或及格陈述。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.construction",
+        "label": "工程施工",
+        "definition": "适用：题干以修路、建造、维修或施工项目为实际任务场景。 排除：政策文件中的工程称号和泛抽象工作不是施工；模型不能从工程二字直接推断。 证据：具体工程对象和施工行为。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.production",
+        "label": "产品生产",
+        "definition": "适用：题干以工厂、生产线、设备产能或产品加工的现实过程为场景。 排除：仅就业调查或零售交易不自动等于生产过程；production不是效率模型。 证据：产品、产线/设备与加工或产量原句。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.water-flow",
+        "label": "流水与水域活动",
+        "definition": "适用：题干实际叙述流水航行、河流、注排水等水域或水流活动。 排除：就业蓄水池等比喻不属于真实流水情境；本情境不决定用航船相对速度还是净流量。 证据：真实水体、水流或注排水活动原句。",
+        "reviewStatus": "reviewed"
+      },
+      {
+        "code": "draft.abstract-work",
+        "label": "抽象任务工作",
+        "definition": "适用：题干只有一项工作或一项工程及参与者效率，没有能确定的具体施工或生产物件。 排除：出现具体公路/高铁/工厂产线时选具体情境；不是空情境的默认补齐码。 证据：题干任务描述及缺少特定现实物件的事实。",
+        "reviewStatus": "reviewed"
+      }
+    ]
+  }
+}

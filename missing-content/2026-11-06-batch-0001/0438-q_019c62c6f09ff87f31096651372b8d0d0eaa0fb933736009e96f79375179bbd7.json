@@ -1,0 +1,53 @@
+{
+  "sequence": 438,
+  "key": {
+    "bankId": "bank-civil-aptitude",
+    "questionId": "q_019c62c6f09ff87f31096651372b8d0d0eaa0fb933736009e96f79375179bbd7",
+    "releaseId": "release-1791732747093-cdd4c2a3",
+    "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+    "revisionDigest": "7617b1b4b81e89a0da2090e302c16c35b3acd5c4252e77ce99c5921f47fbef82"
+  },
+  "status": "partial-material",
+  "note": "已提供明确标注的辅助摘要与全文来源，未恢复完整原文；不冒称完整可练题。",
+  "answerPolicy": "signed-original",
+  "aiReviewStatus": "blocked",
+  "modelReviewStatus": "reviewed",
+  "sourceFile": "questions/part-000001.jsonl",
+  "sourceClassification": [
+    "-2015年河北公务员考试《行测》卷.html",
+    "题目类型：言语理解"
+  ],
+  "originalAnswerPreserved": [
+    "option_c"
+  ],
+  "originalPathUnchanged": true,
+  "recoveryEvidence": {
+    "sources": [
+      "https://m.ah.huatu.com/2022/0527/2317969.html"
+    ],
+    "externalReview": {
+      "key": {
+        "bankId": "bank-civil-aptitude",
+        "questionId": "q_019c62c6f09ff87f31096651372b8d0d0eaa0fb933736009e96f79375179bbd7",
+        "releaseId": "release-1791732747093-cdd4c2a3",
+        "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+        "revisionDigest": "7617b1b4b81e89a0da2090e302c16c35b3acd5c4252e77ce99c5921f47fbef82"
+      },
+      "materialHashes": [
+        "cadb0adf7b7fa60ca791c0b41d7a1d5534507766146cdc67bec4cf2b35d4e8a7"
+      ],
+      "reviewStatus": "reviewed",
+      "coverage": "partial",
+      "reviewedOn": "2026-11-06",
+      "identityChecks": [
+        "已读取华图2015-0412河北整卷31—35组八段文章与33题，并与原库四个选项逐项相合；原库设问“一点表述”和外源“原因表述”有文字差异，原库未改。"
+      ],
+      "coverageReason": "AI独立审核，非用户批准。最终修订摘要cadb0adf已准确补入慢病主要成因和均衡饮食降低部分污染危害的方向，A/B/C涉及的要点没有被倒置；但D还明确要求原文关于缺乏营养师制度的陈述，当前摘要只写可靠指导不足，不能单靠该摘要逐项核对D。外部八段全文已找到，不代表该最终摘要恢复了阅读原文。 审核仅限该题必需材料，未改原答案。",
+      "limitations": [
+        "当前摘要未保留D所需的营养师制度具体信息，不能作为唯一材料完成全部选项的原文核对。",
+        "题目要求判断是否符合原文；最终摘要不保留八段全文及其措辞，须明示辅助摘要，不能标称原文完整恢复。"
+      ]
+    },
+    "reason": "辅助摘要已核真实性，但仍缺足以完整核对阅读题的原文，不能冒称全部恢复。"
+  }
+}

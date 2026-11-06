@@ -1,0 +1,40 @@
+{
+  "batchId": "2026-11-06-batch-0001",
+  "bankId": "bank-civil-aptitude",
+  "sourceReleaseId": "release-1791732747093-cdd4c2a3",
+  "sourceManifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+  "uniqueProcessed": 1000,
+  "newlyAddedSupplementQuestions": 993,
+  "reprocessedExistingSamples": 7,
+  "independentQuestionReviewCount": 535,
+  "independentReviewMeaning": "复核覆盖此前冻结候选版本；材料补充和模型恢复另附独立审查，不宣称全部1000题双审。",
+  "completeness": {
+    "complete": 874,
+    "incomplete": 7,
+    "complete-signed-material": 106,
+    "complete-external-material": 11,
+    "partial-material": 2
+  },
+  "aiStatuses": {
+    "reviewed": 828,
+    "blocked": 9,
+    "needs-review": 163
+  },
+  "modelStatuses": {
+    "reviewed": 412,
+    "quarantined": 4,
+    "pending": 584
+  },
+  "signedMaterialLinks": 106,
+  "externalMaterialQuestions": 13,
+  "externalMaterialSufficient": 11,
+  "externalMaterialPartial": 2,
+  "modelBatches": [
+    "2026-11-06-batch-0001-candidates",
+    "2026-11-06-batch-0001-review-v1",
+    "2026-11-06-batch-0001-review-v2"
+  ],
+  "originalUnchanged": true,
+  "nativeAppImport": "not-run; native Host/SDK controlled import and live application database were not available or tested",
+  "publicationScope": "公开保存已处理批次，不等于全部记录通过审核。"
+}

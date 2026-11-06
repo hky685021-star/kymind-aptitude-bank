@@ -1,0 +1,64 @@
+{
+  "sequence": 960,
+  "key": {
+    "bankId": "bank-civil-aptitude",
+    "questionId": "q_034cda239e1ea9723d2ede52d1538003e529a8368396f639f8a11d6fa9616129",
+    "releaseId": "release-1791732747093-cdd4c2a3",
+    "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+    "revisionDigest": "c312d0f59fc47edc919e03c54a4dcd08ea56e953c5811fbe7a9a48294f3eb1f8"
+  },
+  "status": "incomplete",
+  "note": "缺经原卷确认的字符比较操作指令",
+  "answerPolicy": "signed-original",
+  "aiReviewStatus": "blocked",
+  "modelReviewStatus": "pending",
+  "sourceFile": "questions/part-000001.jsonl",
+  "sourceClassification": [
+    "-2011年江苏公务员考试《行测》B卷.html",
+    "题目类型：知觉速度"
+  ],
+  "originalAnswerPreserved": [
+    "option_a"
+  ],
+  "originalPathUnchanged": true,
+  "recoveryEvidence": {
+    "result": "missing-instruction",
+    "queries": [
+      "\"HC2BKD\" \"Y6CTP4\"",
+      "\"HC2BKD\"",
+      "\"2011年江苏公务员考试\" \"B卷\" \"同符查找\"",
+      "\"2011年江苏公务员考试\" \"HC2BKD\"",
+      "\"2011年江苏\" \"Y6CTP4\"",
+      "\"73062\" \"67925\" \"同符查找\"",
+      "2011 江苏 行测 B 卷 同符 查找 试题 第7题"
+    ],
+    "sources": [
+      {
+        "url": "https://www.xingguanggongkao.com/Pc/XingQuestion/paperList/subject_id/2/area_id/331/p/3.html",
+        "finding": "找到2011江苏B155题目录和原PDF链接，但PDF反复超时，未取得首段说明及目标7题对应。"
+      },
+      {
+        "url": "https://upload.xingguanggongkao.com/pdf/2011%E5%B9%B4%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88B%E5%8D%B7-%E8%80%83%E7%94%9F%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf?time=1733728430",
+        "finding": "工具打开/链接点击均超时，无下载成功。"
+      },
+      {
+        "url": "https://www.51wendang.com/doc/3c18b0097582122332a3c208",
+        "finding": "题名2011但首题9AGUKL RHGJA与2010题一致，原签名卷首题73062/67925；不能把错配年份页面的说明强关联。"
+      },
+      {
+        "url": "https://m.gwysk.cn/shengkao/jiangsu/zhenti/3821.html",
+        "finding": "搜索返回首题SGADFX/KGJAMUX、第7题符号星三角组，并非本目标题号和字符，页面抓取也超时；不能因类型同为同符查找就恢复关联。"
+      },
+      {
+        "url": "https://m-51test-net-bucket.bj.bcebos.com/show/5920556.html",
+        "finding": "2011江苏B页面实际正文从61题开始，缺1—60知觉速度部分。"
+      },
+      {
+        "url": "https://www.renrendoc.com/paper/319016034.html",
+        "finding": "混编训练材料可找到两串字符但同样缺规则，非可靠原题组。"
+      }
+    ],
+    "localCheck": "独立读取签名集合collection_462fb759a26d2cfdb980a06fafbbc6bd06728a1e898c5bbe1604dc08fae4a298前10条，均只含单题字符串，无总说明。",
+    "reason": "从解答可条件核共同字符C=1，但未取得能与准确卷年/首题/第7题匹配的原操作说明，继续缺失，不把猜测规则写成恢复原文。"
+  }
+}

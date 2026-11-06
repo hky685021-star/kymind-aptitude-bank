@@ -1,0 +1,53 @@
+{
+  "sequence": 532,
+  "key": {
+    "bankId": "bank-civil-aptitude",
+    "questionId": "q_01edfbce28260c30885745b9469ec7b35d27efbb4db910a6aee85d3660e342b4",
+    "releaseId": "release-1791732747093-cdd4c2a3",
+    "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+    "revisionDigest": "baa6834e3938662ed3ae2593addc0b4d1cb88554962d732ce0006be2ea07aa15"
+  },
+  "status": "partial-material",
+  "note": "已提供明确标注的辅助摘要与全文来源，未恢复完整原文；不冒称完整可练题。",
+  "answerPolicy": "signed-original",
+  "aiReviewStatus": "blocked",
+  "modelReviewStatus": "reviewed",
+  "sourceFile": "questions/part-000001.jsonl",
+  "sourceClassification": [
+    "-2009年山西公务员考试《行测》党群卷.html",
+    "题目类型：言语理解"
+  ],
+  "originalAnswerPreserved": [
+    "option_a"
+  ],
+  "originalPathUnchanged": true,
+  "recoveryEvidence": {
+    "sources": [
+      "https://m-51test-net-bucket.bj.bcebos.com/show/4344057.html"
+    ],
+    "externalReview": {
+      "key": {
+        "bankId": "bank-civil-aptitude",
+        "questionId": "q_01edfbce28260c30885745b9469ec7b35d27efbb4db910a6aee85d3660e342b4",
+        "releaseId": "release-1791732747093-cdd4c2a3",
+        "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+        "revisionDigest": "baa6834e3938662ed3ae2593addc0b4d1cb88554962d732ce0006be2ea07aa15"
+      },
+      "materialHashes": [
+        "a0bfb41936c2db080a6e0e5da6e18f37967981a6fadc56426b24c777d4c6c260"
+      ],
+      "reviewStatus": "reviewed",
+      "coverage": "partial",
+      "reviewedOn": "2026-11-06",
+      "identityChecks": [
+        "无忧考网2009山西卷页面56—60题共同四段和59题设问、A至D内容与原库2009山西党群第59题对应；页面刊于2014-08-12，刊发时间不是考试年份。"
+      ],
+      "coverageReason": "AI独立审核，非用户批准。逐段读外部四段和59题，最终摘要表达线粒体祖先进入真核细胞远古前身、供能共生与共享基因，属于忠实要点摘要。它将D所需的同一母细胞演化缩写为共同来源，不能排除有共同但不为单一母细胞的解释；A考查原句主体/修饰关系，改写摘要不是该原句。 审核仅限该题必需材料，未改原答案。",
+      "limitations": [
+        "共同来源不足以保留D所需的同一母细胞这一具体断言。",
+        "A涉及原句主体与修饰关系，摘要未恢复原句；不能把摘要声称为完整阅读材料。"
+      ]
+    },
+    "reason": "辅助摘要已核真实性，但仍缺足以完整核对阅读题的原文，不能冒称全部恢复。"
+  }
+}

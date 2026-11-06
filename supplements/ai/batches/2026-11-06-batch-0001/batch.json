@@ -1,0 +1,14 @@
+{
+  "batchId": "2026-11-06-batch-0001",
+  "bankId": "bank-civil-aptitude",
+  "sourceReleaseId": "release-1791732747093-cdd4c2a3",
+  "sourceManifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+  "recordCount": 1000,
+  "reviewedCount": 828,
+  "needsReviewCount": 163,
+  "blockedCount": 9,
+  "recordsSha256": "05daad3f49535eb71ee2a6156c774a214fba747c35ad3c8fd5454a47885c7b70",
+  "status": "processed-mixed-review",
+  "reviewAuthority": "AI review, not user approval",
+  "answerPolicy": "signed-original"
+}

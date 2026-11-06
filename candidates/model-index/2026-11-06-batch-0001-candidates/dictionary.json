@@ -1,0 +1,544 @@
+{
+  "schemaVersion": 1,
+  "dictionaryVersion": "civil-aptitude-batch-0001-20261106",
+  "bankId": "bank-civil-aptitude",
+  "status": "pending-definition-review",
+  "dimensions": {
+    "concept": [
+      {
+        "code": "efficiency.work",
+        "label": "效率与工作量",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "cost.time-rate",
+        "label": "单位时间成本",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.lexical-meaning",
+        "label": "语境词义",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.main-idea",
+        "label": "主旨意图",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.discourse",
+        "label": "篇章衔接",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.analogy",
+        "label": "类比关系",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.argument-form",
+        "label": "论证形式",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.causality",
+        "label": "因果论证",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.definition",
+        "label": "定义要件",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.distribution",
+        "label": "人数分配与盈亏",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.sequence",
+        "label": "数列规律",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.data.average",
+        "label": "平均数",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.data.growth",
+        "label": "增长指标",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.data.share",
+        "label": "比重",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.knowledge.official-documents",
+        "label": "公文种类适用",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.knowledge.history",
+        "label": "历史事实",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.knowledge.science",
+        "label": "自然科学",
+        "definition": "适用候选：题目实际求解所需知识点；排除：不能由来源题型标签或主题词单独确定；证据要求：对应知识点的题干条件和解题步骤",
+        "reviewStatus": "pending"
+      }
+    ],
+    "model": [
+      {
+        "code": "efficiency.solo-then-cooperate",
+        "label": "先独做后合作",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "efficiency.simultaneous-cooperation",
+        "label": "同时合作",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "efficiency.alternating",
+        "label": "交替工作",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "efficiency.opposing-flows",
+        "label": "相反效率合成",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "cost.participant-time-sum",
+        "label": "分参与者累计费用",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.context-correspondence",
+        "label": "语境对应选词",
+        "definition": "适用候选：选词填空中存在解释、反义、并列或复现线索；排除：不能仅因有横线而选；语句补写不在此项；证据要求：引用空位、上下文线索及候选词差异；逐空验证",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.collocation-register",
+        "label": "搭配与语用筛选",
+        "definition": "适用候选：决定性排除依据为搭配对象、词性、语体或褒贬；排除：语义关系主导时作为辅模型，不替代语境对应；证据要求：给出搭配双方或褒贬对象、至少一项排除理由",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.central-proposition",
+        "label": "主旨层次归纳",
+        "definition": "适用候选：问题要求中心主旨或意图；需辨认论点与例证层级；排除：接下来讲什么属于话题衔接；细节判断非主旨；证据要求：全文结构、中心句及选项覆盖/偏离关系",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.detail-entailment",
+        "label": "细节蕴含核验",
+        "definition": "适用候选：选项命题与原文逐项核对主体、程度、范围、时态；排除：不能将合理常识当文段可推出；证据要求：每一被判断选项对应原文与差异",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.discourse-continuation",
+        "label": "尾句话题衔接",
+        "definition": "适用候选：询问后续内容；尾句留下明确话题或待展开事项；排除：主旨不等于后续；不能只靠接下来关键词；证据要求：尾句话题、前文已讲内容、候选承接关系",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.sentence-order",
+        "label": "语句排序约束",
+        "definition": "适用候选：多个句子排列，依据指代、时间、关联或逻辑建立先后约束；排除：单句填空不适用；证据要求：至少两条可检查的先后约束及整体验证",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.verbal.sentence-insertion",
+        "label": "语句插入衔接",
+        "definition": "适用候选：完整句置于段内位置或补全缺句；排除：词语填空不适用；证据要求：前后话题、指代及逻辑同时满足",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.definition-conjunction",
+        "label": "定义要件匹配",
+        "definition": "适用候选：判断对象是否同时满足定义必要要件；排除：法律常识题未给定义不自动归此模型；证据要求：拆出全部必要要件并逐项对照事实；注意否定设问",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.analogy-relations",
+        "label": "类比关系同构",
+        "definition": "适用候选：词项之间关系需在候选中保持同向同层级；排除：同主题或同词性不足；论证同构独立建模；证据要求：两侧关系与方向，竞争选项的二级差异",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.argument-isomorphism",
+        "label": "论证结构同构",
+        "definition": "适用候选：问题要求相同推理形式或相同谬误；排除：一般词语类比不适用；证据要求：前提结论抽象形式与候选逐一对应",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.causal-weaken",
+        "label": "因果归因削弱",
+        "definition": "适用候选：待削弱命题包含因果/排他归因；选项改变因果可信度；排除：仅话题一致不足；非因果论证不用本项；证据要求：标出因与果、反驳的具体环节和作用机制",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.argument-strengthen",
+        "label": "补足论证支持",
+        "definition": "适用候选：提供信息使指定结论更可信或填补前提缺口；排除：必要假设另用否定检验；仅重复论点不自动有效；证据要求：前提、结论、缺口及候选如何弥补",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.assumption-negation",
+        "label": "必要假设否定检验",
+        "definition": "适用候选：问题询问论证成立必须依赖的假设；排除：充分支持不等于必要假设；证据要求：否定候选后说明原推理何以断裂",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.conditional-chain",
+        "label": "条件命题链推导",
+        "definition": "适用候选：可把已知转化为充分/必要条件进行合法推导；排除：日常相关性不能转为蕴含；不得肯后肯前；证据要求：命题翻译、推出链和使用的逆否/选言规则",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.constraint-enumeration",
+        "label": "约束列表与排除",
+        "definition": "适用候选：人物、位置、时间等离散对象存在多项限制；排除：单一因果论证不适用；证据要求：变量域、所有约束、候选可行性或唯一性",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.reason.truth-count",
+        "label": "真假数量约束",
+        "definition": "适用候选：已知若干命题中真假数量，通过矛盾/枚举定位；排除：只出现真假用语但无数量约束不适用；证据要求：命题形式、真假数量以及一致性验证",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.figure.attribute-count",
+        "label": "图形属性计数",
+        "definition": "适用候选：可见图形的点线面角/部分数形成一致规律；排除：没有观察原图不得赋值；不可只数候选一个特征；证据要求：原图可读、每格计数、整行/列规律及候选检验",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.figure.position-transform",
+        "label": "图形位置变换",
+        "definition": "适用候选：元素守恒并按平移、旋转、翻转移动；排除：数量/元素变化不能硬套旋转；证据要求：逐格位置映射、旋转角/方向或对称轴",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.figure.overlay",
+        "label": "图形叠加运算",
+        "definition": "适用候选：前两图通过明确同异/黑白规则生成后一图；排除：未检验所有位置不成立；证据要求：逐位真值表、至少两组验证及目标推导",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.linear-balance",
+        "label": "线性等量约束",
+        "definition": "适用候选：依据守恒、分配、盈亏构造一次方程或不等式；排除：若专门效率/浓度模型完整解释则优先专门模型；证据要求：未知量、各条件方程、不等式边界、代回验证",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.work-fixed-ratio",
+        "label": "定工作量时间效率反比",
+        "definition": "适用候选：总工作量不变，比较时间和单位时间效率；排除：先独做后合作、交替工作不能用此替代阶段建模；证据要求：固定总量、两个时间、效率比及增长率分母",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.relative-motion",
+        "label": "相对速度与路程",
+        "definition": "适用候选：相遇追及或流水，路程由相对速度乘时间；排除：仅速度文字而无运动约束不适用；证据要求：参照系、相对速度方向、距离及起始差",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.set-inclusion-exclusion",
+        "label": "集合容斥",
+        "definition": "适用候选：交叠集合计数，给定总体/交集等约束；排除：互不相交直接加和不必标此项；证据要求：集合定义、交集计数口径、容斥式",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.combinatorial-count",
+        "label": "分类分步计数",
+        "definition": "适用候选：离散安排/选择要求枚举计数且无重漏；排除：等可能概率需另标概率模型；证据要求：分类互斥完备、分步条件与排列组合限制",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.classical-probability",
+        "label": "等可能样本空间",
+        "definition": "适用候选：有限等可能基本事件可定义有利/总数；排除：不可未证明等可能直接相除；证据要求：样本空间、等可能理由、有利事件计数",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.concentration-balance",
+        "label": "溶质守恒",
+        "definition": "适用候选：混合、稀释、蒸发中浓度与质量守恒；排除：百分比统计不属于溶质模型；证据要求：质量单位、溶质质量关系、浓度分母",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.sequence-interleave",
+        "label": "数列奇偶分组",
+        "definition": "适用候选：奇偶或固定周期子列分别具有简单一致规律；排除：只有少量巧合不足；不声称有限数列数学唯一；证据要求：列出各子列与全部已知项验证，注明考试模式推断",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.geometry-measure",
+        "label": "几何关系求量",
+        "definition": "适用候选：依据图形几何关系求长度面积体积；排除：未读图不以题名猜公式；证据要求：图形条件、关键几何关系、单位及计算式",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.data.direct-lookup",
+        "label": "资料定位读取",
+        "definition": "适用候选：目标值直接在材料中给出，仅需定位；排除：需比例、差值或求和时不可只标直接读取；证据要求：材料位置、统计对象、时间、单位",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.data.filtered-aggregation",
+        "label": "条件筛选后汇总",
+        "definition": "适用候选：先按排序/阈值筛选对象再加和或计数；排除：仅单值读取不适用；证据要求：全候选筛选条件、入选集合、汇总量",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.data.current-ratio",
+        "label": "现期比值比较计算",
+        "definition": "适用候选：相同期间两个已知量相除；比重/平均数由考点区分；排除：不含基期还原；比例增长率另建模型；证据要求：分子分母含义、同口径单位、商或交叉乘积",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.data.base-reconstruction",
+        "label": "基期量还原",
+        "definition": "适用候选：已知现期A和增长率r，求A/(1+r)；排除：增长量不是基期量；下降使用负r；证据要求：基期现期、增长率符号、还原式及单位",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.data.growth-amount",
+        "label": "增长量计算比较",
+        "definition": "适用候选：求现期减基期或Ar/(1+r)；排除：比较增长率不能替代增量排序；证据要求：基准期间、单位、差值或增长率换算式",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.data.growth-rate",
+        "label": "增长率计算比较",
+        "definition": "适用候选：求差额相对基期的比例；排除：比重或百分点不是增长率；证据要求：基期分母、增量、同/环比期间",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.data.ratio-change",
+        "label": "两期比值变化",
+        "definition": "适用候选：比较两期平均数/比重，利用分子分母增速；排除：仅现期比值不标此项；证据要求：两期口径、a与b或完整比值；百分点和相对变化区分",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.knowledge.rule-application",
+        "label": "规范适用核验",
+        "definition": "适用候选：依据制度/法律/公文规范将事实匹配适用条件；排除：题干自行给完整定义且不依赖外部规范时归定义判断；证据要求：规范内容、版本/适用时间、具体事实与排除理由",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.knowledge.fact-verification",
+        "label": "事实陈述核验",
+        "definition": "适用候选：核验历史、地理、科技、人文等事实；排除：依文段得结论不是外部事实核验；证据要求：待核验命题、可靠出处或明确未外查、时间范围",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.knowledge.scientific-mechanism",
+        "label": "科学机制解释",
+        "definition": "适用候选：用物理化学生物原理解释现象或判断因果；排除：术语记忆题不自动属于机制模型；证据要求：原理、适用条件、从条件到现象的因果链",
+        "reviewStatus": "pending"
+      }
+    ],
+    "target": [
+      {
+        "code": "cost.total",
+        "label": "总费用",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "time.total",
+        "label": "总时间",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "time.stage",
+        "label": "阶段时间",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "work.quantity",
+        "label": "工作量",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "efficiency.rate",
+        "label": "效率",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.lexical.best-fit",
+        "label": "最恰当词语",
+        "definition": "适用候选：选择与全部空位语境一致的词；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.proposition.main",
+        "label": "中心主旨或意图",
+        "definition": "适用候选：识别整段主要表达内容；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.discourse.next",
+        "label": "后续话题",
+        "definition": "适用候选：预测下一段承接内容；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.relation.best-match",
+        "label": "关系同构项",
+        "definition": "适用候选：选出关系或推理形式最一致者；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.argument.weakener",
+        "label": "最强削弱项",
+        "definition": "适用候选：削弱指定论点；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.definition.member",
+        "label": "定义符合项",
+        "definition": "适用候选：按正向定义设问选择符合者；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.quantity.count",
+        "label": "个数或人数",
+        "definition": "适用候选：求离散对象数量；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.rate.relative-change",
+        "label": "相对变化率",
+        "definition": "适用候选：以原值为分母的变化比例；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.data.max-average",
+        "label": "最大平均值对应对象",
+        "definition": "适用候选：比较各组平均值并选对象；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.sequence.next",
+        "label": "数列后续项",
+        "definition": "适用候选：给定数列的考试模式续项；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.knowledge.correct-option",
+        "label": "符合规范或事实的选项",
+        "definition": "适用候选：按设问真假方向选项；排除：按最终问句选择，不把中间量当最终目标；证据要求：最终设问原文",
+        "reviewStatus": "pending"
+      }
+    ],
+    "context": [
+      {
+        "code": "construction",
+        "label": "工程施工",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "production",
+        "label": "生产",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "water-flow",
+        "label": "水流",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "abstract-work",
+        "label": "抽象工作",
+        "definition": "适用候选：沿用父任务核实的既有词条；适用定义仍须本机字典全文复核；排除：不凭本稿补写定义覆盖原定义；证据要求：题干相关量、关系或情境的原文",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.culture-performance",
+        "label": "文化演出",
+        "definition": "适用候选：题干明确叙述该题材；排除：不影响模型成立；不得据题材推模型；资料不足可为空；证据要求：题材原文而非解析举例",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.family-education",
+        "label": "家庭教育",
+        "definition": "适用候选：题干明确叙述该题材；排除：不影响模型成立；不得据题材推模型；资料不足可为空；证据要求：题材原文而非解析举例",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.classroom-allocation",
+        "label": "考室安排",
+        "definition": "适用候选：题干明确叙述该题材；排除：不影响模型成立；不得据题材推模型；资料不足可为空；证据要求：题材原文而非解析举例",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.public-administration",
+        "label": "公共行政",
+        "definition": "适用候选：题干明确叙述该题材；排除：不影响模型成立；不得据题材推模型；资料不足可为空；证据要求：题材原文而非解析举例",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.industrial-employment",
+        "label": "产业就业",
+        "definition": "适用候选：题干明确叙述该题材；排除：不影响模型成立；不得据题材推模型；资料不足可为空；证据要求：题材原文而非解析举例",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.scientific-claims",
+        "label": "科学主张",
+        "definition": "适用候选：题干明确叙述该题材；排除：不影响模型成立；不得据题材推模型；资料不足可为空；证据要求：题材原文而非解析举例",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.abstract-language",
+        "label": "抽象词语",
+        "definition": "适用候选：题干明确叙述该题材；排除：不影响模型成立；不得据题材推模型；资料不足可为空；证据要求：题材原文而非解析举例",
+        "reviewStatus": "pending"
+      },
+      {
+        "code": "draft.abstract-numbers",
+        "label": "抽象数列",
+        "definition": "适用候选：题干明确叙述该题材；排除：不影响模型成立；不得据题材推模型；资料不足可为空；证据要求：题材原文而非解析举例",
+        "reviewStatus": "pending"
+      }
+    ]
+  }
+}

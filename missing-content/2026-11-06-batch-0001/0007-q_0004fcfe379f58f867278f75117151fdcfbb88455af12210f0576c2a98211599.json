@@ -1,0 +1,43 @@
+{
+  "sequence": 7,
+  "key": {
+    "bankId": "bank-civil-aptitude",
+    "questionId": "q_0004fcfe379f58f867278f75117151fdcfbb88455af12210f0576c2a98211599",
+    "releaseId": "release-1791732747093-cdd4c2a3",
+    "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+    "revisionDigest": "57075671328d4d2c56d2e0a1a75dde8f7d986bfbe51e1dc21b4749f5e89bd23b"
+  },
+  "status": "incomplete",
+  "note": "真实题干和四个选项仍为征集占位",
+  "answerPolicy": "signed-original",
+  "aiReviewStatus": "blocked",
+  "modelReviewStatus": "quarantined",
+  "sourceFile": "questions/part-000001.jsonl",
+  "sourceClassification": [
+    "-2025年内蒙古公务员录用考试《行测》题（网友回忆版）.html",
+    "题目类型：判断推理"
+  ],
+  "originalAnswerPreserved": [
+    "option_a"
+  ],
+  "originalPathUnchanged": true,
+  "recoveryEvidence": {
+    "checkedAt": "2026-11-06",
+    "searchQueries": [
+      "\"2025年内蒙古\" \"102\" \"题目正在\"",
+      "\"2025年内蒙古\" \"102\" \"行测\" 逻辑"
+    ],
+    "sources": [
+      {
+        "url": "https://www.gongwk.com/doc/578496.jhtml",
+        "evidence": "标题明确80/102/103缺失。"
+      },
+      {
+        "url": "https://upload.xingguanggongkao.com/pdf/2025%E5%B9%B4%E5%86%85%E8%92%99%E5%8F%A4%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88%E8%80%83%E7%94%9F%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf?time=1764301202",
+        "location": "PDF印刷19页，第102题；网页文本744—745行",
+        "evidence": "第102仍说明未收集，四个选项是正确答案是A占位；101/103是真实不同题，不能借相邻替换。"
+      }
+    ],
+    "reason": "无真实题干和选项；外部另一版也缺失，不能凭默认A创作题目。"
+  }
+}

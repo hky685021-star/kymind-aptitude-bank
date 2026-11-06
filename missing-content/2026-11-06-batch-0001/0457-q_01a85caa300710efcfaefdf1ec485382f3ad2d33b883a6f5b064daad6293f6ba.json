@@ -1,0 +1,51 @@
+{
+  "sequence": 457,
+  "key": {
+    "bankId": "bank-civil-aptitude",
+    "questionId": "q_01a85caa300710efcfaefdf1ec485382f3ad2d33b883a6f5b064daad6293f6ba",
+    "releaseId": "release-1791732747093-cdd4c2a3",
+    "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+    "revisionDigest": "7dc8d00217906733d0da114bd11e7ec60f62caf896e0f2a3e0b526fbcba88d85"
+  },
+  "status": "incomplete",
+  "note": "真实题干和四个选项为占位，外源编号冲突无法可靠替入",
+  "answerPolicy": "signed-original",
+  "aiReviewStatus": "blocked",
+  "modelReviewStatus": "pending",
+  "sourceFile": "questions/part-000001.jsonl",
+  "sourceClassification": [
+    "-2018年421联考《行测》真题（宁夏卷）（网友回忆版）.html",
+    "题目类型：判断推理"
+  ],
+  "originalAnswerPreserved": [
+    "option_a"
+  ],
+  "originalPathUnchanged": true,
+  "recoveryEvidence": {
+    "checkedAt": "2026-11-06T09:44:41.523608+00:00",
+    "attempts": [
+      "检索2018宁夏421第87及完整原卷；金标尺外源和本题都占位。",
+      "chinagwy20231229162605_23580.pdf网页读取/截图502、直接下载503；星光PDF下载503。仅已看到的索引指向图形87，无法证明对应银行类比段缺失题，未采用。"
+    ],
+    "sources": [
+      {
+        "url": "https://m.jinbiaochi.com/qggwy/news_98768.html",
+        "accessedAt": "2026-11-06T09:44:41.523608+00:00"
+      },
+      {
+        "url": "https://www.chinagwy.org/files/20231229162605_23580.pdf",
+        "accessedAt": "2026-11-06T09:44:41.523608+00:00"
+      },
+      {
+        "url": "https://upload.xingguanggongkao.com/pdf/2018%E5%B9%B4%E5%AE%81%E5%A4%8F%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88%E8%80%83%E7%94%9F%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf?time=1733728949",
+        "accessedAt": "2026-11-06T09:44:41.523608+00:00"
+      }
+    ],
+    "sourceEvidence": "银行2018宁夏421第87完全占位。已读同卷邻题，86蜘蛛织网爬行、88勤奋学习进步、89少壮不努力，与金标尺2018宁夏卷顺序相同；该外源87也占位。另检索PDF中87为图形题，与该原卷定位体系不同，不能仅按数字87替入。",
+    "missing": [
+      "题干",
+      "全部四个选项",
+      "若原题需要的图片"
+    ]
+  }
+}

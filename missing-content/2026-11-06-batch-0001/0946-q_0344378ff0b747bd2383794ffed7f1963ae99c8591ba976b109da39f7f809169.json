@@ -1,0 +1,44 @@
+{
+  "sequence": 946,
+  "key": {
+    "bankId": "bank-civil-aptitude",
+    "questionId": "q_0344378ff0b747bd2383794ffed7f1963ae99c8591ba976b109da39f7f809169",
+    "releaseId": "release-1791732747093-cdd4c2a3",
+    "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+    "revisionDigest": "b0f851894bba4932c11e1e571a1ebba738602f0dedcd913551226aec9dde1b95"
+  },
+  "status": "incomplete",
+  "note": "真实题干和四个选项为征集占位",
+  "answerPolicy": "signed-original",
+  "aiReviewStatus": "blocked",
+  "modelReviewStatus": "quarantined",
+  "sourceFile": "questions/part-000001.jsonl",
+  "sourceClassification": [
+    "-2023年北京市公务员录用考试《行测》题（网友回忆版）.html",
+    "题目类型：判断推理"
+  ],
+  "originalAnswerPreserved": [
+    "option_a"
+  ],
+  "originalPathUnchanged": true,
+  "recoveryEvidence": {
+    "result": "missing",
+    "queries": [
+      "\"2023年北京\" \"112\" \"行测\" 判断推理",
+      "\"2023\" \"北京\" \"112.\" \"行测\"",
+      "\"2023年北京市\" \"112\" \"征集\" 行测"
+    ],
+    "sources": [
+      {
+        "url": "https://upload.xingguanggongkao.com/pdf/2023%E5%8C%97%E4%BA%AC%E8%A1%8C%E6%B5%8B%E7%9C%9F%E9%A2%98.pdf?time=1702375769",
+        "title": "星光2023北京行测真题，更新2023-12-12",
+        "finding": "网页读取第25页111—115全为未收集占位，112仍无题面；后部存在混杂旧资料，不将该非官方版本视作完整可靠恢复源。"
+      },
+      {
+        "url": "https://www.lianti.cn/banks/civil-service/civil-service-exam/civil-service-past-paper/ch01",
+        "finding": "2023北京网络版仅92题目录，未检出112原题。"
+      }
+    ],
+    "reason": "仅有同卷同题号占位，没有可对比独特题面及四项，无法安全补全。"
+  }
+}

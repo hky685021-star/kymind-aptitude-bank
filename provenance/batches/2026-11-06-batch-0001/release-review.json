@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-11-06-batch-0001",
+  "reviewedOn": "2026-11-06",
+  "verdict": "pass-with-stated-limits",
+  "criticalBlockers": [],
+  "scope": "Independent release structure, source preservation, publication hygiene and targeted content audit; not a semantic review of all 1000 questions.",
+  "codeCommit": "0e30078a6bdc2a0bf78625e6732508ff14151612",
+  "destination": "https://github.com/hky685021-star/kymind-aptitude-bank",
+  "counts": {
+    "uniqueProcessed": 1000,
+    "newlyAddedSupplementQuestions": 993,
+    "reprocessedExistingSamples": 7,
+    "independentQuestionReviewCount": 535,
+    "completeness": {
+      "complete": 874,
+      "incomplete": 7,
+      "complete-signed-material": 106,
+      "complete-external-material": 11,
+      "partial-material": 2
+    },
+    "aiStatuses": {
+      "reviewed": 828,
+      "blocked": 9,
+      "needs-review": 163
+    },
+    "modelStatuses": {
+      "reviewed": 412,
+      "quarantined": 4,
+      "pending": 584
+    }
+  },
+  "passes": [
+    "All 1000 unique IDs are the exact first 1000 sorted signed-source IDs. Bank, release, manifest and canonical question revisions match. Original 51054 files, 699118078 bytes, signatures, 70575 questions and prior seven-sample bytes verified.",
+    "Model sub-batches cover all 1000 IDs without overlap. All codes resolve in their correct version and dimension; no reviewed mapping uses a pending term; all pending mappings have reasons. Optional context is honestly empty on 232 reviewed mappings.",
+    "Completeness, status counts and missing folder agree: 991 complete, 7 missing, 2 partial. Reader has 1000 records; repair projection has 126, with exactly the same 9 holds and no replacement answers.",
+    "All projection source hashes, shard hashes/lengths and repair identities match. All 13 external reviews bind exact materials: 11 sufficient, 2 partial. External image/text/URL contracts pass.",
+    "Viewed all 6 external image assets and read all 8 external text blocks and 106 signed-material link explanations. No answer panels or copied full third-party articles found in the inspected pre-answer additions.",
+    "535 independent-review evidence entries are honestly described as prior frozen-candidate reviews, not all 1000 final records. Twelve recovery reviews match final models. The 201-entry definition ledger matches dictionary statuses: 180 reviewed, 21 pending.",
+    "Publication scan found no credentials, private absolute paths or internal coordination/report content. Eight private work-relative evidence labels were removed; substantive evidence, URLs and SHA256 references remain.",
+    "Docs explicitly distinguish AI review from human approval and do not claim native application import. Complete questions retain original-answer grading despite pending model status or answer disagreements."
+  ],
+  "targetedSemanticSamples": {
+    "sequences": [
+      1,
+      16,
+      279,
+      344,
+      438,
+      588,
+      909,
+      1000
+    ],
+    "finding": "No critical content blocker found. Checked rationale/calculations, truthful partial and placeholder holds, and time-zone ambiguity while retaining the original answer."
+  },
+  "integrationTestsReportedByIntegrator": {
+    "nodeDomPassed": 51,
+    "pythonPassed": 51,
+    "readerProjectionCheck": {
+      "passed": true,
+      "uniqueQuestions": 1000,
+      "shards": 4
+    },
+    "repairProjectionCheck": {
+      "passed": true,
+      "questions": 126,
+      "shards": 4
+    },
+    "realExternalRuntime": {
+      "passed": true,
+      "questions": 13,
+      "materials": 14,
+      "images": 6,
+      "textBlocks": 8,
+      "originalAnswerGraded": 11,
+      "partialHeld": [
+        438,
+        532
+      ],
+      "onlyLocalRequests": true
+    },
+    "materialLinkSignedIdentityAndImageHashValidation": {
+      "passed": true,
+      "questions": 106
+    }
+  },
+  "limits": [
+    "Targeted samples do not approve every explanation or independently validate all 106 signed-material semantic associations.",
+    "Actual browser visual acceptance and native-application database import are not asserted.",
+    "This is a local pre-publication audit. Publisher must verify the intended remote commit after push.",
+    "Original package licensing/redistribution restrictions remain disclosed; integrity verification is not copyright clearance."
+  ],
+  "auditedHashes": {
+    "supplements/ai/batches/2026-11-06-batch-0001/records.jsonl": "05daad3f49535eb71ee2a6156c774a214fba747c35ad3c8fd5454a47885c7b70",
+    "candidates/model-index/2026-11-06-batch-0001-candidates/records.jsonl": "b191a5cc31114cc551339eea2f9365913b385089265b44fdd566662d26449644",
+    "candidates/model-index/2026-11-06-batch-0001-review-v1/records.jsonl": "5bd754a60b4843ed9f6290fa1ceb438123a606d27e0a81fdf01c1e4b91471a0c",
+    "candidates/model-index/2026-11-06-batch-0001-review-v2/records.jsonl": "589c697c274b040e2603868a58cb918585b7a1ddaa1387f232e52fbbace42f64",
+    "supplements/repairs/batches/2026-11-06-batch-0001/records.jsonl": "e57cb1df0bd31020c19a851d32bda2a3cf4a3ceeae646e50c99e138caaee29bb",
+    "supplements/repairs/batches/2026-11-06-batch-0001/external-material-reviews.jsonl": "f1d5d2730b09be130130056bb932449ad86f18b48845a1efb68de86cf0450d2a",
+    "provenance/batches/2026-11-06-batch-0001/model-recovery-reviews.jsonl": "2a968e2a5150e9c6f4f9c977c0ac54be9949b8e661d71a8a9ecbd555cd860749",
+    "provenance/batches/2026-11-06-batch-0001/dictionary-definition-review.jsonl": "97f4513a192a93f42a6b38948ba7fd537950e58c0d0ca56b79bd4b03e55e574a",
+    "supplements/reader/index.json": "7c8fa22422e8f959afe32402401b43ee4ff20dce48c9a810f46534559db6eb95",
+    "supplements/repairs/reader/index.json": "a6684adefae76f2851b9b56d28d1f3b9ddb211be016d681ddda183942f7a85d0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 2,
+  "batchId": "2026-11-06-batch-0001-candidates",
+  "dictionaryVersion": "civil-aptitude-batch-0001-20261106",
+  "bankId": "bank-civil-aptitude",
+  "sourceReleaseId": "release-1791732747093-cdd4c2a3",
+  "sourceManifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+  "recordCount": 459,
+  "uniqueQuestionCount": 459,
+  "reviewedCount": 0,
+  "pendingCount": 459,
+  "quarantinedCount": 0,
+  "recordsSha256": "b191a5cc31114cc551339eea2f9365913b385089265b44fdd566662d26449644",
+  "dictionarySha256": "226a66b55a3f7cd60e547b9a6962034037230f5a71afbde18ffd822acef9d25d",
+  "status": "AI-reviewed-and-pending-as-labelled",
+  "producer": "逐题实质分析；AI审核不表示用户逐题批准"
+}

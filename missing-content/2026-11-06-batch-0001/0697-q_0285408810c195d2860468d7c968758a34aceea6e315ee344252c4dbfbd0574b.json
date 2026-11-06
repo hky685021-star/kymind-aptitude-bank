@@ -1,0 +1,55 @@
+{
+  "sequence": 697,
+  "key": {
+    "bankId": "bank-civil-aptitude",
+    "questionId": "q_0285408810c195d2860468d7c968758a34aceea6e315ee344252c4dbfbd0574b",
+    "releaseId": "release-1791732747093-cdd4c2a3",
+    "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+    "revisionDigest": "950b982e39a24af473eb733d2b34da97d232b558127e08c57941fd3390247e61"
+  },
+  "status": "incomplete",
+  "note": "缺字符题操作指令，外部同年卷对应字符不匹配",
+  "answerPolicy": "signed-original",
+  "aiReviewStatus": "blocked",
+  "modelReviewStatus": "pending",
+  "sourceFile": "questions/part-000001.jsonl",
+  "sourceClassification": [
+    "-2011年江苏公务员考试《行测》B卷.html",
+    "题目类型：知觉速度"
+  ],
+  "originalAnswerPreserved": [
+    "option_c"
+  ],
+  "originalPathUnchanged": true,
+  "recoveryEvidence": {
+    "checkedAt": "2026-11-06",
+    "missing": "没有任务指令，不能仅按答案反推出应当数三组共有字符。",
+    "queries": [
+      "\"生末日丹旦\" \"同符\"",
+      "\"丹玍日曰末\"",
+      "\"2011\" \"生末日丹旦\"",
+      "\"E45Q62WG\" \"同符\"",
+      "\"生末日丹旦\" \"相同\""
+    ],
+    "attempts": [
+      {
+        "source": "星光公考2011江苏B考生回忆版PDF",
+        "url": "https://upload.xingguanggongkao.com/pdf/2011%E5%B9%B4%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88B%E5%8D%B7-%E8%80%83%E7%94%9F%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf?time=1733728430",
+        "result": "确能读取，但27至31题字符均不匹配本地版本；其第30为更服材均等字符，不能据同年卷名移植指令。"
+      },
+      {
+        "url": "https://www.gwysk.cn/shengkao/jiangsu/zhenti/3821.html",
+        "result": "桌面网页无可读正文；移动版打开超时。非权限拒绝。"
+      },
+      {
+        "url": "https://www.51wendang.com/doc/3c18b0097582122332a3c208",
+        "result": "搜索显示同符查找指令，但可读首页未能展示目标30题。尝试分页/p2和/2工具不可访问。未证实具体字符组版本一致。"
+      },
+      {
+        "url": "https://www.renrendoc.com/paper/292220296.html",
+        "result": "搜索命中目标字符，公开可读正文find未找到；页面属2023年拼合题集，并非2011原卷。其他搜索命中同类拼合题集300950011、290665850、308193563等，没有可核对的原卷题组指令。"
+      }
+    ],
+    "nextStep": "暂放真实缺失目录，保留原答案C。后续若找到与本地27至31题字符同时匹配的同卷页或含明确指令的完整同题，再添加补充恢复，不将通用规则推断冒充原文。"
+  }
+}

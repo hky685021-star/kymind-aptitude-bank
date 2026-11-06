@@ -1,0 +1,57 @@
+{
+  "sequence": 588,
+  "key": {
+    "bankId": "bank-civil-aptitude",
+    "questionId": "q_022a07aa5a836ea9a45dc962ba96484d218e0a286c61767c1dd7b3ea087709b9",
+    "releaseId": "release-1791732747093-cdd4c2a3",
+    "manifestHash": "86e81ddc937cab92f237c211c213eaa8474310d78b6aca866c9daf92c8e6ceb9",
+    "revisionDigest": "97327e950edee25e94549dcc2ab0c35fcb67928536eb30ebd9dbfd95bcf4b0e9"
+  },
+  "status": "incomplete",
+  "note": "原记录整题占位；已定位外部候选题，但原答案A明确是占位，不能假作真实答案直接恢复判分",
+  "answerPolicy": "signed-original",
+  "aiReviewStatus": "blocked",
+  "modelReviewStatus": "quarantined",
+  "sourceFile": "questions/part-000001.jsonl",
+  "sourceClassification": [
+    "-2020年陕西省公务员考试《行测》试题（网友回忆版）.html",
+    "题目类型：判断推理"
+  ],
+  "originalAnswerPreserved": [
+    "option_a"
+  ],
+  "originalPathUnchanged": true,
+  "recoveryEvidence": {
+    "checkedAt": "2026-11-06",
+    "originalAnswerStatus": "原解析明言暂以A项代替，非有效作答结论；仍保留原字段，不静默改写。",
+    "recoveredAnswerSupplement": "D",
+    "recoveredQuestionSummary": {
+      "notice": "以下为外部同卷题的压缩转述，非原卷逐字还原；完整措辞见链接第16页第94题。",
+      "stem": "IAU于2006年重新定义行星后排除冥王星。有天文学家因其位于天体密集的柯伊伯带，复杂、有趣且活跃而主张恢复其行星身份。哪项最能质疑？",
+      "options": {
+        "A": "冥王星处外圈，暗且小于月球。",
+        "B": "其轨道附近有其他天体，卫星约其一半大小。",
+        "C": "其他八大行星轨道大致共面。",
+        "D": "行星必须清除轨道附近其他天体。"
+      }
+    },
+    "identityEvidence": [
+      "签名源卷为2020陕西网友回忆版，第94题占位。",
+      "外部同卷92核桃与心脏、93深度造假及1000万美元工具、95昆虫食品百万美元盈利、97鸟蛋颜色与温度，与本地同卷对应题内容及顺序一致。",
+      "两处外部全文第94题均为冥王星质疑题；Scribd另注明据中公整理，粉笔和华图暂缺，解释本地占位。不能视为两个独立原始见证。"
+    ],
+    "sources": [
+      {
+        "url": "https://upload.xingguanggongkao.com/pdf/2020%E5%B9%B4%E9%99%95%E8%A5%BF%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88%E8%80%83%E7%94%9F%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf?time=1733729640",
+        "locator": "第16页，第94题；同页93、95及邻页92、97",
+        "publicationDate": "未核实"
+      },
+      {
+        "url": "https://www.scribd.com/document/991795300/2020年0725陕西公务员考试-行测-真题",
+        "locator": "第94题及整理来源说明",
+        "publicationDate": "未核实"
+      }
+    ],
+    "limitations": "非官方回忆版，不改变签名源题。可将摘要作为明确标识的补充题展示，不能标成逐字原卷。原A为占位，D为恢复题的AI推导答案，需分字段显示。未核实全文再发布许可。"
+  }
+}
