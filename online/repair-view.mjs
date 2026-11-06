@@ -1,16 +1,14 @@
-import {evaluateWithRepairs} from './question-repairs.mjs';
+import {evaluateWithRepairs,missingRequiredMaterial} from './question-repairs.mjs';
 
 function element(tag,text){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;return e;}
 const labels=(question,ids)=>ids.map(id=>question.options.find(o=>o.optionId===id)?.label||id).join('、')||'无客观选项答案';
 
 export function appendRepairAnswerNotice(container,question,state,grade) {
   const box=element('section');box.className='answer-erratum';box.setAttribute('aria-label','判分依据与勘误');
-  if(grade.mode==='corrected') {
-    box.append(element('h3','本次按勘误答案核对'),element('p','勘误后参考选项：'+labels(question,grade.referenceOptionIds)),element('p','原库参考选项：'+labels(question,question.answer.optionIds)+'（原记录保留，不用于本次判分）'));
-  } else if(grade.mode==='withheld') {
-    box.append(element('h3','本题暂停自动判分'),element('p','仅展示原库参考答案与解析，不能将其视为已核实结论。请先处理补充材料或答案冲突，再重新核对。'));
-  } else if(state?.record?.answerCorrection?.action==='keep-original') {
-    box.append(element('h3','勘误复核：保留原答案'),element('p','本次使用原库参考选项：'+labels(question,question.answer.optionIds)));
+  if(grade.mode==='withheld') {
+    box.append(element('h3','本题暂停自动判分'),element('p','必需材料缺失、未完成核验，或补充读取失败。仍可查看原库参考答案，补齐或重试后再核对。'));
+  } else if(state?.record?.answerCorrection) {
+    box.append(element('h3','按原答案判分'),element('p','本次使用原库参考选项：'+labels(question,question.answer.optionIds)+'。下列补充仅记录核验意见，不改变原答案与判分。'));
   } else return;
   const correction=state?.record?.answerCorrection;
   if(correction) {
@@ -39,7 +37,7 @@ export function createRepairPanel({client,question,signal,renderBody,typeset=asy
         if(result.state==='missing') {state=result;section.replaceChildren();section.hidden=true;return;}
         if(result.state==='stale')throw Error('repair_stale');
         const record=result.record;
-        if(record.reviewStatus!=='reviewed')fragment.append(element('p','本题补充尚未完成复核，暂停自动判分。查看答案时会保留原库参考内容并标明限制。'));
+        if(record.reviewStatus!=='reviewed')fragment.append(element('p',missingRequiredMaterial(record)||record.materialLinks.length?'本题必需材料尚未完成核验，暂停自动判分。':'补充意见尚未完成复核；题目完整，仍按原库答案判分。'));
         else {
           for(const material of result.materials) {
             const block=element('section');block.className='recovered-material';
@@ -49,12 +47,12 @@ export function createRepairPanel({client,question,signal,renderBody,typeset=asy
             const source=element('details'),summary=element('summary','查看材料来源与关联依据');
             source.append(summary,element('p','试卷：'+material.collectionTitle),element('p','来源题 ID：'+material.link.sourceQuestionId),element('p','来源修订摘要：'+material.link.sourceRevisionDigest),element('p',material.link.evidence));block.append(source);fragment.append(block);
           }
-          if(record.answerCorrection?.action==='replace')fragment.append(element('p','原库答案已有经复核勘误。查看答案时将明确列出原答案与修正答案，并按修正答案核对。'));
-          if(record.answerCorrection?.action==='withhold')fragment.append(element('p','本题答案或材料仍有争议，暂停自动判分。查看答案时将说明原因。'));
+          if(record.answerCorrection?.action==='replace')fragment.append(element('p','本题有补充核验意见。仍按原库答案判分，查看答案时可见客观备注。'));
+          if(record.answerCorrection?.action==='withhold')fragment.append(element('p',missingRequiredMaterial(record)?'本题缺少必需材料，暂停自动判分。查看答案时将说明原因。':'本题有答案或解析备注，仍按原库答案判分。查看答案时将说明依据。'));
           if(record.answerCorrection?.action==='keep-original')fragment.append(element('p','本题已有勘误复核记录，结论为保留原答案；查看答案时可见依据。'));
         }
         if(signal?.aborted)return;
-        // Decode required source images before allowing corrected grading. A valid
+        // Decode required source images before allowing original-answer grading. A valid
         // file hash does not imply that image bytes can actually be displayed.
         const images=[...fragment.querySelectorAll('img')];let pixels=0;
         if(images.length>32)throw Error('repair_image_budget');

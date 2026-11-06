@@ -8,7 +8,8 @@ from build_reader_supplements import require, text as base_text, digest, encode,
 from verify_repository import verify_signature
 
 ROOT = Path(__file__).resolve().parents[1]
-HOLDS = {'answer-conflict', 'missing-material', 'missing-image', 'source-unverified'}
+# Complete questions are graded by the signed original answer. Disputes are annotations.
+HOLDS = {'missing-material', 'missing-image'}
 ISSUE_LABELS = {'answer-conflict': '答案冲突', 'missing-material': '缺材料', 'missing-image': '缺图片', 'source-unverified': '来源待核验'}
 
 def text(value, limit=16000):
@@ -254,7 +255,7 @@ def build(root, repair_batches, ai_batches):
         if unresolved and not (record and record['answerCorrection'] and record['answerCorrection']['action'] == 'withhold'):
             q = source.question(qid)
             names = '、'.join(ISSUE_LABELS[name] for name in sorted(unresolved))
-            record = {'schemaVersion': 1, 'key': {**source.scope, 'questionId': qid, 'revisionDigest': q['revisionDigest']}, 'batchId': 'derived-source-hold', 'reviewStatus': 'blocked', 'materialLinks': [], 'answerCorrection': {'action': 'withhold', 'originalOptionIds': q['answer']['optionIds'], 'correctedOptionIds': [], 'reason': '原题仍有未解决问题：' + names + '。在补齐材料或完成勘误复核前，暂停自动判分。', 'evidence': [f'已保存的 AI 批次 {issue_batches[qid]} 标记：' + names]}}
+            record = {'schemaVersion': 1, 'key': {**source.scope, 'questionId': qid, 'revisionDigest': q['revisionDigest']}, 'batchId': 'derived-source-hold', 'reviewStatus': 'blocked', 'materialLinks': [], 'answerCorrection': {'action': 'withhold', 'originalOptionIds': q['answer']['optionIds'], 'correctedOptionIds': [], 'reason': '原题仍缺少作答必需内容：' + names + '。在补齐所需材料前，暂停自动判分。', 'evidence': [f'已保存的 AI 批次 {issue_batches[qid]} 标记：' + names]}}
             records[qid] = record
         if record:
             record['sourceIssues'] = known

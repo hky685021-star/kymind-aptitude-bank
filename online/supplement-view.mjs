@@ -16,13 +16,13 @@ export function renderSupplement(section,kind,result) {
   }
   const note = element('p'); note.className = 'supplement-note';
   if (kind === 'ai') {
-    note.textContent = ({reviewed:'已复核的保存稿，仍请结合原题核对。', 'needs-review':'待复核稿，不能视为已确认答案。', blocked:'已阻断：材料或来源问题尚未解决，不作为解题结论。'})[content.reviewStatus];
+    note.textContent = ({reviewed:'AI已复核的保存稿，不表示用户逐题批准；按原答案判分。', 'needs-review':'补充解析待复核，独立于题目完整性；完整题仍按原答案判分。', blocked:'已阻断：材料或来源问题尚未解决，不作为解题结论。'})[content.reviewStatus];
     section.append(note);
     paragraph(section,'重点解析',content.focusAnalysis);
     paragraph(section,'秒杀技巧',content.quickTip);
-    if(content.sourceIssues.length) paragraph(section,'原题问题',content.sourceIssues.map(issue=>issueNames[issue]).join('、'));
+    if(content.sourceIssues.length) paragraph(section,'完整性与解析备注',content.sourceIssues.map(issue=>issueNames[issue]).join('、'));
   } else {
-    note.textContent = ({pending:'候选模型索引，尚待审核；空项表示暂无准确映射。',reviewed:'已复核的模型映射；词条自身的状态另列。',quarantined:'模型索引已隔离，不能用于训练筛选。'})[content.reviewStatus];
+    note.textContent = ({pending:'候选模型索引，尚待审核；空项表示暂无准确映射。',reviewed:'AI已复核的模型映射；不表示用户批准，词条状态另列。',quarantined:'模型索引已隔离，不能用于训练筛选。'})[content.reviewStatus];
     section.append(note);
     paragraph(section,'知识分类',content.knowledgeCategory);
     for (const [dimension,label] of Object.entries(dimensionNames)) {

@@ -72,9 +72,10 @@ class RepairTests(unittest.TestCase):
             with self.subTest(issue=issue):
                 self.ai([issue]); rows,_=self.build(); self.assertEqual(rows[0]['answerCorrection']['action'],'withhold')
 
-    def test_material_only_does_not_clear_answer_conflict(self):
+    def test_answer_conflict_does_not_withhold_complete_question(self):
         self.ai(['answer-conflict']); self.row['materialLinks']=[self.link()]; self.row['answerCorrection']=None
-        self.assertEqual(self.build([self.row])[0][0]['reviewStatus'],'blocked')
+        self.assertEqual(self.build([self.row])[0][0]['reviewStatus'],'reviewed')
+        self.ai(['source-unverified']); self.assertEqual(self.build([self.row])[0][0]['reviewStatus'],'reviewed')
 
     def test_replace_does_not_clear_missing_material(self):
         self.ai(['missing-material']); self.assertEqual(self.build([self.row])[0][0]['reviewStatus'],'blocked')

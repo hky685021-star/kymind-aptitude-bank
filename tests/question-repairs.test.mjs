@@ -21,11 +21,11 @@ function bank(overrides={}) {
 }
 const ready=(r=record)=>({state:'ready',record:r,materials:[],repairDigest:'c'.repeat(64)});
 
-test('explicit verified correction changes grading, exposes old/new identity, and never mutates originals',()=>{
+test('verified historical correction remains annotation; complete questions retain original grading',()=>{
   const before=JSON.stringify(target);validateRepairRecord(record,scope);validateCorrectionForQuestion(record,target);
   const grade=evaluateWithRepairs(target,['option_a'],ready());
-  assert.equal(grade.evaluation,'correct');assert.equal(grade.mode,'corrected');assert.deepEqual(grade.referenceOptionIds,['option_a']);
-  assert.equal(evaluateWithRepairs(target,['option_b'],ready()).evaluation,'incorrect');assert.equal(JSON.stringify(target),before);
+  assert.equal(grade.evaluation,'incorrect');assert.equal(grade.mode,'original');assert.deepEqual(grade.referenceOptionIds,['option_b']);
+  assert.equal(evaluateWithRepairs(target,['option_b'],ready()).evaluation,'correct');assert.equal(JSON.stringify(target),before);
 });
 
 test('missing repair index entry uses original, but loading/error/stale or unreviewed state never guesses',()=>{
@@ -35,10 +35,12 @@ test('missing repair index entry uses original, but loading/error/stale or unrev
   assert.throws(()=>evaluateWithRepairs(target,['unknown'],{state:'error'}),/response_invalid/);
 });
 
-test('withhold is safe even needs-review; explicit keep-original restores original grading',()=>{
+test('complete disputed questions keep original grading; missing material alone withholds',()=>{
   for(const reviewStatus of ['reviewed','needs-review','blocked']) {
-    const r={...record,reviewStatus,answerCorrection:{...record.answerCorrection,action:'withhold',correctedOptionIds:[]}};
-    validateRepairRecord(r,scope);assert.equal(evaluateWithRepairs(target,['option_b'],ready(r)).mode,'withheld');
+    const r={...record,reviewStatus,materialLinks:[],sourceIssues:['answer-conflict','source-unverified'],answerCorrection:{...record.answerCorrection,action:'withhold',correctedOptionIds:[]}};
+    validateRepairRecord(r,scope);assert.equal(evaluateWithRepairs(target,['option_b'],ready(r)).mode,'original');
+    assert.equal(evaluateWithRepairs(target,['option_b'],ready({...r,sourceIssues:['missing-material']})).mode,'withheld');
+    assert.equal(evaluateWithRepairs(target,['option_b'],ready({...r,sourceIssues:['missing-image']})).mode,'withheld');
   }
   const keep={...record,answerCorrection:{...record.answerCorrection,action:'keep-original',correctedOptionIds:[]}};
   validateRepairRecord(keep,scope);assert.equal(evaluateWithRepairs(target,['option_b'],ready(keep)).evaluation,'correct');

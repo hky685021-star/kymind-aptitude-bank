@@ -28,9 +28,9 @@ test('pending repair blocks grading; successful materials precede target and cor
   resolve({...ready,materials:[material]});await panel.ready;
   assert.match(panel.element.textContent,/真实来源材料/);assert.match(panel.element.textContent,/查看答案时/);
   assert.doesNotMatch(panel.element.textContent,/参考选项：A|不能执行/);
-  assert.equal(panel.grade(['a']).evaluation,'correct');
+  assert.equal(panel.grade(['a']).evaluation,'incorrect');
   const answer=new Node('section');appendRepairAnswerNotice(answer,q,panel.state,panel.grade(['a']));
-  assert.match(answer.textContent,/勘误后参考选项：A/);assert.match(answer.textContent,/原库参考选项：B/);assert.match(answer.textContent,/以下为原库答案与解析/);
+  assert.match(answer.textContent,/按原答案判分/);assert.match(answer.textContent,/原库参考选项：B/);assert.match(answer.textContent,/以下为原库答案与解析/);
   assert.match(answer.textContent,/<script>不能执行<\/script>/);assert.equal(answer.querySelectorAll('script').length,0);
 });
 
@@ -40,7 +40,7 @@ test('failed metadata load is visible and withheld until explicit retry finishes
   await panel.ready;assert.equal(panel.grade(['b']).mode,'withheld');assert.match(panel.element.textContent,/加载失败/);
   const version=panel.version;panel.element.querySelectorAll('button')[0].onclick();
   assert.equal(panel.grade(['a']).mode,'withheld');await tick();
-  assert.equal(panel.grade(['a']).evaluation,'correct');assert.equal(panel.version,version+1);assert.equal(refreshes,1);assert.equal(invalidations,1);
+  assert.equal(panel.grade(['a']).evaluation,'incorrect');assert.equal(panel.version,version+1);assert.equal(refreshes,1);assert.equal(invalidations,1);
 });
 
 test('image hashing/loading or decode failure withholds correction and a successful retry can recover',async()=>{
@@ -54,7 +54,7 @@ test('image hashing/loading or decode failure withholds correction and a success
   }});
   await panel.ready;assert.equal(panel.grade(['a']).mode,'withheld');
   fail='decode';panel.element.querySelectorAll('button')[0].onclick();await tick();assert.equal(panel.grade(['a']).mode,'withheld');
-  fail=null;panel.element.querySelectorAll('button')[0].onclick();await tick();assert.equal(panel.grade(['a']).mode,'corrected');assert.equal(loads,3);controller.abort();
+  fail=null;panel.element.querySelectorAll('button')[0].onclick();await tick();assert.equal(panel.grade(['a']).mode,'original');assert.equal(loads,3);controller.abort();
 });
 
 test('late response after navigation does not disclose materials or change grading',async()=>{
@@ -64,10 +64,12 @@ test('late response after navigation does not disclose materials or change gradi
   assert.doesNotMatch(panel.element.textContent,/真实来源材料/);assert.equal(panel.grade(['a']).mode,'withheld');
 });
 
-test('missing records hide the preamble; needs-review withhold stays explicitly self-evaluated',async()=>{
+test('missing records hide preamble; complete disputes retain original grading and missing materials withhold',async()=>{
   const absent=createRepairPanel({client:{async get(){return {state:'missing'};}},question:q,renderBody:render});await absent.ready;
   assert.equal(absent.element.hidden,true);assert.equal(absent.grade(['b']).evaluation,'correct');
-  const held=createRepairPanel({client:{async get(){return {...ready,record:{...record,reviewStatus:'needs-review',answerCorrection:{...record.answerCorrection,action:'withhold',correctedOptionIds:[]}}};}},question:q,renderBody:render});await held.ready;
-  assert.equal(held.grade(['b']).mode,'withheld');const answer=new Node('section');appendRepairAnswerNotice(answer,q,held.state,held.grade(['b']));
-  assert.match(answer.textContent,/暂停自动判分/);assert.match(answer.textContent,/不能将其视为已核实结论/);
+  const held=createRepairPanel({client:{async get(){return {...ready,record:{...record,reviewStatus:'needs-review',sourceIssues:['answer-conflict'],answerCorrection:{...record.answerCorrection,action:'withhold',correctedOptionIds:[]}}};}},question:q,renderBody:render});await held.ready;
+  assert.equal(held.grade(['b']).mode,'original');const answer=new Node('section');appendRepairAnswerNotice(answer,q,held.state,held.grade(['b']));
+  assert.match(answer.textContent,/按原答案判分/);assert.match(answer.textContent,/不改变原答案与判分/);
+  const missing=createRepairPanel({client:{async get(){return {...ready,record:{...record,reviewStatus:'blocked',sourceIssues:['missing-material'],answerCorrection:{...record.answerCorrection,action:'withhold',correctedOptionIds:[]}}};}},question:q,renderBody:render});await missing.ready;
+  assert.equal(missing.grade(['b']).mode,'withheld');
 });

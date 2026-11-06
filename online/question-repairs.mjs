@@ -25,6 +25,7 @@ export function validateRepairRecord(row,scope) {
     require(indexes===null||(Array.isArray(indexes)&&indexes.length>0&&indexes.length<=128&&indexes.every((n,i)=>Number.isSafeInteger(n)&&n>=0&&(i===0||n>indexes[i-1]))));
     const identity=JSON.stringify([link.sourceQuestionId,indexes]);require(!links.has(identity));links.add(identity);
   }
+  if(row.sourceIssues!==undefined)require(strings(row.sourceIssues,4,40)&&new Set(row.sourceIssues).size===row.sourceIssues.length&&row.sourceIssues.every(x=>['missing-material','missing-image','answer-conflict','source-unverified'].includes(x)));
   const correction=row.answerCorrection;
   require(correction===null||object(correction));
   if(correction) {
@@ -152,18 +153,20 @@ export function createQuestionRepairs(base,bank) {
   };
 }
 
+export function missingRequiredMaterial(record) {
+  const missing=(record.sourceIssues||[]).some(x=>x==='missing-material'||x==='missing-image');
+  // Only reviewed, source-verified links may resolve a required-material gap.
+  return missing&&!(record.reviewStatus==='reviewed'&&record.materialLinks?.length);
+}
+
 export function evaluateWithRepairs(question,optionIds,state) {
-  // Validate the response even when grading is withheld.
   const original=evaluate(question,optionIds);
   const withheld={evaluation:'requires-self-evaluation',mode:'withheld',referenceOptionIds:[],repairDigest:state?.repairDigest||null};
   if(state?.state==='missing')return {evaluation:original,mode:'original',referenceOptionIds:[...question.answer.optionIds],repairDigest:null};
-  if(state?.state!=='ready'||state.record.reviewStatus!=='reviewed')return withheld;
+  if(state?.state!=='ready')return withheld;
   validateCorrectionForQuestion(state.record,question);
-  const correction=state.record.answerCorrection;
-  if(correction?.action==='withhold')return withheld;
-  if(correction?.action==='replace') {
-    const ids=[...correction.correctedOptionIds];
-    return {evaluation:evaluate({...question,answer:{...question.answer,optionIds:ids}},optionIds),mode:'corrected',referenceOptionIds:ids,repairDigest:state.repairDigest};
-  }
+  if(missingRequiredMaterial(state.record)||(state.record.materialLinks?.length&&state.record.reviewStatus!=='reviewed'))return withheld;
+  // Latest publication policy: complete questions always keep signed original
+  // grading. Historical replace/withhold proposals are visible notes only.
   return {evaluation:original,mode:'original',referenceOptionIds:[...question.answer.optionIds],repairDigest:state.repairDigest};
 }
