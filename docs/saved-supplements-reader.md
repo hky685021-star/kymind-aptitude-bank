@@ -31,7 +31,7 @@ python3 scripts/build_reader_supplements.py \
 
 必须同时匹配 `bankId`、`releaseId`、`manifestHash`、`questionId`、`revisionDigest`。原题仍经独立的 Ed25519、文件长度及 SHA256 验证；补充失效不阻止原题练习。
 
-- 首次点按钮才加载补充，不全库预取，不因切题调用模型。
+- AI与模型正文首次点对应按钮才加载，不全库预取，不因切题调用模型。题前材料与勘误目录在选题时核对，见 [受控材料与勘误](question-repairs.md)。
 - 目录最多 256 KiB、256 个分片；单分片最多 4 MiB、2000 条记录。
 - 最多同时读取 4 个分片，成功缓存最多 4 个；点击同分片共享请求。
 - 每段 AI 文本最多 16000 字符，四维每维最多 32 个词条，词条定义最多 2000 字符。
@@ -43,6 +43,7 @@ python3 scripts/build_reader_supplements.py \
 ```sh
 python3 scripts/verify_repository.py
 node --test tests/*.test.mjs
+python3 -m unittest discover -s tests -p 'test_question_repairs.py'
 python3 scripts/build_reader_supplements.py \
   --ai-batch 2026-11-06-seven-samples \
   --model-batch 2026-11-06-seven-samples --check

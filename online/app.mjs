@@ -1,10 +1,12 @@
-import {openBank,saveProgress,readProgress,evaluate} from './core.mjs';
+import {openBank,saveProgress,readProgress} from './core.mjs';
 import {renderContent} from './render.mjs';
 import {createSearchClient} from './search-client.mjs';
 import {createNavigationView} from './navigation-view.mjs';
 import {createExamSession} from './exam-session.mjs';
 import {createSavedSupplements} from './saved-supplements.mjs';
 import {createSupplementControls} from './supplement-view.mjs';
+import {createQuestionRepairs} from './question-repairs.mjs';
+import {createRepairPanel,appendRepairAnswerNotice} from './repair-view.mjs';
 const $=id=>document.getElementById(id),base=new URL('../original/bank-civil-aptitude/',location.href);
 // Static introduction only: no tracking, network prefetch or native capabilities.
 const introDialog=$('kymind-intro-dialog'),introOpen=$('kymind-intro-open');
@@ -18,7 +20,7 @@ if(introDialog&&introOpen){
 }
 const scopeIds=new Set();let collectionTab='paper',examPaperId='',ungroupedScope=false;
 let scopeDraft=null;
-let savedSupplements;
+let savedSupplements,questionRepairs,currentRepair;
 let bank,current,queue=[],position=0,serial=0,loadController,searchController,urls=[],selected=[],collections=[],submitFlight;
 let searchOffset=0,searchClient,searchGeneration=0,searchInput,searchFlight=Promise.resolve();
 function status(text){$('status').textContent=text;}
@@ -48,13 +50,15 @@ $('toggle-grid').onclick=()=>{if(window.innerWidth<=1100)compactGrid=!compactGri
 $('hide-solution').onclick=()=>{$('solution').hidden=!$('solution').hidden;$('hide-solution').textContent=$('solution').hidden?'展开解析':'收起解析';};
 function step(direction){let index=position+direction;while(index>=0&&index<queue.length){if(queue[index].practiceEligible){position=index;return select(queue[index]);}index+=direction;}}
 const render=(body,occurrences,signal)=>renderContent(body,occurrences,(o,s)=>bank.image(o,s),signal,urls);
+const renderRepair=(body,occurrences,signal,objectUrls)=>renderContent(body,occurrences,(o,s)=>bank.image(o,s),signal,objectUrls);
 let mathWarning='';
 async function typeset(container){if(!container.querySelector('.math'))return;let timer;try{await Promise.race([(async()=>{if(window.MathJax?.startup?.promise)await window.MathJax.startup.promise;if(window.MathJax?.typesetPromise)await window.MathJax.typesetPromise([container]);})(),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('公式排版超时')),5000);})]);}catch(error){mathWarning='公式排版未完成，保留公式原文：'+error.message;console.warn(mathWarning);}finally{clearTimeout(timer);}}
-function clear(){loadController?.abort();document.getElementById('single-supplement-buttons')?.remove();document.getElementById('single-supplement-panels')?.remove();suiteObserver?.disconnect();suiteMode=false;document.getElementById('exam-controls')?.remove();for(const url of urls)URL.revokeObjectURL(url);urls=[];$('question').replaceChildren();$('solution').replaceChildren();$('solution').hidden=true;$('hide-solution').hidden=true;$('response').replaceChildren();current=null;actions();}
+function clear(){loadController?.abort();currentRepair=null;document.getElementById('single-supplement-buttons')?.remove();document.getElementById('single-supplement-panels')?.remove();suiteObserver?.disconnect();suiteMode=false;document.getElementById('exam-controls')?.remove();for(const url of urls)URL.revokeObjectURL(url);urls=[];$('question').replaceChildren();$('solution').replaceChildren();$('solution').hidden=true;$('hide-solution').hidden=true;$('response').replaceChildren();current=null;actions();}
 function list(items){queue=items;position=Math.max(0,items.findIndex(i=>i.questionId===current?.questionId));navigation.show(items,{collection:scopeIds.size>0});actions();}
 async function select(item){
   clear();const generation=++serial,controller=loadController=new AbortController();selected=[];status('正在校验题目、材料及图片…');
   const q=await bank.question(item,controller.signal),passages=await bank.passages(q,controller.signal),fragment=document.createDocumentFragment();
+  const repair=createRepairPanel({client:questionRepairs,question:q,signal:controller.signal,renderBody:renderRepair,typeset,onRefresh:()=>{if(generation===serial){$('solution').hidden=true;$('hide-solution').hidden=true;navigation.result(q.questionId,'requires-self-evaluation');}}});fragment.append(repair.element);
   for(const passage of passages)fragment.append(await render(passage.content,passage.mediaOccurrences,controller.signal));
   fragment.append(await render(q.stem,q.mediaOccurrences.filter(o=>o.zone==='stem'),controller.signal));
   const response=document.createDocumentFragment();
@@ -63,7 +67,7 @@ async function select(item){
   if(generation!==serial||controller.signal.aborted)return;
   $('question-title').textContent=`第 ${item.collectionNumber||position+1} 题`;$('question-type').textContent=typeNames[q.type]||'自评题';$('question').append(fragment);$('response').append(response);
   const supplement=createSupplementControls({client:savedSupplements,question:q,signal:controller.signal});supplement.buttons.id='single-supplement-buttons';supplement.panels.id='single-supplement-panels';$('submit').after(supplement.buttons);$('solution').after(supplement.panels);
-  current=q;navigation.select(q.questionId);actions();$('practice').scrollTop=0;mobileNav=false;compactGrid=false;panels();$('practice').focus({preventScroll:true});
+  current=q;currentRepair=repair;navigation.select(q.questionId);actions();$('practice').scrollTop=0;mobileNav=false;compactGrid=false;panels();$('practice').focus({preventScroll:true});
   await typeset($('question'));await typeset($('response'));
   let restored=false;
   try{const saved=await readProgress(bank.manifest.bankId,q.questionId,q.revisionDigest);if(generation!==serial)return;if(saved){selected=saved.response.optionIds||[];for(const input of $('response').querySelectorAll('input'))input.checked=selected.includes(input.value);const text=$('response').querySelector('textarea');if(text)text.value=saved.response.text||'';restored=true;navigation.answered(q.questionId);}}catch{/* Private browsing can disable IndexedDB; never prevent reading. */}
@@ -75,13 +79,14 @@ async function submit(){
   try{return await task;}finally{submitFlight=null;actions();}
 }
 async function submitCurrent(){
-  if(!current)return;const q=current,generation=serial,signal=loadController.signal,optionIds=[...selected],text=$('response').querySelector('textarea')?.value||null,result=evaluate(q,optionIds),fragment=document.createDocumentFragment();
+  if(!current)return;const q=current,generation=serial,signal=loadController.signal,optionIds=[...selected],text=$('response').querySelector('textarea')?.value||null,repair=currentRepair,grade=repair.grade(optionIds),result=grade.evaluation,fragment=document.createDocumentFragment();
   fragment.append(element('h3',result==='correct'?'回答正确':result==='incorrect'?'回答有误':'此题需自行核对／自评'));
+  appendRepairAnswerNotice(fragment,q,repair.state,grade);
   fragment.append(await render(q.answer.content,q.mediaOccurrences.filter(o=>o.zone==='answer'),signal));
-  if(q.answer.optionIds.length)fragment.append(element('p','参考选项：'+q.answer.optionIds.map(id=>q.options.find(o=>o.optionId===id)?.label||id).join('、')));
+  if(q.answer.optionIds.length)fragment.append(element('p','原库参考选项：'+q.answer.optionIds.map(id=>q.options.find(o=>o.optionId===id)?.label||id).join('、')));
   fragment.append(await render(q.solution,q.mediaOccurrences.filter(o=>o.zone==='solution'),signal));
-  if(generation!==serial)return;$('solution').replaceChildren(fragment);$('solution').hidden=false;$('hide-solution').hidden=false;$('hide-solution').textContent='收起解析';await typeset($('solution'));
-  try{await saveProgress({id:crypto.randomUUID(),bankId:bank.manifest.bankId,releaseId:bank.manifest.releaseId,questionId:q.questionId,revisionDigest:q.revisionDigest,response:{optionIds,text},evaluation:result,submittedAt:Date.now()});if(generation===serial){navigation.answered(q.questionId);status('作答已保存到当前浏览器；答案与解析已揭晓。');}}catch{if(generation===serial)status('答案与解析已显示，但浏览器存储不可用／容量不足，作答未保存。');}
+  if(generation!==serial||grade.version!==repair.version)return;$('solution').replaceChildren(fragment);$('solution').hidden=false;$('hide-solution').hidden=false;$('hide-solution').textContent='收起解析';await typeset($('solution'));if(generation!==serial||grade.version!==repair.version)return;
+  try{await saveProgress({id:crypto.randomUUID(),bankId:bank.manifest.bankId,releaseId:bank.manifest.releaseId,questionId:q.questionId,revisionDigest:q.revisionDigest,response:{optionIds,text},evaluation:result,gradingBasis:{mode:grade.mode,repairDigest:grade.repairDigest,referenceOptionIds:grade.referenceOptionIds},submittedAt:Date.now()});if(generation===serial){navigation.answered(q.questionId);status('作答已保存到当前浏览器；答案与解析已揭晓。');}}catch{if(generation===serial)status('答案与解析已显示，但浏览器存储不可用／容量不足，作答未保存。');}
 }
 // Bounded viewport, not a bank-size limit. Collections follow official order.
 async function search(next=false){
@@ -144,18 +149,21 @@ async function suite(){
       if(!item.practiceEligible){card.append(element('p','此题已隔离，暂不可练。'));continue;}
       const q=await bank.question(item,controller.signal),materials=await bank.passages(q,controller.signal);
       if(controller.signal.aborted||generation!==serial)return;
+      let repair,lastGrade;
       for(const p of materials)card.append(await suiteRender(p.content,p.mediaOccurrences));card.append(await suiteRender(q.stem,q.mediaOccurrences.filter(o=>o.zone==='stem')));
       const inputs=element('div');inputs.className='response';
       for(const o of q.options){const label=element('label');label.className='answer-option';const input=element('input');input.type=q.type==='multiple-choice'?'checkbox':'radio';input.name='suite-'+q.questionId;input.value=o.optionId;label.append(input,element('span',o.label),await suiteRender(o.content,q.mediaOccurrences.filter(x=>x.zone==='option')));inputs.append(label);}
       if(!q.options.length){const input=element('textarea');input.placeholder='输入思路或答案（自评）';inputs.append(input);}
       const button=element('button','查看答案与解析'),answer=element('section'),hideAnswer=element('button','收起原解析');answer.className='solution';answer.hidden=true;hideAnswer.hidden=true;hideAnswer.onclick=()=>{answer.hidden=!answer.hidden;hideAnswer.textContent=answer.hidden?'展开原解析':'收起原解析';};
+      repair=createRepairPanel({client:questionRepairs,question:q,signal:controller.signal,renderBody:renderRepair,typeset,onRefresh:()=>{lastGrade=null;answer.hidden=true;hideAnswer.hidden=true;navigation.result(q.questionId,'requires-self-evaluation');summary.textContent='补充校验状态已更新，请重新查看答案以重新统计。';}});card.insertBefore(repair.element,card.children[1]||null);
       const supplement=createSupplementControls({client:savedSupplements,question:q,signal:controller.signal}),questionActions=element('div');questionActions.className='actions';questionActions.append(button,supplement.buttons,hideAnswer);
-      const reveal=async(printOnly=false)=>{const optionIds=[...inputs.querySelectorAll('input:checked')].map(x=>x.value),evaluation=evaluate(q,optionIds);const fragment=document.createDocumentFragment();fragment.append(element('h3',printOnly?'参考答案与解析':evaluation==='correct'?'回答正确':evaluation==='incorrect'?'回答有误':'请自行核对／自评'));fragment.append(await suiteRender(q.answer.content,q.mediaOccurrences.filter(x=>x.zone==='answer')));if(q.answer.optionIds.length)fragment.append(element('p','参考选项：'+q.answer.optionIds.map(id=>q.options.find(o=>o.optionId===id)?.label||id).join('、')));fragment.append(await suiteRender(q.solution,q.mediaOccurrences.filter(x=>x.zone==='solution')));if(controller.signal.aborted||generation!==serial)throw Error('cancelled');answer.replaceChildren(fragment);answer.hidden=false;hideAnswer.hidden=false;hideAnswer.textContent='收起原解析';await typeset(answer);if(!printOnly)navigation.result(q.questionId,evaluation);return evaluation;};
-      button.onclick=async()=>{button.disabled=true;try{const evaluation=await reveal();await saveProgress({id:crypto.randomUUID(),bankId:bank.manifest.bankId,releaseId:bank.manifest.releaseId,questionId:q.questionId,revisionDigest:q.revisionDigest,response:{optionIds:[...inputs.querySelectorAll('input:checked')].map(x=>x.value),text:inputs.querySelector('textarea')?.value||null},evaluation,submittedAt:Date.now()});}catch(e){fail(e);}finally{button.disabled=false;}};
-      entries.push({q,inputs,answer,reveal});
+      const reveal=async(printOnly=false)=>{const optionIds=[...inputs.querySelectorAll('input:checked')].map(x=>x.value),grade=repair.grade(optionIds),evaluation=grade.evaluation;const fragment=document.createDocumentFragment();fragment.append(element('h3',printOnly?'参考答案与解析':evaluation==='correct'?'回答正确':evaluation==='incorrect'?'回答有误':'请自行核对／自评'));appendRepairAnswerNotice(fragment,q,repair.state,grade);fragment.append(await suiteRender(q.answer.content,q.mediaOccurrences.filter(x=>x.zone==='answer')));if(q.answer.optionIds.length)fragment.append(element('p','原库参考选项：'+q.answer.optionIds.map(id=>q.options.find(o=>o.optionId===id)?.label||id).join('、')));fragment.append(await suiteRender(q.solution,q.mediaOccurrences.filter(x=>x.zone==='solution')));if(controller.signal.aborted||generation!==serial)throw Error('cancelled');if(grade.version!==repair.version)throw Error('补充状态已更新，请重新查看答案');answer.replaceChildren(fragment);answer.hidden=false;hideAnswer.hidden=false;hideAnswer.textContent='收起原解析';await typeset(answer);if(controller.signal.aborted||generation!==serial||grade.version!==repair.version)throw Error('补充状态已更新，请重新查看答案');lastGrade=grade;if(!printOnly)navigation.result(q.questionId,evaluation);return evaluation;};
+      button.onclick=async()=>{button.disabled=true;try{const evaluation=await reveal();await saveProgress({id:crypto.randomUUID(),bankId:bank.manifest.bankId,releaseId:bank.manifest.releaseId,questionId:q.questionId,revisionDigest:q.revisionDigest,response:{optionIds:[...inputs.querySelectorAll('input:checked')].map(x=>x.value),text:inputs.querySelector('textarea')?.value||null},evaluation,gradingBasis:{mode:lastGrade.mode,repairDigest:lastGrade.repairDigest,referenceOptionIds:lastGrade.referenceOptionIds},submittedAt:Date.now()});}catch(e){fail(e);}finally{button.disabled=false;}};
+      entries.push({q,inputs,answer,reveal,repair});
       if(new URL(location.href).pathname.endsWith('/exam.html')){button.hidden=true;button.className='exam-grade';}
       card.append(inputs,questionActions,answer,supplement.panels);
       try{const saved=await readProgress(bank.manifest.bankId,q.questionId,q.revisionDigest);if(saved){for(const input of inputs.querySelectorAll('input'))input.checked=(saved.response.optionIds||[]).includes(input.value);const input=inputs.querySelector('textarea');if(input)input.value=saved.response.text||'';navigation.answered(q.questionId);}}catch{}
+      await repair.ready;if(controller.signal.aborted||generation!==serial)return;
       status(`套题加载 ${index+1}/${result.items.length}；图片按滚动位置加载。`);await new Promise(r=>setTimeout(r,0));
     }
     if(generation===serial){
@@ -173,6 +181,7 @@ async function suite(){
 document.addEventListener('keydown',event=>{if(event.repeat||$('collection-dialog').open||$('suite-dialog').open)return;if(event.ctrlKey&&event.key==='Enter'&&current){event.preventDefault();void submit().catch(fail);return;}if(event.ctrlKey||event.metaKey||event.altKey||event.target.closest?.('input,textarea,select,button,a,[contenteditable]'))return;if(current&&['ArrowLeft','ArrowRight'].includes(event.key)){event.preventDefault();void Promise.resolve(step(event.key==='ArrowLeft'?-1:1)).catch(fail);}});
 try{
   bank=await openBank(base);$('title').textContent=bank.entry.title.replace('（发布前本地预览）','');document.title=$('title').textContent;$('meta').textContent=`${bank.entry.subject} · ${bank.manifest.versionLabel} · ${bank.manifest.questionCount} 题 · ${bank.entry.authorId} · ${new Date(bank.manifest.publishedAt).toLocaleString()} · ${bank.manifest.changeSummary} · 许可：${bank.entry.license.name}`;
+  questionRepairs=createQuestionRepairs(new URL('../supplements/repairs/reader/',location.href),bank);
   savedSupplements=createSavedSupplements(new URL('../supplements/reader/',location.href),{bankId:bank.manifest.bankId,releaseId:bank.manifest.releaseId,manifestHash:bank.entry.currentRelease.manifestHash});
   collections=await bank.collections();
   searchClient=createSearchClient(bank,collections,(done,total)=>status(`正在载入当前题库分类索引 ${done}/${total}…`));
@@ -181,4 +190,4 @@ try{
   const examId=new URL(location.href).searchParams.get('paper');
   if(location.pathname.endsWith('/exam.html')){const paper=collections.find(c=>c.collectionId===examId&&c.kind==='paper');if(!paper)throw Error('所选试卷不存在；章节不能作为套卷');examPaperId=examId;scopeIds.add(examId);document.body.classList.add('exam-mode');$('title').textContent=paper.title;const back=element('a','返回练习');back.href='practice.html';back.className='button-link';document.querySelector('.header-actions').prepend(back);await suite();}else{list([]);$('more').disabled=true;status('已载入题库。请选择试卷或章节，应用练习范围后开始答题。');}
 }catch(error){fail(error);for(const b of document.querySelectorAll('button'))if(!['help','close-help','toggle-collections'].includes(b.id))b.disabled=true;}
-window.addEventListener('pagehide',()=>{clear();savedSupplements?.dispose();searchController?.abort();searchClient?.dispose();navigation.dispose();window.removeEventListener('resize',panels);});
+window.addEventListener('pagehide',()=>{clear();questionRepairs?.dispose();savedSupplements?.dispose();searchController?.abort();searchClient?.dispose();navigation.dispose();window.removeEventListener('resize',panels);});

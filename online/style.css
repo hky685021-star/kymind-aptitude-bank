@@ -123,3 +123,11 @@ body.pure-practice{--accent:#4f6af5;--primary:#4f6af5;--primary-dark:#4f6af5;--p
 .pure-practice .saved-supplement details{padding:3px 0}.saved-supplement summary{cursor:pointer}
 .pure-practice .saved-supplement button{margin-top:8px}
 @media(max-width:760px){.pure-practice .actions{flex-wrap:wrap}.pure-practice .saved-supplement{padding:10px}}
+
+/* Restored materials precede the target stem; errata never replace original bytes. */
+.pure-practice .question-repairs{border:1px solid #dce3ff;border-radius:10px;background:#f8faff;padding:10px 12px;margin:8px 0 14px;line-height:1.65;font-size:14px;overflow-wrap:anywhere}
+.pure-practice .question-repairs h3,.pure-practice .answer-erratum h3{font-size:14px;margin:5px 0;color:#344b94}
+.pure-practice .question-repairs p,.pure-practice .answer-erratum p{white-space:pre-wrap;margin:5px 0}
+.pure-practice .question-repairs details{font-size:12px;color:#68728a}.question-repairs summary{cursor:pointer}
+.pure-practice .recovered-material+.recovered-material{border-top:1px solid #dce3ff;margin-top:10px;padding-top:8px}
+.pure-practice .answer-erratum{border-left:3px solid #c78e2c;background:#fff9ed;padding:8px 12px;margin:8px 0;line-height:1.65;overflow-wrap:anywhere}
