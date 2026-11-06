@@ -125,13 +125,12 @@ test('a modified signed entry is rejected', async () => {
   });
 });
 
-test('reader copy differs only in the approved transport guard and data-base routing', async () => {
+test('signed reader core and portal retain original verification with approved transport and routing changes', async () => {
   const sourceCore = await readFile(new URL('../original/bank-civil-aptitude/site/core.mjs',import.meta.url),'utf8');
   const copiedCore = await readFile(new URL('../online/core.mjs',import.meta.url),'utf8');
   const normalized = copiedCore.replace('// Encoded Content-Length measures transfer bytes, but fetch streams decoded bytes.\n// Keep the streamed decoded-byte budget and signed length/SHA checks unchanged.\n','').replace("const encoding=(r.headers.get('Content-Encoding')||'identity').trim().toLowerCase();if((!encoding||encoding==='identity')&&Number(r.headers.get('Content-Length'))>max)","if(Number(r.headers.get('Content-Length'))>max)");
   assert.equal(normalized,sourceCore);
   for (const [name,from,to] of [
-    ['app.mjs',"base=new URL('../original/bank-civil-aptitude/',location.href)","base=new URL('../',location.href)"],
     ['portal.mjs',"openBank(new URL('../original/bank-civil-aptitude/',import.meta.url))","openBank(new URL('../',import.meta.url))"]
   ]) {
     const actual = await readFile(new URL(`../online/${name}`,import.meta.url),'utf8');

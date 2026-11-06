@@ -111,3 +111,15 @@ body.pure-practice{--accent:#4f6af5;--primary:#4f6af5;--primary-dark:#4f6af5;--p
  .pure-practice .overview{padding-top:5px;padding-bottom:5px}.pure-practice #status{padding-top:4px;padding-bottom:4px;max-height:38px}
 }
 @media print{.pure-practice .overview,.pure-practice .kymind-intro{display:none!important}}
+
+/* Saved sidecars stay visually and functionally separate from original answers. */
+.supplement-buttons{display:inline-flex;flex-wrap:wrap;gap:6px}
+.pure-practice .saved-supplement{margin:10px 0;padding:12px 14px;border:1px solid #dce3ff;border-radius:10px;background:#f7f9ff;overflow-wrap:anywhere;line-height:1.65;font-size:14px}
+.saved-supplement[hidden]{display:none!important}
+.pure-practice .saved-supplement h4{font-size:14px;margin:8px 0 4px;color:#344b94}
+.pure-practice .saved-supplement p{white-space:pre-wrap;margin:4px 0}
+.pure-practice .saved-supplement .supplement-note{font-weight:600;color:#805b1b}
+.pure-practice .saved-supplement .supplement-source{font-size:11px;color:#6c7488;margin-top:10px}
+.pure-practice .saved-supplement details{padding:3px 0}.saved-supplement summary{cursor:pointer}
+.pure-practice .saved-supplement button{margin-top:8px}
+@media(max-width:760px){.pure-practice .actions{flex-wrap:wrap}.pure-practice .saved-supplement{padding:10px}}
