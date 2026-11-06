@@ -6,6 +6,7 @@ from pathlib import Path, PurePosixPath
 import re
 from build_reader_supplements import require, text as base_text, digest, encode, read, MAX_SHARD_BYTES, ISSUES
 from verify_repository import verify_signature
+import external_materials as external
 
 ROOT = Path(__file__).resolve().parents[1]
 # Complete questions are graded by the signed original answer. Disputes are annotations.
@@ -33,6 +34,7 @@ def safe(root, name):
 
 class Source:
     def __init__(self, root):
+        self.root = root
         bank = safe(root, 'original/bank-civil-aptitude')
         entry = json.loads(read(safe(bank, 'bank.json')))
         verify_signature(entry)
@@ -118,14 +120,18 @@ def load_batch(root, kind, batch_id, scope):
     rows = [json.loads(line) for line in data.splitlines() if line.strip()]
     require(len(rows) == meta['recordCount'] and len(rows) <= 2000, 'batch record budget')
     require(len({r['key']['questionId'] for r in rows}) == len(rows), 'duplicate batch question')
-    return rows, {'kind': kind, 'batchId': batch_id, 'recordsSha256': digest(data), 'recordCount': len(rows)}
+    provenance = {'kind': kind, 'batchId': batch_id, 'recordsSha256': digest(data), 'recordCount': len(rows)}
+    reviews = external.load_reviews(directory, meta, rows, safe) if kind == 'repairs' else {}
+    if 'externalMaterialReviewsSha256' in meta:
+        provenance['externalMaterialReviewsSha256'] = meta['externalMaterialReviewsSha256']
+    return rows, provenance, reviews
 
 def option_ids(value):
     ids = strings(value, 100, 100)
     require(len(ids) == len(set(ids)), 'duplicate option IDs')
     return ids
 
-def validate_material(source, question, indexes):
+def validate_material(source, question, indexes, pixel_budget=None):
     """Mirror selectMaterialBody and verify every selected image's signed bytes."""
     require(question['review'].get('practiceEligible') is True and question['review'].get('status') != 'quarantined', 'material source quarantined')
     stem = question['stem']
@@ -162,9 +168,13 @@ def validate_material(source, question, indexes):
         require(total <= 16*1024*1024, 'material image byte budget')
         data = source.file(m['path'], 'media')
         require(len(data) == m['byteLength'] and digest(data) == m['sha256'] and m['mediaId'] == 'media_' + m['sha256'], 'material media hash mismatch')
+        if pixel_budget is not None:
+            w, h = external.image_info(data, m['mimeType'])
+            pixel_budget[0] += w*h
+            external.check_budget(0, 0, pixel_budget[0])
     return len(selected), total
 
-def validate_repair(row, source, batch_id):
+def validate_repair(row, source, batch_id, external_review=None):
     require(row['schemaVersion'] == 1, 'repair schema mismatch')
     q = source.key(row['key'])
     status = row['reviewStatus']
@@ -173,6 +183,7 @@ def validate_repair(row, source, batch_id):
     require(isinstance(links, list) and len(links) <= 8, 'material links budget')
     checked, identities = [], set()
     image_count = image_bytes = 0
+    pixel_budget = [0] if row.get("externalMaterials") else None
     for link in links:
         require(link['sourceQuestionId'] != q['questionId'], 'self material link')
         require(re.fullmatch(r'questions/[a-zA-Z0-9._-]+\.jsonl', link['sourceFile']), 'invalid source question path')
@@ -189,7 +200,7 @@ def validate_repair(row, source, batch_id):
         blocks = src['stem']['doc']['content']
         if indexes is not None:
             require(isinstance(indexes, list) and 0 < len(indexes) <= 128 and all(type(i) is int and 0 <= i < len(blocks) for i in indexes) and indexes == sorted(set(indexes)), 'invalid material block indexes')
-        count, size = validate_material(source, src, indexes)
+        count, size = validate_material(source, src, indexes, pixel_budget) if pixel_budget is not None else validate_material(source, src, indexes)
         image_count += count; image_bytes += size
         require(image_count <= 32 and image_bytes <= 16*1024*1024, 'target image budget')
         checked.append({**{k: link[k] for k in ('sourceQuestionId', 'sourceRevisionDigest', 'sourceFile', 'collectionId')}, 'evidence': text(link['evidence']), 'stemBlockIndexes': indexes})
@@ -216,7 +227,11 @@ def validate_repair(row, source, batch_id):
             require(not corrected, 'nonreplacement corrected options')
             require(action != 'keep-original' or (status == 'reviewed' and evidence), 'keeping original requires reviewed evidence')
         correction = {'action': action, 'originalOptionIds': original, 'correctedOptionIds': corrected, 'reason': reason, 'evidence': evidence}
-    return {'schemaVersion': 1, 'key': row['key'], 'batchId': batch_id, 'reviewStatus': status, 'materialLinks': checked, 'answerCorrection': correction}
+    result = {'schemaVersion': 1, 'key': row['key'], 'batchId': batch_id, 'reviewStatus': status, 'materialLinks': checked, 'answerCorrection': correction}
+    if 'externalMaterials' in row:
+        result['externalMaterials'] = external.materials(row['externalMaterials'], source.root, safe, image_count, image_bytes, pixel_budget[0] if pixel_budget else 0)
+        result['externalReview'] = external_review
+    return result
 
 def build(root, repair_batches, ai_batches):
     root = Path(root)
@@ -226,7 +241,7 @@ def build(root, repair_batches, ai_batches):
     for kind, batches in [('ai', ai_batches), ('repairs', repair_batches)]:
         require(len(set(batches)) == len(batches), 'duplicate source batch')
         for batch_id in batches:
-            rows, provenance = load_batch(root, kind, batch_id, source.scope)
+            rows, provenance, reviews = load_batch(root, kind, batch_id, source.scope)
             sources.append(provenance)
             for row in rows:
                 q = source.key(row['key']); qid = q['questionId']
@@ -237,7 +252,7 @@ def build(root, repair_batches, ai_batches):
                     issues[qid] = names
                     issue_batches[qid] = batch_id
                 else:
-                    record = validate_repair(row, source, batch_id)
+                    record = validate_repair(row, source, batch_id, reviews.get(qid))
                     require(not (records.get(qid, {}).get('answerCorrection') and record['answerCorrection'] is None), 'later null cannot clear earlier correction')
                     records[qid] = record
     for qid in sorted(set(records) | set(issues)):
@@ -250,12 +265,24 @@ def build(root, repair_batches, ai_batches):
                 unresolved.discard('answer-conflict')
             if record['materialLinks']:
                 unresolved -= {'missing-material', 'missing-image'}
+        if record and record.get('externalMaterials'):
+            review = record.get('externalReview')
+            if review and review['reviewStatus'] == 'reviewed' and review['coverage'] == 'sufficient':
+                unresolved -= HOLDS
+            else:
+                unresolved.add('missing-material')
         # An authored hold already prevents grading. Preserve its specific reason
         # and evidence instead of replacing useful analysis with a generic notice.
         if unresolved and not (record and record['answerCorrection'] and record['answerCorrection']['action'] == 'withhold'):
             q = source.question(qid)
             names = '、'.join(ISSUE_LABELS[name] for name in sorted(unresolved))
-            record = {'schemaVersion': 1, 'key': {**source.scope, 'questionId': qid, 'revisionDigest': q['revisionDigest']}, 'batchId': 'derived-source-hold', 'reviewStatus': 'blocked', 'materialLinks': [], 'answerCorrection': {'action': 'withhold', 'originalOptionIds': q['answer']['optionIds'], 'correctedOptionIds': [], 'reason': '原题仍缺少作答必需内容：' + names + '。在补齐所需材料前，暂停自动判分。', 'evidence': [f'已保存的 AI 批次 {issue_batches[qid]} 标记：' + names]}}
+            prior = record
+            record = {'schemaVersion': 1, 'key': {**source.scope, 'questionId': qid, 'revisionDigest': q['revisionDigest']}, 'batchId': 'derived-source-hold', 'reviewStatus': 'blocked', 'materialLinks': [], 'answerCorrection': {'action': 'withhold', 'originalOptionIds': q['answer']['optionIds'], 'correctedOptionIds': [], 'reason': '原题仍缺少作答必需内容：' + names + '。在补齐所需材料前，暂停自动判分。', 'evidence': [f"已保存的 AI 批次 {issue_batches.get(qid, '未提供')} 标记：" + names]}}
+            if prior and prior.get('externalMaterials'):
+                # Keep independently reviewed partial material and its provenance visible.
+                if not (set(known) & HOLDS):
+                    record['answerCorrection']['evidence'] = ['外部材料尚无绑定当前全部内容摘要的充分独立复核。']
+                record = {**prior, 'answerCorrection': prior['answerCorrection'] or record['answerCorrection']}
             records[qid] = record
         if record:
             record['sourceIssues'] = known

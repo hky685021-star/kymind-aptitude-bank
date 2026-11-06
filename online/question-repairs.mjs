@@ -1,6 +1,7 @@
 // Controlled, source-bound materials and answer errata. Original questions stay immutable.
 import {boundedFetch,canonical,evaluate,hash} from './core.mjs';
 import {validateIndex} from './saved-supplements.mjs';
+import {resolveExternalMaterials,sufficientExternalCoverage,validateExternalMaterials} from './external-materials.mjs';
 
 const dec=new TextDecoder('utf-8',{fatal:true}), enc=new TextEncoder();
 const HEX=/^[a-f0-9]{64}$/, QID=/^q_[a-f0-9]{64}$/;
@@ -36,6 +37,7 @@ export function validateRepairRecord(row,scope) {
     else require(correction.correctedOptionIds.length===0);
     if(correction.action==='keep-original')require(row.reviewStatus==='reviewed');
   }
+  validateExternalMaterials(row);
   return row;
 }
 
@@ -145,8 +147,9 @@ export function createQuestionRepairs(base,bank) {
       validateCorrectionForQuestion(record,question);
       // Unreviewed records remain visible as a hold, but never fetch/display unreviewed material.
       const materials=record.reviewStatus==='reviewed'?await resolveRepairMaterials(bank,question,record,signal):[];
+      const externalMaterials=await resolveExternalMaterials(base,record,materials,signal||controller.signal);
       if(signal?.aborted)throw new DOMException('Aborted','AbortError');
-      return {state:'ready',record,materials,repairDigest:await hash(enc.encode(canonical(record)))};
+      return {state:'ready',record,materials,externalMaterials,repairDigest:await hash(enc.encode(canonical(record)))};
     },
     refresh(){indexFlight=undefined;cache.clear();},
     dispose(){controller.abort();cache.clear();flights.clear();}
@@ -155,8 +158,10 @@ export function createQuestionRepairs(base,bank) {
 
 export function missingRequiredMaterial(record) {
   const missing=(record.sourceIssues||[]).some(x=>x==='missing-material'||x==='missing-image');
-  // Only reviewed, source-verified links may resolve a required-material gap.
-  return missing&&!(record.reviewStatus==='reviewed'&&record.materialLinks?.length);
+  // Every external entry is necessary recovered content. A partial or absent
+  // independent review must hold even if an author prematurely clears sourceIssues.
+  if(record.externalMaterials?.length&&!sufficientExternalCoverage(record))return true;
+  return missing&&!(record.reviewStatus==='reviewed'&&record.materialLinks?.length)&&!sufficientExternalCoverage(record);
 }
 
 export function evaluateWithRepairs(question,optionIds,state) {

@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {openBank} from '../online/core.mjs';
-import {validateRepairRecord,resolveRepairMaterials,validateCorrectionForQuestion,evaluateWithRepairs} from '../online/question-repairs.mjs';
+import {validateRepairRecord,resolveRepairMaterials,validateCorrectionForQuestion,evaluateWithRepairs,missingRequiredMaterial} from '../online/question-repairs.mjs';
 
 const input=process.argv[2];if(!input)throw Error('Provide a repair records JSONL path');
 const examples=(await readFile(input,'utf8')).trim().split('\n').map(JSON.parse);
@@ -24,7 +24,8 @@ try {
     const resolved=record.reviewStatus==='reviewed'?await resolveRepairMaterials(bank,q,record):[];
     for(const material of resolved){materials++;for(const occurrence of material.mediaOccurrences){const blob=await bank.image(occurrence);assert.ok(blob.size>0);images++;}}
     const grade=evaluateWithRepairs(q,q.answer.optionIds,{state:'ready',record,materials:resolved,repairDigest:null});
-    if(record.answerCorrection?.action==='withhold'){assert.equal(grade.mode,'withheld');holds++;}
+    if(missingRequiredMaterial(record)){assert.equal(grade.mode,'withheld');holds++;}
+    else assert.equal(grade.mode,'original');
     assert.equal(JSON.stringify(q),before);
   }
   console.log(JSON.stringify({passed:true,records:examples.length,materials,images,withheld:holds,originalsUnchanged:true}));

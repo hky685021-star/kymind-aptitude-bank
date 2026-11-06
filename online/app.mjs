@@ -7,6 +7,7 @@ import {createSavedSupplements} from './saved-supplements.mjs';
 import {createSupplementControls} from './supplement-view.mjs';
 import {createQuestionRepairs} from './question-repairs.mjs';
 import {createRepairPanel,appendRepairAnswerNotice} from './repair-view.mjs';
+import {imageDimensions} from './external-materials.mjs';
 const $=id=>document.getElementById(id),base=new URL('../original/bank-civil-aptitude/',location.href);
 // Static introduction only: no tracking, network prefetch or native capabilities.
 const introDialog=$('kymind-intro-dialog'),introOpen=$('kymind-intro-open');
@@ -50,7 +51,7 @@ $('toggle-grid').onclick=()=>{if(window.innerWidth<=1100)compactGrid=!compactGri
 $('hide-solution').onclick=()=>{$('solution').hidden=!$('solution').hidden;$('hide-solution').textContent=$('solution').hidden?'展开解析':'收起解析';};
 function step(direction){let index=position+direction;while(index>=0&&index<queue.length){if(queue[index].practiceEligible){position=index;return select(queue[index]);}index+=direction;}}
 const render=(body,occurrences,signal)=>renderContent(body,occurrences,(o,s)=>bank.image(o,s),signal,urls);
-const renderRepair=(body,occurrences,signal,objectUrls)=>renderContent(body,occurrences,(o,s)=>bank.image(o,s),signal,objectUrls);
+const renderRepair=(body,occurrences,signal,objectUrls)=>renderContent(body,occurrences,async(o,s)=>{const blob=await bank.image(o,s);imageDimensions(new Uint8Array(await blob.arrayBuffer()),blob.type);return blob;},signal,objectUrls);
 let mathWarning='';
 async function typeset(container){if(!container.querySelector('.math'))return;let timer;try{await Promise.race([(async()=>{if(window.MathJax?.startup?.promise)await window.MathJax.startup.promise;if(window.MathJax?.typesetPromise)await window.MathJax.typesetPromise([container]);})(),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('公式排版超时')),5000);})]);}catch(error){mathWarning='公式排版未完成，保留公式原文：'+error.message;console.warn(mathWarning);}finally{clearTimeout(timer);}}
 function clear(){loadController?.abort();currentRepair=null;document.getElementById('single-supplement-buttons')?.remove();document.getElementById('single-supplement-panels')?.remove();suiteObserver?.disconnect();suiteMode=false;document.getElementById('exam-controls')?.remove();for(const url of urls)URL.revokeObjectURL(url);urls=[];$('question').replaceChildren();$('solution').replaceChildren();$('solution').hidden=true;$('hide-solution').hidden=true;$('response').replaceChildren();current=null;actions();}

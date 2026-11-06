@@ -1,0 +1,45 @@
+{
+  "validatedOn": "2026-11-06",
+  "scope": "Code and local candidate external-material acceptance. Not a deployed-site or browser acceptance.",
+  "baseCommit": "ccc131b1983e81337226c2e88241739ba19e33a8",
+  "inputSha256": {
+    "materials-to-publish.jsonl": "ba929659e77a22db51af9b14b9861a0fc3ea6cc8cd13ec2026f4545519c15333",
+    "external-material-reviews.jsonl": "f04929db4b702e6ad5f9e71c10b309e629e8718c359aa058bd416941c76aadb6",
+    "material-assets-to-copy.json": "456e0608c81e2c30275908d8c701f6fc27c559f34c9c317efb44b5963bb7ee2a"
+  },
+  "tests": {
+    "nodeDomPassed": 51,
+    "pythonPassed": 51,
+    "realExternalQuestions": 13,
+    "realExternalMaterials": 14,
+    "realExternalImages": 6,
+    "realExternalTexts": 8,
+    "originalGraded": 11,
+    "partialHeldSequences": [
+      438,
+      532
+    ],
+    "onlyLocalRuntimeRequests": true,
+    "pythonAllImagesDecoded": true,
+    "signedQuestionIdentityMatched": true
+  },
+  "originalIntegrity": {
+    "files": 51054,
+    "bytes": 699118078,
+    "uniqueQuestions": 70575,
+    "ed25519EntryAndReleaseVerified": true,
+    "originalsModified": false
+  },
+  "limitations": [
+    "Chromium cannot create local sockets in this environment; real browser decoding and visual layout were not verified.",
+    "No deployment or Git push was performed. Data assembly and generated reader projections are handled by the batch publisher.",
+    "The existing signed archive records one PNG decode anomaly; this change does not alter or claim to repair that original asset.",
+    "Initial repair projection predates the original-answer-policy wording change; rebuild the full repair projection with the final batch before publishing."
+  ],
+  "commands": [
+    "node --test tests/*.test.mjs",
+    "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "node tests/check-external-materials.mjs /path/to/aptitude-batch-0001",
+    "python3 scripts/verify_repository.py"
+  ]
+}

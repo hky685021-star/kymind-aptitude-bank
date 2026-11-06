@@ -73,3 +73,40 @@ test('missing records hide preamble; complete disputes retain original grading a
   const missing=createRepairPanel({client:{async get(){return {...ready,record:{...record,reviewStatus:'blocked',sourceIssues:['missing-material'],answerCorrection:{...record.answerCorrection,action:'withhold',correctedOptionIds:[]}}};}},question:q,renderBody:render});await missing.ready;
   assert.equal(missing.grade(['b']).mode,'withheld');
 });
+
+const external={materialId:'chart',kind:'text-summary',title:'<script>材料</script>',sourcePageUrl:'https://example.com/paper',sourceAssetUrl:null,checkedOn:'2026-11-06',identityEvidence:'原试卷题组匹配',contentSha256:'c'.repeat(64),text:'<img src="https://evil.example/x"> 真实事实摘要，不含答案。',asset:null};
+const externalReview={reviewStatus:'reviewed',coverage:'sufficient',reviewedOn:'2026-11-06',identityChecks:['题卷一致','题干一致','选项一致'],coverageReason:'详细比较可透露计算方法',limitations:[]};
+const externalState=(review=externalReview)=>({...ready,record:{...record,answerCorrection:null,reviewStatus:'blocked',sourceIssues:['missing-material'],externalMaterials:[external],externalReview:review},externalMaterials:review?.reviewStatus==='reviewed'?[external]:[]});
+
+test('external summaries are literal, source-linked and do not disclose detailed review before answer reveal',async()=>{
+  const panel=createRepairPanel({client:{async get(){return externalState();}},question:q,renderBody:render});await panel.ready;
+  assert.match(panel.element.textContent,/事实摘要，非逐字原材料/);assert.match(panel.element.textContent,/<img src=/);
+  assert.equal(panel.element.querySelectorAll('img').length,0);assert.equal(panel.element.querySelectorAll('script').length,0);
+  assert.equal(panel.element.querySelectorAll('a')[0].href,'https://example.com/paper');assert.equal(panel.element.querySelectorAll('a')[0].rel,'noopener noreferrer');
+  assert.doesNotMatch(panel.element.textContent,/详细比较可透露计算方法/);assert.equal(panel.grade(['b']).evaluation,'correct');
+  const box=new Node('section');appendRepairAnswerNotice(box,q,panel.state,panel.grade(['b']));assert.match(box.textContent,/详细比较可透露计算方法/);
+});
+
+test('partial reviewed materials remain useful but held; unreviewed or missing review hides external content',async()=>{
+  for(const review of [null,{...externalReview,reviewStatus:'needs-review',coverage:'partial',limitations:['原文未找齐']},{...externalReview,coverage:'partial',limitations:['原文未找齐']}]) {
+    const panel=createRepairPanel({client:{async get(){return externalState(review);}},question:q,renderBody:render});await panel.ready;
+    assert.equal(panel.grade(['b']).mode,'withheld');
+    if(review?.reviewStatus==='reviewed')assert.match(panel.element.textContent,/真实事实摘要/);else assert.doesNotMatch(panel.element.textContent,/真实事实摘要/);
+    assert.doesNotMatch(panel.element.textContent,/详细比较可透露计算方法|原文未找齐/);
+  }
+});
+
+test('external images require successful decode and actual declared dimensions; timeout errors offer retry',async()=>{
+  const old=document.createElement;let width=2,calls=0;
+  document.createElement=tag=>{const node=old(tag);if(tag==='img'){node.naturalWidth=width;node.naturalHeight=1;}return node;};
+  const img={...external,kind:'image',text:null,asset:{width:1,height:1},blob:new Blob(['test'],{type:'image/png'})};
+  const client={refresh(){},async get(){if(++calls===1)throw new DOMException('Timed out','AbortError');return {...externalState(),externalMaterials:[img]};}};
+  const controller=new AbortController();
+  try {
+    const panel=createRepairPanel({client,question:q,renderBody:render,signal:controller.signal});await panel.ready;
+    assert.match(panel.element.textContent,/加载失败/);assert.equal(panel.grade(['b']).mode,'withheld');
+    panel.element.querySelectorAll('button')[0].onclick();await tick();assert.match(panel.element.textContent,/加载失败/);assert.equal(panel.grade(['b']).mode,'withheld');
+    width=1;panel.element.querySelectorAll('button')[0].onclick();await tick();assert.equal(panel.grade(['b']).evaluation,'correct');
+    assert.match(panel.element.querySelectorAll('img')[0].src,/^blob:/);controller.abort();
+  }finally{document.createElement=old;controller.abort();}
+});
